@@ -22,7 +22,7 @@ const Blog = () => {
                             <h3 className="mb-3 text-neturalGrey font-semibold hover:text-bluehover">{blog.title}</h3>
                             <div className="flex items-center justify-center gap-8">
                                 <a href="https://nex4.blog/" className="font-bold text-neturalGrey hover:text-bluehover">
-                                    Read More{" "}
+                                    もっと見る{" "}
                                     <svg
                                         xmlns ="http://www.google.com/2000/svg"
                                         width="17"

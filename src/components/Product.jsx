@@ -17,7 +17,7 @@ const Product = () => {
                 <h2 className='text-4xl text-neturalDGrey font-semibold mb-4 md:w-4/5'>エンジニア・チーム</h2>
                 <p className='md:w-3/4 text-lg text-neturalDGrey mb-8'>デジタルで結ばれた今日の世界において、組織が業界のリーダーとなるためには、戦略のあらゆる部分を整合させることが不可欠であると私たちは考えています。<b/>私たちは、お客様がこの課題に対処し、新しいテクノロジーとの接続時に直面する可能性のある<b/>多くの障害を克服するための支援に専念しています。
                 </p>
-                <button className='btn-primary'>Learn More</button>
+                {/* <button className='btn-primary'>Learn More</button> */}
             </div>
             </div>
         </div>

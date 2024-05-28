@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
                     </h2>
                     <div className="flex items-center justify-center gap-8">
                         <button className="btn-primary border-t-indigo-600 text-white">
-                            View More
+                            <a href="https://www.nex4.net/privacy-policy/">もっと見る</a>
                         </button>
                     </div>
                     </div>

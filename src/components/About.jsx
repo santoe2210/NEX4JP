@@ -19,7 +19,7 @@ const About =() => {
                     <h2 className='text-4xl text-neturalDGrey font-semibold mb-4 md:w-4/5'>品質、信頼性、コンプライアンスを兼ね備えたサービスを提供するリーディング会社です！</h2>
                     <p className='md:w-3/4 text-lg text-neturalDGrey mb-8'>
                     </p>
-                    <button className='btn-primary'>Learn More</button>
+                    {/* <button className='btn-primary'>Learn More</button> */}
                 </div>
                 </div>
             </div>
