@@ -1,8 +1,11 @@
 import React from 'react';
 import photo3 from "../assets/photo1.jpg";
-import { Carousel } from "flowbite-react";
-import { Sidebar } from "flowbite-react";
-import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, HiViewBoards } from "react-icons/hi";
+import allservices from "../assets/icons/allservices.png";
+import reward from "../assets/icons/reward.png"
+import clients from "../assets/icons/clients.png"
+import project1 from "../assets/icons/project1.png"
+import team from "../assets/icons/team.png"
+import dc from "../assets/icons/dc.png"
 
 
 
@@ -27,7 +30,7 @@ const About =() => {
                 <h2 className="text-4xl text-neturalDGrey font-semibold mb-2">パートナー</h2>
                 <p className="text-neturalDGrey font-semibold">国内で200ご客様の為にAWSサービスをプロバイダーとしてしています。</p>
                 <div className="my-8 flex items-center justify-center">
-                    <img src="/src/assets/icons/allservices.png" alt=""  className=' items-center'/>
+                    <img src={allservices} alt=""  className=' items-center'/>
                 </div>
             </div>
             {/* write for reward*/}
@@ -36,7 +39,7 @@ const About =() => {
             <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 items-center text-center">
             <div className="flex flex-col items-center my-8 hover:border-indigo-700">
                 <figure className="flex justify-center m-0 p-0">
-                    <img src="/src/assets/icons/reward.png" alt="" />
+                    <img src={reward} alt="" />
                 </figure>
                 <div className="ml-5">
                     <h3 className="text-2xl font-bold text-neturalDGrey mb-2 px-2">F5 アワード</h3>
@@ -53,7 +56,7 @@ const About =() => {
             </div>
             <div className="flex flex-col items-center m-0 p-0">
                 <figure className="flex justify-center m-0 p-0">
-                    <img src="/src/assets/icons/reward.png" alt="" />
+                    <img src={reward} alt="" />
                 </figure>
                 <div className="ml-5 mb-8">
                     <h3 className="text-2xl font-bold text-neturalDGrey mb-2 px-2">CISCO アワード</h3>
@@ -68,7 +71,7 @@ const About =() => {
             </div>
             <div className="flex flex-col items-center m-0 p-0">
                 <figure className="flex justify-center m-0 p-0">
-                    <img src="/src/assets/icons/reward.png" alt="" />
+                    <img src={reward} alt="" />
                 </figure>
                 <div className="ml-5">
                     <h3 className="text-2xl font-bold text-neturalDGrey mb-2 px-2">VMWARE アワード</h3>
@@ -92,14 +95,14 @@ const About =() => {
                     <div className='md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12'>
                         <div className='space-y-8'>
                             <div className='flex items-center gap-4'> 
-                                <img src="/src/assets/icons/clients.png" alt="" />
+                                <img src={clients} alt="" />
                                     <div>
                                         <h4 className='text-2xl text-neturalGrey font-semibold'>110+</h4>
                                         <p className='text-xl text-neturalGrey font-normal'>プロジェクト</p>
                                     </div>
                             </div>
                             <div className='flex items-center gap-4'> 
-                                <img src="/src/assets/icons/project1.png" alt="" />
+                                <img src={project1} alt="" />
                                     <div>
                                         <h4 className='text-2xl text-neturalGrey font-semibold'>188+</h4>
                                         <p className='text-xl text-neturalGrey font-normal'>サーバー</p>
@@ -108,14 +111,14 @@ const About =() => {
                         </div>
                         <div className='space-y-8'>
                             <div className='flex items-center gap-4'> 
-                                <img src="/src/assets/icons/team.png" alt="" />
+                                <img src={team} alt="" />
                                 <div>
                                     <h4 className='text-2xl text-neturalGrey font-semibold'>120+</h4>
                                     <p className='text-xl text-neturalGrey font-normal'>チームメンバー</p>
                                 </div>
                             </div>
                             <div className='flex items-center gap-4'> 
-                                <img src="/src/assets/icons/dc.png" alt="" />
+                                <img src={dc} alt="" />
                                 <div>
                                     <h4 className='text-2xl text-neturalGrey font-semibold'>666+</h4>
                                     <p className='text-xl text-neturalGrey font-normal'>ネットワーク機器</p>

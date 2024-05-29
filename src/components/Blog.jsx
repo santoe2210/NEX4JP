@@ -1,10 +1,13 @@
 import React from "react";
+import blog1 from "../assets/blog1.jpg"
+import blog2 from "../assets/blog2.jpg"
+import blog3 from "../assets/blog3.jpg"
 
 const Blog = () => {
     const blogs =[
-        {id: 1, title: "ENHANCING SECURITY AND PERFORMANCE THROUGH CI/CD AND CLOUDFRONT", image:"/src/assets/blog1.jpg"},
-        {id: 2, title: "CLOUD SECURITY OPERATIONS ON AWS SHARING SESSION", image:"/src/assets/blog2.jpg"},
-        {id: 3, title: "ENHANCING SECURITY AND PERFORMANCE THROUGH CI/CD AND CLOUDFRONTHOW CORPORATE", image:"/src/assets/blog3.jpg"},
+        {id: 1, title: "ENHANCING SECURITY AND PERFORMANCE THROUGH CI/CD AND CLOUDFRONT", image:blog1},
+        {id: 2, title: "CLOUD SECURITY OPERATIONS ON AWS SHARING SESSION", image:blog2},
+        {id: 3, title: "ENHANCING SECURITY AND PERFORMANCE THROUGH CI/CD AND CLOUDFRONTHOW CORPORATE", image:blog3},
 
     ];
     return(

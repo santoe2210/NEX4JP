@@ -1,16 +1,19 @@
 import React from "react";
 import { MdDescription } from "react-icons/md";
+import m1 from "../assets/icons/m-1.png";
+import m2 from "../assets/icons/m-2.png";
+import m3 from "../assets/icons/m-3.png";
 
 const Services =() => {
     const services = [
         {
-            id: 1, title: "プロフェッショナルサービス" , description: "企業がクラウド導入や移行、最適化を成功させるための専門的な支援を提供します。これには、コンサルティング、実装支援、トレーニング、ベストプラクティスの提供が含まれます。" , image:"/src/assets/icons/m-1.png"
+            id: 1, title: "プロフェッショナルサービス" , description: "企業がクラウド導入や移行、最適化を成功させるための専門的な支援を提供します。これには、コンサルティング、実装支援、トレーニング、ベストプラクティスの提供が含まれます。" , image:m1
         },
         {
-            id: 2, title: "管理サービス" , description: "クラウドリソースの配置、監視、管理を簡素化するためのツールとサービスを提供します。これにより、インフラストラクチャのパフォーマンス最適化やコスト管理、セキュリティの強化が効率的に行えます。" , image:"/src/assets/icons/m-2.png"
+            id: 2, title: "管理サービス" , description: "クラウドリソースの配置、監視、管理を簡素化するためのツールとサービスを提供します。これにより、インフラストラクチャのパフォーマンス最適化やコスト管理、セキュリティの強化が効率的に行えます。" , image:m2
         },
         {
-            id: 3, title: "AWS/Azureへの課金" , description: "どちらも従量課金制を採用しており、使用したリソースに応じて料金が発生します。長期利用割引や無料利用枠も提供されており、コスト管理ツールを使って効率的にコストを追跡できます。" , image:"/src/assets/icons/m-3.png"
+            id: 3, title: "AWS/Azureへの課金" , description: "どちらも従量課金制を採用しており、使用したリソースに応じて料金が発生します。長期利用割引や無料利用枠も提供されており、コスト管理ツールを使って効率的にコストを追跡できます。" , image:m3
         },
 
     ]

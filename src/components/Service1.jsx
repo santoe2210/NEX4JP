@@ -3,7 +3,10 @@ import NavBar from "./NavBar";
 import { Card } from "flowbite-react";
 import { Table } from "flowbite-react";
 import MyFooter from './MyFooter'
-
+import s1 from "../assets/icons/service1.png";
+import s2 from "../assets/icons/service2.png";
+import s3 from "../assets/icons/service3.png";
+import s4 from "../assets/icons/service4.png";
 const Service1 = () =>{
     return(
         
@@ -28,7 +31,7 @@ const Service1 = () =>{
                         <div className='space-y-8 gap-4 items-center justify-center'>
                         <li style={{ flex: '1 1 50%'}} className="flex flex-wrap gap-12">
                             <span className="block w-12 h-12 m-0 p-0">
-                                <img src="/src/assets/icons/service1.png" alt="" />
+                                <img src={s1} alt="" />
                             </span>
                                 <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
                                 AWSを活用した最適なサーバー構成がわからない
@@ -36,7 +39,7 @@ const Service1 = () =>{
                         </li>
                         <li style={{ flex: '1 1 50%'}} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0">
-                                <img src="/src/assets/icons/service2.png" alt="" />
+                                <img src={s2} alt="" />
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
                             移行後の手順や運用フローがどう変わるのかわからない
@@ -46,7 +49,7 @@ const Service1 = () =>{
                         <div className='space-y-8 gap-4 items-center justify-center'>
                         <li style={{ flex: '1 1 50%' }} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0">
-                                <img src="/src/assets/icons/service3.png" alt="" />
+                                <img src={s3} alt="" />
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
                             不要なコストを削減して、本当に必要なシステムに投資したい
@@ -54,7 +57,7 @@ const Service1 = () =>{
                         </li>
                         <li style={{ flex: '1 1 50%' }} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0 flex-wrap">
-                                <img src="/src/assets/icons/service4.png" alt="" />
+                                <img src={s4} alt="" />
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
                             クラウド移行に関する十分な知識がない

@@ -2,7 +2,11 @@ import React from "react";
 import NavBar from "./NavBar";
 import { Card } from "flowbite-react";
 import { Table } from "flowbite-react";
-import MyFooter from './MyFooter'
+import MyFooter from './MyFooter';
+import s1 from "../assets/icons/service1.png";
+import s2 from "../assets/icons/service2.png";
+import s3 from "../assets/icons/service3.png";
+import s4 from "../assets/icons/service4.png";
 
 const Service2 = () =>{
     return(
@@ -28,7 +32,7 @@ const Service2 = () =>{
                         <div className='space-y-8 gap-4 items-center justify-center'>
                         <li style={{ flex: '1 1 50%'}} className="flex flex-wrap gap-12">
                             <span className="block w-12 h-12 m-0 p-0">
-                                <img src="/src/assets/icons/service1.png" alt="" />
+                                <img src={s1} alt="" />
                             </span>
                                 <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
                                 アプリケーションを監視したい
@@ -36,7 +40,7 @@ const Service2 = () =>{
                         </li>
                         <li style={{ flex: '1 1 50%'}} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0">
-                                <img src="/src/assets/icons/service2.png" alt="" />
+                                <img src={s2} alt="" />
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
                             パフォーマンスの変化に応答したい
@@ -46,7 +50,7 @@ const Service2 = () =>{
                         <div className='space-y-8 gap-4 items-center justify-center'>
                         <li style={{ flex: '1 1 50%' }} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0">
-                                <img src="/src/assets/icons/service3.png" alt="" />
+                                <img src={s3} alt="" />
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
                             リソースの使用を最適化したい
@@ -54,7 +58,7 @@ const Service2 = () =>{
                         </li>
                         <li style={{ flex: '1 1 50%' }} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0 flex-wrap">
-                                <img src="/src/assets/icons/service4.png" alt="" />
+                                <img src={s4} alt="" />
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
                             運用状態に関するインサイトを提供したい
@@ -127,7 +131,7 @@ const Service2 = () =>{
             <ol className="flex flex-wrap gap-16 items-center">
                 <li className="w-72 text-center">
                     <span className="block">
-                        <img src="/src/assets/icons/service4.png" alt="" className="mx-auto" />
+                        <img src={s4} alt="" className="mx-auto" />
                     </span>
                     <h3 className="mt-9 text-2xl text-bluehover">自動化・効率化を踏まえた 運用設計</h3>
                     <p className="mt-2 text-xl">
@@ -136,7 +140,7 @@ const Service2 = () =>{
                 </li>
                 <li className="w-72 text-center">
                     <span className="block">
-                        <img src="/src/assets/icons/service4.png" alt="" className="mx-auto" />
+                        <img src={s4} alt="" className="mx-auto" />
                     </span>
                     <h3 className="mt-9 text-2xl text-bluehover">24時間365日の監視</h3>
                     <p className="mt-2 text-xl">
@@ -145,7 +149,7 @@ const Service2 = () =>{
                 </li>
                 <li className="w-72 text-center">
                     <span className="block">
-                        <img src="/src/assets/icons/service4.png" alt="" className="mx-auto" />
+                        <img src={s4} alt="" className="mx-auto" />
                     </span>
                     <h3 className="mt-9 text-2xl text-bluehover">障害発生時の一次対応</h3>
                     <p className="mt-2 text-xl">

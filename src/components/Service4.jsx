@@ -4,17 +4,23 @@ import { Card } from "flowbite-react";
 import { Table } from "flowbite-react";
 import MyFooter from './MyFooter'
 import ProfessionalServicePage from './Professional4'
-import Professional5 from './Professional5'
+import Professional5 from './Professional5';
+import Op9 from "../assets/icons/Op9.png"
+import Op10 from "../assets/icons/Op10.png"
+import Op11 from "../assets/icons/Op11.png"
+import Op12 from "../assets/icons/Op12.png"
+import Op13 from "../assets/icons/Op13.png"
+import Op14 from "../assets/icons/Op14.png"
 
 
 const Service4 = () =>{
 
     const services = [
         {
-            id: 1, title: "より速い展開" , description: "" , image:"/src/assets/icons/Op9.png"
+            id: 1, title: "より速い展開" , description: "" , image:Op9
         },
         {
-            id: 2, title: "最適化されたパフォーマンス" , description: "" , image:"/src/assets/icons/Op10.png"
+            id: 2, title: "最適化されたパフォーマンス" , description: "" , image:Op10
         },
         {
             id: 3, title: "リスクの低減" , description: "" , image:"https://img.icons8.com/ios-filled/50/medium-risk.png"
@@ -56,7 +62,7 @@ const Service4 = () =>{
         <div className="mt-12 grid md:grid-cols-2 grid-cols-1 gap-4 items-center text-center justify-center">
             <div className="flex flex-col items-center my-8 hover:border-indigo-700">
                 <figure className="flex justify-center m-0 p-0">
-                    <img src="/src/assets/icons/Op12.png" alt="" />
+                    <img src={Op12} alt="" />
                 </figure>
                 <div className="ml-5">
                     <h3 className="text-2xl font-bold text-neturalDGrey mb-2 px-2">ネットワーク</h3>
@@ -65,7 +71,7 @@ const Service4 = () =>{
             </div>
             <div className="flex flex-col items-center m-0 p-0">
                 <figure className="flex justify-center m-0 p-0">
-                    <img src="/src/assets/icons/Op11.png" alt="" />
+                    <img src={Op11} alt="" />
                 </figure>
                 <div className="ml-5">
                     <h3 className="text-2xl font-bold text-neturalDGrey mb-2 px-2">インスタンスストレージ</h3>
@@ -79,7 +85,7 @@ const Service4 = () =>{
         <div className="mt-14 grid md:grid-cols-2 grid-cols-1 gap-8 items-center text-center">
             <div className="flex flex-col items-center my-8 hover:border-indigo-700">
                 <figure className="flex justify-center m-0 p-0">
-                    <img src="/src/assets/icons/Op13.png" alt="" />
+                    <img src={Op13} alt="" />
                 </figure>
                 <div className="ml-5">
                     <h3 className="text-2xl font-bold text-neturalDGrey mb-2 px-2">ファイアウォール</h3>
@@ -88,7 +94,7 @@ const Service4 = () =>{
             </div>
             <div className="flex flex-col items-center m-0 p-0">
                 <figure className="flex justify-center m-0 p-0">
-                    <img src="/src/assets/icons/Op14.png" alt="" />
+                    <img src={Op14} alt="" />
                 </figure>
                 <div className="ml-5">
                     <h3 className="text-2xl font-bold text-neturalDGrey mb-2 px-2">ロードバランサー</h3>
