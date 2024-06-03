@@ -7,8 +7,13 @@ import Service3 from './components/Service3'
 import ProfessionalServicePage from './components/Professional'
 import Service4 from './components/Service4'
 import HomePage from './Pages/Home'
+import About from './components/About'
+import Team from './components/Team'
+import Blog from './components/Blog'
+import Services from './components/Service'
 import NavBar from './components/NavBar'
-
+import Developing from './components/Developing'
+import ContactUs from './components/ContactUs'
 
 
 
@@ -18,11 +23,17 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-      <Route path="/" element={<HomePage />}/> 
+      <Route path="/" element={<HomePage />}/>
+      <Route path="/about" element={<About />}/>
+      <Route path="/product" element={<Team />}/>
+      <Route path="/blog" element={<Blog />}/>
+      <Route path="/service" element={<Services />}/>
       <Route path="/service1" element={<Service1 />}/>
       <Route path="/service2" element={<Service2 />}/>
       <Route path="/service3" element={<Service3 />}/>
       <Route path="/service4" element={<Service4 />}/>
+      <Route path="/developing" element={<Developing />}/>
+      <Route path="/faq" element={<ContactUs />}/>
       </Routes>
       </BrowserRouter> 
     </>

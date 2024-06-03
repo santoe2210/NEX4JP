@@ -3,7 +3,8 @@ import { MdDescription } from "react-icons/md";
 import m1 from "../assets/icons/m-1.png";
 import m2 from "../assets/icons/m-2.png";
 import m3 from "../assets/icons/m-3.png";
-
+import NavBar from "./TestNav";
+import MyFooter from "./MyFooter";
 const Services =() => {
     const services = [
         {
@@ -18,7 +19,10 @@ const Services =() => {
 
     ]
     return(
-        <div className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto" id="service"> 
+        <div path="service" className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto">
+            <div className="mb-16">
+                <NavBar/>    
+            </div> 
             <div className="text-center my-8">
                 {/* services card */}
                 <div>
@@ -41,6 +45,9 @@ const Services =() => {
                     </div>)
                 }
             </div>
+        <div>
+           <MyFooter/> 
+        </div>
         </div>
 
     );
