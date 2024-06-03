@@ -84,7 +84,7 @@ const NavBar = () => {
                         </button>
                     </div>
                 </div>
-
+                {/*for mobile view */}
                 <div className={`space-y-4 px-4 mt-16 py-7 font-bold bg-bluehover ${isMenuOpen ? "block fixed top-0 right-0 left-0" : "hidden"}`}>
                     {navItems.map(({ link, path, dropdownItems }) => (
                         <div key={path} className="relative">

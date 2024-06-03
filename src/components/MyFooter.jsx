@@ -9,23 +9,26 @@ const MyFooter = () =>{
         <Footer container>
         <div className="w-full px-10" id="faq" >
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-            <div className="space-y-4 mb-8 ">
+            <div className="space-y-4 mb-8 w-1/2">
               <Footer.Brand
-                href="https://flowbite.com"
+                href="/"
                 src={logo}
-                alt="Flowbite Logo"
+                alt="NEX4 Logo"
               />
-              <p className="mb-1">Copyright @2020 NEX4 ltd.</p>
-              <p>All rights reserved</p>
+              <h3>私たちにとって毎日が新たな日であり、どこにいてもお客様に<br/>ご満足いただけるよう全力で取り組んでいます。</h3>
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6 hover:text-bluehover">
-              {/* <div className="">
-                <Footer.Title title="about" />
+            <div className="grid grid-cols-2 gap-4 sm:mt-4 sm:grid-cols-3 sm:gap-6 hover:text-bluehover w-1/2 font-semibold">
+              <div className="">
+                <Footer.Title title="Menu" />
                 <Footer.LinkGroup col>
-                  <Footer.Link href="#">Flowbite</Footer.Link>
-                  <Footer.Link href="#">Tailwind CSS</Footer.Link>
+                  <Footer.Link href="/">ホームページ</Footer.Link>
+                  <Footer.Link href="/service">サービス</Footer.Link>
+                  <Footer.Link href="/about">NEX4について</Footer.Link>
+                  <Footer.Link href="/product">チーム</Footer.Link>
+                  <Footer.Link href="/blog">ブロック</Footer.Link>
+                  <Footer.Link href="#">お問い合わせ</Footer.Link>
                 </Footer.LinkGroup>
-              </div> */}
+              </div>
               <div>
                 <Footer.Title title="Follow us" />
                 <Footer.LinkGroup col>
@@ -44,7 +47,7 @@ const MyFooter = () =>{
           </div>
           <Footer.Divider />
           <div className="w-full sm:flex sm:items-center sm:justify-between">
-            <Footer.Copyright href="#" by="NEX4" year={2022} />
+            <Footer.Copyright href="/" by="NEX4" year={2024} />
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
               <Footer.Icon href="https://www.facebook.com/nex4ict?mibextid=LQQJ4d" icon={BsFacebook} />
               <Footer.Icon href="https://www.linkedin.com/company/nex4ict/mycompany/" icon={BsLinkedin} />

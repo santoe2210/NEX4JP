@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "./NavBar";
+import NavBar from "./TestNav";
 import { Card } from "flowbite-react";
 import { Table } from "flowbite-react";
 import MyFooter from './MyFooter'
@@ -29,7 +29,7 @@ const Service4 = () =>{
     ]
 
     return(
-        <div path="service4">
+        <div path="service4" className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto">
             <div className="mb-16">
                 <NavBar/>
             </div>
