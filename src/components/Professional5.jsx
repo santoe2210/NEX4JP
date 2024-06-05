@@ -1,6 +1,8 @@
 import React from 'react';
 import service1 from '../assets/icons/Op13.png'
 import service2 from '../assets/icons/Op14.png'
+import {motion} from 'framer-motion';
+import {fadeIn} from '../variants';
 
 const Professional5 = () => {
     return (
@@ -36,7 +38,12 @@ const Professional5 = () => {
 // eslint-disable-next-line react/prop-types
 const ServiceSection = ({ title, description , icon }) => {
     return (
-        <div className="mb-8 flex items-center px-20">
+        <motion.div 
+        variants={fadeIn("up", 0.5)}
+        initial= "hidden"
+        whileInView={"show"}
+        viewport={{once: false,amount: 0.7}}
+        className="mb-8 flex items-center px-20">
             <div className="mr-4">
                 <img src={icon}/>
             </div>
@@ -44,7 +51,7 @@ const ServiceSection = ({ title, description , icon }) => {
                 <h2 className="text-2xl font-bold">{title}</h2>
                 <p className="mt-4">{description}</p>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

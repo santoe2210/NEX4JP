@@ -6,6 +6,8 @@ import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, Hi
 import NavBar from "./TestNav";
 import MyFooter from "./MyFooter";
 import mg1 from "../assets/icons/mg1.png";
+import {motion} from 'framer-motion';
+import {fadeIn} from '../variants';
 
 const Team = () => {
     return(
@@ -14,7 +16,12 @@ const Team = () => {
                 <NavBar/>
             </div>
         {/* about text*/}
-        <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
+        <motion.div 
+        variants={fadeIn("right", 0.5)}
+        initial= "hidden"
+        whileInView={"show"}
+        viewport={{once: false,amount: 0.7}}
+        className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
             
             <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
                 <div>
@@ -28,18 +35,23 @@ const Team = () => {
             </div>
             </div>
             
-        </div>
+        </motion.div>
         <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center bg-blue-400 bg-transparent'>
             <div className=' mx-auto'>
                 <h2 className='text-2xl text-neturalDGrey font-semibold mb-4'>管理チーム</h2>
                 <p className='md:w-3/4 text-lg text-neturalDGrey mb-8'>
                 </p>
             </div>
-                <div className="h-40 sm:h-60 xl:h-60  w-3/5">
+                <motion.div 
+                variants={fadeIn("up", 0.5)}
+                initial= "hidden"
+                whileInView={"show"}
+                viewport={{once: false,amount: 0.7}}
+                className="h-40 sm:h-60 xl:h-60  w-3/5">
                 <Carousel>
                     <img src={mg1} alt="..." />
                 </Carousel>
-                </div>
+                </motion.div>
             </div>
         {/* comapny status*/} 
         <div>
