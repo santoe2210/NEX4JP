@@ -26,7 +26,7 @@ const MyFooter = () =>{
                   <Footer.Link href="/about">NEX4について</Footer.Link>
                   <Footer.Link href="/product">チーム</Footer.Link>
                   <Footer.Link href="/blog">ブロック</Footer.Link>
-                  <Footer.Link href="#">お問い合わせ</Footer.Link>
+                  <Footer.Link href="/faq">お問い合わせ</Footer.Link>
                 </Footer.LinkGroup>
               </div>
               <div>

@@ -14,7 +14,11 @@ import dc from "../assets/icons/dc.png"
 import NavBar from "./TestNav";
 import enteam from "../assets/icons/enteam.png";
 import mg1 from "../assets/icons/mg1.png";
-
+import f5 from "../assets/icons/f5.png";
+import cisco from "../assets/icons/cc1.png";
+import vmware from "../assets/icons/vm1.png";
+import {motion} from 'framer-motion';
+import {fadeIn} from '../variants';
 
 // eslint-disable-next-line react/prop-types
 const Counter = ({ targetCount }) => {
@@ -40,7 +44,7 @@ const Counter = ({ targetCount }) => {
 
 
 const Home = () => {
-
+    
     return(
         
         <div className='bg-neutralSilver mb-4' id="home">
@@ -94,9 +98,14 @@ const Home = () => {
             <div>
             {/* about text*/}
             <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
-                <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
+                <motion.div 
+                variants={fadeIn("up", 0.5)}
+                initial= "hidden"
+                whileInView={"show"}
+                viewport={{once: false,amount: 0.7}}
+                className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
                     <div>
-                        <img src={photo3} alt="" />
+                    <img src={photo3} alt="" />
                     </div>
                 <div className='md:w-3/5 mx-auto'>
                     <h2 className='text-4xl text-neturalDGrey font-semibold mb-4 md:w-4/5'>品質、信頼性、コンプライアンスを兼ね備えたサービスを提供するリーディング会社です！</h2>
@@ -104,22 +113,35 @@ const Home = () => {
                     </p>
                     {/* <button className='btn-primary'>Learn More</button> */}
                 </div>
-                </div>
+                </motion.div>
             </div>
             <div className="text-center items-center justify-center my-8 px-10">
-                <h2 className="text-4xl text-neturalDGrey font-semibold mb-2">パートナー</h2>
-                <p className="text-neturalDGrey font-semibold">国内で200ご客様の為にAWSサービスをプロバイダーとしてしています。</p>
-                <div className="my-8 flex items-center justify-center">
-                    <img src={allservices} alt=""  className=' items-center'/>
-                </div>
+                <h2 className="text-4xl text-neturalDGrey font-semibold mb-2 ">パートナー</h2>
+                <p className="text-neturalDGrey font-semibold ">国内で200ご客様の為にAWSサービスをプロバイダーとしてしています。</p>
+                <motion.div 
+                variants={fadeIn("up", 0.2)}
+                initial= "hidden"
+                whileInView={"show"}
+                viewport={{once: false,amount: 0.7}}
+                className="my-8 flex items-center justify-center">
+                    <img src={allservices} alt=""  className=' items-center' />
+                </motion.div>
             </div>
             {/* write for reward*/}
             <h2 className="text-4xl text-neturalDGrey font-semibold mb-2 text-center px-10">アワード</h2>
             <p className="text-neturalDGrey font-semibold text-3xl text-center">パフォーマンス</p>
-            <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 items-center text-center px-12">
+            <motion.div 
+             variants={fadeIn("up", 0.2)}
+             initial= "hidden"
+             whileInView={"show"}
+             viewport={{once: false,amount: 0.7}}
+            className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 items-center text-center px-12">
             <div className="flex flex-col items-center my-8 hover:border-indigo-700">
                 <figure className="flex justify-center m-0 p-0">
                     <img src={reward} alt="" />
+                </figure>
+                <figure className="flex justify-center m-0 p-0">
+                    <img src={f5} alt="" />
                 </figure>
                 <div className="ml-5">
                     <h3 className="text-2xl font-bold text-neturalDGrey mb-2 px-2">F5 アワード</h3>
@@ -138,6 +160,9 @@ const Home = () => {
                 <figure className="flex justify-center m-0 p-0">
                     <img src={reward} alt="" />
                 </figure>
+                <figure className="flex justify-center m-0 p-0">
+                    <img src={cisco} alt="" />
+                </figure>
                 <div className="ml-5 mb-8">
                     <h3 className="text-2xl font-bold text-neturalDGrey mb-2 px-2">CISCO アワード</h3>
                     <p className="text-sm text-neturalDGrey">
@@ -153,6 +178,9 @@ const Home = () => {
                 <figure className="flex justify-center m-0 p-0">
                     <img src={reward} alt="" />
                 </figure>
+                <figure className="flex justify-center m-0 p-0">
+                    <img src={vmware} alt="" />
+                </figure>
                 <div className="ml-5">
                     <h3 className="text-2xl font-bold text-neturalDGrey mb-2 px-2">VMWARE アワード</h3>
                     <p className="text-sm text-neturalDGrey">
@@ -163,9 +191,10 @@ const Home = () => {
                     </p>
                 </div>
             </div>
-        </div>
+        </motion.div>
             {/* added for web*/}
-            <div className='px-10 lg:px-14 max-w-screen-2xl mx-auto bg-sky-300 py-16'>
+            <div
+            className='px-10 lg:px-14 max-w-screen-2xl mx-auto bg-sky-300 py-16'>
                 <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
                     <div className='md:w-1/2'>
                         <h2 className='text-4xl text-neturalDGrey font-semibold mb-4 md:w-2/3'>プロジェクト状況</h2>
@@ -214,7 +243,12 @@ const Home = () => {
             </div>
             <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
             
-            <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
+            <motion.div 
+            variants={fadeIn("right", 0.5)}
+            initial= "hidden"
+            whileInView={"show"}
+            viewport={{once: false,amount: 0.7}} 
+            className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
                 <div>
                     <img src={enteam} alt="" />
                 </div>
@@ -224,21 +258,47 @@ const Home = () => {
                 </p>
                 {/* <button className='btn-primary'>Learn More</button> */}
             </div>
-            </div>
+            </motion.div>
             <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center bg-blue-400 bg-transparent'>
             <div className=' mx-auto'>
                 <h2 className='text-2xl text-neturalDGrey font-semibold mb-4'>管理チーム</h2>
                 <p className='md:w-3/4 text-lg text-neturalDGrey mb-8'>
                 </p>
             </div>
-                <div className="h-40 sm:h-60 xl:h-60  w-3/5">
+                <motion.div variants={fadeIn("up", 0.4)}
+                initial= "hidden"
+                whileInView={"show"}
+                viewport={{once: false,amount: 0.7}} className="h-40 sm:h-60 xl:h-60  w-3/5">
                 <Carousel>
                     <img src={mg1} alt="..." />
                 </Carousel>
-                </div>
+                </motion.div>
             </div>
             
+            
         </div>
+        {/* For Customers only if we get customers from japan*/}
+        {/* <div className=' items-center mb-8 px-9'>
+            <div>
+                <h2 className="text-2xl text-neturalDGrey font-semibold mb-2 text-center px-10">
+                    他にもこんなお客様に導入いただいています
+                </h2>
+            </div>
+            <div className=' flex items-center justify-center'>
+                <div className='grid grid-cols-5 grid-rows-2 ml-2 gap-14'>
+                        <div><img src={reward} alt="" /></div>
+                        <div><img src={reward} alt="" /></div>
+                        <div><img src={reward} alt="" /></div>
+                        <div><img src={reward} alt="" /></div>
+                        <div><img src={reward} alt="" /></div>
+                        <div><img src={reward} alt="" /></div>
+                        <div><img src={reward} alt="" /></div>
+                        <div><img src={reward} alt="" /></div>
+                        <div><img src={reward} alt="" /></div>
+                        <div><img src={reward} alt="" /></div>
+                </div>
+            </div>   
+        </div> */}
         </div>
         </div>     
     );

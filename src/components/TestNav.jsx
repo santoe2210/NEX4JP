@@ -40,9 +40,9 @@ const TestNav = () => {
           <Navbar.Link href="/" className=" font-bold">ホームページ</Navbar.Link>
           <Navbar.Link>
             {/* use comment closed classname and ul under this comment*/}
-            <MegaMenu.Dropdown toggle={<a href="service" className=" font-bold">サービス</a>} > {/* className="w-4/5 font-semibold" */}
-              {/* <ul className="grid grid-cols-5 sm:gap-1 gap-0.5 sm:mt-4"> */}
-              <ul>
+            <MegaMenu.Dropdown toggle={<a href="service" className=" w-4/5 font-semibold">サービス</a>} > {/* className="w-4/5 font-semibold" */}
+              <ul className="grid grid-cols-5 sm:gap-1 gap-0.5 sm:mt-4">
+              {/* <ul> */}
                 <div className="space-y-4 p-4">
                     <li>
                         <h2 className=" text-1xl font-bold">AWS Services</h2>
@@ -69,7 +69,7 @@ const TestNav = () => {
                   </li>
                 </div>
                 {/* open this comment for more services*/}
-                {/* <div className="space-y-4 p-4">
+                <div className="space-y-4 p-4">
                 <li>
                         <h2 className=" text-1xl  font-bold">CISCO サービス</h2>
                     </li>
@@ -153,7 +153,7 @@ const TestNav = () => {
                     UNIFIED COMMUNICTION/ VIDEO CONFERENCING
                     </a>
                   </li>
-                </div> */}
+                </div>
               </ul>
             </MegaMenu.Dropdown>
           </Navbar.Link>

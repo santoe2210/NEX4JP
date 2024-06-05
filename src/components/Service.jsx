@@ -5,6 +5,8 @@ import m2 from "../assets/icons/m-2.png";
 import m3 from "../assets/icons/m-3.png";
 import NavBar from "./TestNav";
 import MyFooter from "./MyFooter";
+import {motion} from 'framer-motion';
+import {fadeIn} from '../variants';
 const Services =() => {
     const services = [
         {
@@ -33,7 +35,12 @@ const Services =() => {
                 </div>
             </div>
             {/* cards */}
-            <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
+            <motion.div 
+            variants={fadeIn("up", 0.5)}
+            initial= "hidden"
+            whileInView={"show"}
+            viewport={{once: false,amount: 0.7}}
+            className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
                 {
                     services.map(service => <div key={service.id} className="px-4 py-8 text-center md:w-[300px] mx-auto md:h-80 rounded-md shadow cursor-pointer hover:-translate-y-5 hover:border-b-4
                     hover:border-indigo-700 transition-all duration-300 flex items-center justify-center h-full">
@@ -44,7 +51,7 @@ const Services =() => {
                         </div>
                     </div>)
                 }
-            </div>
+            </motion.div>
         <div>
            <MyFooter/> 
         </div>
