@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from '../assets/logo.png';
+import logo from '../assets/lgr1.png';
 import { Button, MegaMenu, Navbar } from 'flowbite-react';
 
 
@@ -140,17 +140,17 @@ const TestNav = () => {
                     </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    OFFICE 365/ MICROSOFT 365
+                    Professional Service
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    ビジネスアプリケーション
+                    Support Service
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    UNIFIED COMMUNICTION/ VIDEO CONFERENCING
+                    Soultion 
                     </a>
                   </li>
                 </div>
@@ -158,7 +158,7 @@ const TestNav = () => {
             </MegaMenu.Dropdown>
           </Navbar.Link>
           <Navbar.Link href="about" className=" font-bold">NEX4について</Navbar.Link>
-          <Navbar.Link href="product" className=" font-bold">チーム</Navbar.Link>
+          <Navbar.Link href="team" className=" font-bold">チーム</Navbar.Link>
           <Navbar.Link href="blog" className=" font-bold">ブロック</Navbar.Link>
           <Navbar.Link href="faq" className=" font-bold">お問い合わせ</Navbar.Link>
         </Navbar.Collapse>

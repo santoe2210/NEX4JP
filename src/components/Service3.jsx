@@ -16,7 +16,8 @@ import Op4 from "../assets/icons/Op4.png"
 import Op5 from "../assets/icons/Op5.png"
 import Op6 from "../assets/icons/Op6.png"
 import Op7 from "../assets/icons/Op7.png"
-import Op8 from "../assets/icons/Op8.png"
+import Op8 from "../assets/icons/Op8.png";
+import bg from "../assets/icons/bg1.jpg";
 
 const Service3 = () =>{
 
@@ -38,19 +39,23 @@ const Service3 = () =>{
             <div className="mb-16">
                 <NavBar/>
             </div>
-            <div className=" mb-8 items-center">
+            <div style={{
+                backgroundImage: `url(${bg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',}}className=" mb-8 items-center rounded-xl">
                 <div>
-                    <h1 className='text-6xl font-bold mb-4 text-neturalDGrey leading-snug text-center'>
+                    <h1 className='text-6xl font-bold mb-4 text-white leading-snug text-center'>
                         <span className='cursor-pointer hover:text-bluehover'>プロフェッショナルサービス</span>   
                     </h1>
                 </div>  
-            </div>
-            <div className="mb-8 space-y-8">
-            <div className=" text-4xl font-semibold text-neturalDGrey">
-                    <h2 className="text-2xl text-center space-y-4 cursor-pointer hover:text-bluehover">
+                <div className=" text-4xl font-semibold text-white">
+                    <h2 className="text-center space-y-4 cursor-pointer hover:text-bluehover">
                     サービスリスト一覧
                     </h2>
             </div>
+            </div>
+            <div className="mb-8 space-y-8">
+            
             {/* cards */}
             <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12 px-10">
                 {

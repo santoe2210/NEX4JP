@@ -11,7 +11,7 @@ import Op11 from "../assets/icons/Op11.png"
 import Op12 from "../assets/icons/Op12.png"
 import Op13 from "../assets/icons/Op13.png"
 import Op14 from "../assets/icons/Op14.png"
-
+import bg from "../assets/icons/bg1.jpg";
 
 const Service4 = () =>{
 
@@ -33,18 +33,22 @@ const Service4 = () =>{
             <div className="mb-16">
                 <NavBar/>
             </div>
-            <div className=" mb-8 items-center">
+            <div style={{
+                backgroundImage: `url(${bg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',}}className=" mb-8 items-center rounded-xl">
                 <div>
-                    <h1 className='text-6xl font-bold mb-4 text-neturalDGrey leading-snug text-center'>
+                    <h1 className='text-6xl font-bold mb-4 text-white leading-snug text-center'>
                         <span className='cursor-pointer hover:text-bluehover'>AWS導入支援サービス</span>   
                     </h1>
+                    <h2 className="text-4xl  font-semibold text-center text-white space-y-4 cursor-pointer hover:text-bluehover">
+                    サービスリスト一覧
+                    </h2>
                 </div>  
             </div>
             <div className="mb-8 space-y-8">
             <div className=" text-4xl font-semibold text-neturalDGrey">
-                    <h2 className="text-2xl text-center space-y-4 cursor-pointer hover:text-bluehover">
-                    サービスリスト一覧
-                    </h2>
+                    
             </div>
             {/* cards */}
             <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12">
