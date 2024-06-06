@@ -7,6 +7,7 @@ import s1 from "../assets/icons/service1.png";
 import s2 from "../assets/icons/service2.png";
 import s3 from "../assets/icons/service3.png";
 import s4 from "../assets/icons/service4.png";
+import bg from "../assets/icons/bg1.jpg";
 
 const Service2 = () =>{
     return(
@@ -15,14 +16,17 @@ const Service2 = () =>{
             <div className="mb-16">
                 <NavBar/>
             </div>
-            <div className=" mb-8 items-center">
+            <div style={{
+                backgroundImage: `url(${bg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',}}className=" mb-8 items-center rounded-xl">
                 <div>
-                    <h1 className='text-6xl font-bold mb-4 text-neturalDGrey leading-snug text-center'>
+                    <h1 className='text-6xl font-bold mb-4 text-white leading-snug text-center'>
                         <span className='cursor-pointer hover:text-bluehover'>運用監視代行サービス</span>   
                     </h1>
                 </div>
                 <div className="space-y-8 items-center">
-                    <div className=" text-4xl font-semibold text-neturalDGrey">
+                    <div className=" text-4xl font-semibold text-white">
                         <h2 className="text-2xl text-center space-y-4 cursor-pointer hover:text-bluehover">
                         Amazon CloudWatch はこんな課題を解決します。
                         </h2>
@@ -34,7 +38,7 @@ const Service2 = () =>{
                             <span className="block w-12 h-12 m-0 p-0">
                                 <img src={s1} alt="" />
                             </span>
-                                <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
+                                <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                                 アプリケーションを監視したい
                                 </h3>
                         </li>
@@ -42,7 +46,7 @@ const Service2 = () =>{
                             <span className=" block w-12 h-12 m-0 p-0">
                                 <img src={s2} alt="" />
                             </span>
-                            <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
+                            <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                             パフォーマンスの変化に応答したい
                             </h3>
                         </li>
@@ -52,7 +56,7 @@ const Service2 = () =>{
                             <span className=" block w-12 h-12 m-0 p-0">
                                 <img src={s3} alt="" />
                             </span>
-                            <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
+                            <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                             リソースの使用を最適化したい
                             </h3>
                         </li>
@@ -60,7 +64,7 @@ const Service2 = () =>{
                             <span className=" block w-12 h-12 m-0 p-0 flex-wrap">
                                 <img src={s4} alt="" />
                             </span>
-                            <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300">
+                            <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                             運用状態に関するインサイトを提供したい
                             </h3>
                         </li>

@@ -11,7 +11,7 @@ import {fadeIn} from '../variants';
 
 const Team = () => {
     return(
-        <div id="product" className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto">
+        <div path="team" className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto">
             <div className="mb-16">
                 <NavBar/>
             </div>
