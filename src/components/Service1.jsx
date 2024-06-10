@@ -8,25 +8,28 @@ import s2 from "../assets/icons/service2.png";
 import s3 from "../assets/icons/service3.png";
 import s4 from "../assets/icons/service4.png";
 import bg from "../assets/icons/bg1.jpg";
+
 const Service1 = () =>{
     return(
         
-        <div path="service1" className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto">
+        <div path="service1" className="md-px-14  py-16 max-w-screen-2xl mx-auto">
             <div className="mb-16">
                 <NavBar/>
             </div>
             <div style={{
                 backgroundImage: `url(${bg})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',}}className=" mb-8 items-center rounded-xl">
+                backgroundPosition: 'center',
+                height: '320px',
+                }}className="w-full mb-8 items-center rounded-xl">
                 <div  className="h-500 w-500"> 
                     <h1 className='text-6xl font-bold mb-4 text-white leading-snug text-center h-200'>
-                        <span className='cursor-pointer hover:text-violet-400'>AWSの移行サービス</span>   
+                        <span className='cursor-pointer hover:text-black'>AWSの移行サービス</span>   
                     </h1>
                 </div>
                 <div className="space-y-8 items-center">
                     <div className=" text-4xl font-semibold text-white">
-                        <h2 className="text-2xl text-center space-y-4 cursor-pointer hover:text-bluehover">
+                        <h2 className="text-3xl text-center space-y-4 cursor-pointer hover:text-black">
                         AWS移行支援でこんな課題を解決します。
                         </h2>
                     </div>
@@ -35,7 +38,7 @@ const Service1 = () =>{
                         <div className='space-y-8 gap-4 items-center justify-center'>
                         <li style={{ flex: '1 1 50%'}} className="flex flex-wrap gap-12">
                             <span className="block w-12 h-12 m-0 p-0">
-                                <img src={s1} alt="" />
+                                <img src="https://img.icons8.com/dusk/64/server.png" alt="" />
                             </span>
                                 <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                                 AWSを活用した最適なサーバー構成がわからない
@@ -43,7 +46,7 @@ const Service1 = () =>{
                         </li>
                         <li style={{ flex: '1 1 50%'}} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0">
-                                <img src={s2} alt="" />
+                            <img width="80" height="80" src="https://img.icons8.com/officel/80/immigration.png" alt="immigration"/>
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                             移行後の手順や運用フローがどう変わるのかわからない
@@ -53,7 +56,7 @@ const Service1 = () =>{
                         <div className='space-y-8 gap-4 items-center justify-center'>
                         <li style={{ flex: '1 1 50%' }} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0">
-                                <img src={s3} alt="" />
+                                <img src="https://img.icons8.com/plasticine/100/cost.png" alt="" />
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                             不要なコストを削減して、本当に必要なシステムに投資したい
@@ -61,7 +64,7 @@ const Service1 = () =>{
                         </li>
                         <li style={{ flex: '1 1 50%' }} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0 flex-wrap">
-                                <img src={s4} alt="" />
+                            <img width="64" height="64" src="https://img.icons8.com/dusk/64/cloud.png" alt="cloud"/>
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                             クラウド移行に関する十分な知識がない
@@ -73,10 +76,10 @@ const Service1 = () =>{
                     </div>
                 </div>
             </div>
-            <div className="mb-8 space-y-8">
+            <div className="mb-8 space-y-8 px-20">
             <div className=" text-4xl font-semibold text-neturalDGrey">
-                    <h2 className="text-2xl text-center space-y-4 cursor-pointer hover:text-bluehover">
-                    メリット
+                    <h2 className="text-4xl text-center space-y-4 cursor-pointer hover:text-bluehover">
+                    利点
                     </h2>
             </div>
             <div className="space-y-8 items-center justify-center">

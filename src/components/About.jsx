@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import photo3 from "../assets/photo1.jpg";
+import photo1 from "../assets/photo1.jpg";
+import photo3 from "../assets/photo3.jpg";
 import allservices from "../assets/icons/allservices.png";
 import reward from "../assets/icons/rnew.png"
 import clients from "../assets/icons/clients.png"
@@ -13,6 +14,7 @@ import cisco from "../assets/icons/cc1.png";
 import vmware from "../assets/icons/vm1.png";
 import {motion} from 'framer-motion';
 import {fadeIn} from '../variants';
+
 
 // eslint-disable-next-line react/prop-types
 const Counter = ({ targetCount }) => {
@@ -46,7 +48,7 @@ const About =() => {
             <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
                 <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
                     <div>
-                        <img src={photo3} alt="" />
+                        <img src={photo1} alt="" />
                     </div>
                 <motion.div 
                 variants={fadeIn("up", 0.5)}
@@ -54,7 +56,7 @@ const About =() => {
                 whileInView={"show"}
                 viewport={{once: false,amount: 0.7}}
                 className='md:w-3/5 mx-auto'>
-                    <h2 className='text-4xl text-neturalDGrey font-semibold mb-4 md:w-4/5'>品質、信頼性、コンプライアンスを兼ね備えたサービスを提供するリーディング会社です！</h2>
+                    <h2 className='text-4xl text-white font-semibold mb-4 md:w-4/5'>品質、信頼性、コンプライアンスを兼ね備えたサービスを提供するリーディング会社です！</h2>
                     <p className='md:w-3/4 text-lg text-neturalDGrey mb-8'>
                     </p>
                     {/* <button className='btn-primary'>Learn More</button> */}

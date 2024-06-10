@@ -6,7 +6,7 @@ import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsLinkedin, BsTwitter, B
 
 const MyFooter = () =>{
     return(
-        <Footer container>
+        <Footer container className="px-20">
         <div 
         style={{
           backgroundImage: `url(${bg})`,
@@ -54,10 +54,10 @@ const MyFooter = () =>{
           <div className="w-full sm:flex sm:items-center sm:justify-between">
             <Footer.Copyright className="text-white "href="/" by="NEX4 ICT Solutions" />
             <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
-              <Footer.Icon href="https://www.facebook.com/nex4ict?mibextid=LQQJ4d" icon={BsFacebook} />
-              <Footer.Icon href="https://www.linkedin.com/company/nex4ict/mycompany/" icon={BsLinkedin} />
-              <Footer.Icon href="https://x.com/nex4ict?s=09&mx=2" icon={BsTwitter} />
-              <Footer.Icon href="https://www.youtube.com/channel/UCwcOIHDbgoaKzGM3LG-ACRg" icon={BsYoutube} />
+              <Footer.Icon href="https://www.facebook.com/nex4ict?mibextid=LQQJ4d" icon={BsFacebook} className="hover:text-[#1877F2]"/>
+              <Footer.Icon href="https://www.linkedin.com/company/nex4ict/mycompany/" icon={BsLinkedin} className="hover:text-[#0A66C2]"/>
+              <Footer.Icon href="https://x.com/nex4ict?s=09&mx=2" icon={BsTwitter} className="hover:text-[#1DA1F2]"/>
+              <Footer.Icon href="https://www.youtube.com/channel/UCwcOIHDbgoaKzGM3LG-ACRg" icon={BsYoutube} className="hover:text-[#FF0000]"/>
             </div>
           </div>
         </div>

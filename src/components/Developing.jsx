@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './TestNav'
 import MyFooter from './MyFooter'
+import bg from "../assets/icons/bg1.jpg";
 
 
 export default function Developing() {
@@ -9,9 +10,19 @@ export default function Developing() {
       <div className="mb-16">
                 <NavBar/>    
             </div>
-      <h2 className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto text-center font-bold text-4xl" >
-      このウェブページはまだ開発中です
-     </h2>
+            <div style={{
+                backgroundImage: `url(${bg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '258px',
+                }}className=" mb-8 flex flex-col justify-center items-center rounded-xl">
+                <div>
+                    <h1 className='text-6xl font-bold mb-4 text-white leading-snug text-center'>
+                        <span className='cursor-pointer hover:text-black '>このウェブページはまだ開発中です</span>   
+                    </h1>
+                    
+                </div>  
+            </div>
      <div>
         <MyFooter/>
      </div>

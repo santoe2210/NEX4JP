@@ -3,31 +3,36 @@ import NavBar from "./TestNav";
 import { Card } from "flowbite-react";
 import { Table } from "flowbite-react";
 import MyFooter from './MyFooter';
-import s1 from "../assets/icons/service1.png";
-import s2 from "../assets/icons/service2.png";
-import s3 from "../assets/icons/service3.png";
-import s4 from "../assets/icons/service4.png";
 import bg from "../assets/icons/bg1.jpg";
+import auto from "../assets/icons/auto.png";
+import clock from "../assets/icons/clock.png";
+import respond from "../assets/icons/respond.png";
+import app1 from "../assets/icons/app1.png";
+import resource from "../assets/icons/resource.png";
+import pf from "../assets/icons/performance.png";
+import insight from "../assets/icons/insight.png";
 
 const Service2 = () =>{
     return(
         
-        <div path="service2" className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto">
+        <div path="service2" className="md-px-14  py-16 max-w-screen-2xl mx-auto">
             <div className="mb-16">
                 <NavBar/>
             </div>
             <div style={{
                 backgroundImage: `url(${bg})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',}}className=" mb-8 items-center rounded-xl">
+                backgroundPosition: 'center',
+                height: '320px',
+                }}className=" mb-8 items-center rounded-xl">
                 <div>
                     <h1 className='text-6xl font-bold mb-4 text-white leading-snug text-center'>
-                        <span className='cursor-pointer hover:text-bluehover'>運用監視代行サービス</span>   
+                        <span className='cursor-pointer hover:text-black'>運用監視代行サービス</span>   
                     </h1>
                 </div>
                 <div className="space-y-8 items-center">
                     <div className=" text-4xl font-semibold text-white">
-                        <h2 className="text-2xl text-center space-y-4 cursor-pointer hover:text-bluehover">
+                        <h2 className="text-4xl text-center space-y-4 cursor-pointer hover:text-black">
                         Amazon CloudWatch はこんな課題を解決します。
                         </h2>
                     </div>
@@ -36,7 +41,7 @@ const Service2 = () =>{
                         <div className='space-y-8 gap-4 items-center justify-center'>
                         <li style={{ flex: '1 1 50%'}} className="flex flex-wrap gap-12">
                             <span className="block w-12 h-12 m-0 p-0">
-                                <img src={s1} alt="" />
+                                <img src={app1} alt="" />
                             </span>
                                 <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                                 アプリケーションを監視したい
@@ -44,7 +49,7 @@ const Service2 = () =>{
                         </li>
                         <li style={{ flex: '1 1 50%'}} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0">
-                                <img src={s2} alt="" />
+                                <img src={pf} alt="" />
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                             パフォーマンスの変化に応答したい
@@ -54,7 +59,7 @@ const Service2 = () =>{
                         <div className='space-y-8 gap-4 items-center justify-center'>
                         <li style={{ flex: '1 1 50%' }} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0">
-                                <img src={s3} alt="" />
+                                <img src={resource} alt="" />
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                             リソースの使用を最適化したい
@@ -62,7 +67,7 @@ const Service2 = () =>{
                         </li>
                         <li style={{ flex: '1 1 50%' }} className="flex flex-wrap gap-12">
                             <span className=" block w-12 h-12 m-0 p-0 flex-wrap">
-                                <img src={s4} alt="" />
+                                <img src={insight} alt="" />
                             </span>
                             <h3 className="hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300 text-white">
                             運用状態に関するインサイトを提供したい
@@ -74,10 +79,10 @@ const Service2 = () =>{
                     </div>
                 </div>
             </div>
-            <div className="mb-8 space-y-8">
+            <div className="mb-8 space-y-8 px-20">
             <div className=" text-4xl font-semibold text-neturalDGrey">
-                    <h2 className="text-2xl text-center space-y-4 cursor-pointer hover:text-bluehover">
-                    メリット
+                    <h2 className="text-4xl text-center space-y-4 cursor-pointer hover:text-bluehover">
+                    利点
                     </h2>
             </div>
             <div className="space-y-8 items-center justify-center">
@@ -127,7 +132,7 @@ const Service2 = () =>{
             </div>
             </div>
             <div className="mb-8">
-    <div className="mt-12 bg-bgcolor flex flex-col items-center">
+    <div className="mt-12 bg-bgcolor flex flex-col items-center px-20">
         <h2 className="p-6 text-center bg-cyan-600 font-semibold text-neutral-100">
             <span>24時間、365日対応の「AWS監視・運用代行サービス」</span>
         </h2>
@@ -135,7 +140,7 @@ const Service2 = () =>{
             <ol className="flex flex-wrap gap-16 items-center">
                 <li className="w-72 text-center">
                     <span className="block">
-                        <img src={s4} alt="" className="mx-auto" />
+                        <img src={auto} alt="" className="mx-auto" />
                     </span>
                     <h3 className="mt-9 text-2xl text-bluehover">自動化・効率化を踏まえた 運用設計</h3>
                     <p className="mt-2 text-xl">
@@ -144,7 +149,7 @@ const Service2 = () =>{
                 </li>
                 <li className="w-72 text-center">
                     <span className="block">
-                        <img src={s4} alt="" className="mx-auto" />
+                        <img src={clock} alt="" className="mx-auto" />
                     </span>
                     <h3 className="mt-9 text-2xl text-bluehover">24時間365日の監視</h3>
                     <p className="mt-2 text-xl">
@@ -153,7 +158,7 @@ const Service2 = () =>{
                 </li>
                 <li className="w-72 text-center">
                     <span className="block">
-                        <img src={s4} alt="" className="mx-auto" />
+                        <img src={respond} alt="" className="mx-auto" />
                     </span>
                     <h3 className="mt-9 text-2xl text-bluehover">障害発生時の一次対応</h3>
                     <p className="mt-2 text-xl">
@@ -165,7 +170,7 @@ const Service2 = () =>{
     </div>
 </div>
 
-            <div className="mb-8">
+            <div className="mb-8 px-20">
             <div className=" text-4xl font-semibold text-neturalDGrey">
                 <h2 className="text-2xl text-center space-y-4 cursor-pointer hover:text-bluehover">
                 AWSの導入・移行支援サービス プラン
