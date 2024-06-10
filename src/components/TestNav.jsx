@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from '../assets/lgr1.png';
 import { Button, MegaMenu, Navbar } from 'flowbite-react';
-
+// add hover underline
 
 const TestNav = () => {
 
@@ -37,130 +37,165 @@ const TestNav = () => {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Navbar.Link href="/" className=" font-bold">ホームページ</Navbar.Link>
+          <Navbar.Link href="/" className=" font-bold hover:underline">ホームページ</Navbar.Link>
           <Navbar.Link>
             {/* use comment closed classname and ul under this comment*/}
-            <MegaMenu.Dropdown toggle={<a href="service" className=" w-4/5 font-semibold">サービス</a>} > {/* className="w-4/5 font-semibold" */}
-              <ul className="grid grid-cols-5 sm:gap-1 gap-0.5 sm:mt-4">
+            <MegaMenu.Dropdown toggle={<a href="service" className=" w-4/5 font-semibold hover:underline">サービス</a>} > {/* className="w-4/5 font-semibold" */}
+              <ul className="grid grid-cols-3 sm:gap-1 gap-0.5 sm:mt-4">
               {/* <ul> */}
                 <div className="space-y-4 p-4">
                     <li>
-                        <h2 className=" text-1xl font-bold">AWS Services</h2>
+                        <h2 className=" text-1xl font-bold">Services</h2>
                     </li>
                   <li className="hover:text-bluehover">
                     <a href="/service1" className="hover:text-primary-600 dark:hover:text-primary-500">
-                        AWS移行サービス
+                        Migration
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/service2" className="hover:text-primary-600 dark:hover:text-primary-500">
-                        AWS運用監視代行サービス
+                        Operation and Monitoring Service
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/service3" className="hover:text-primary-600 dark:hover:text-primary-500">
-                        プロフェッショナルサービス
+                        Professional Services 
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/service4" className="hover:text-primary-600 dark:hover:text-primary-500">
-                        AWS導入支援サービス
+                        Implemenation Suppot Service
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                      Managed Service
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                      Optimization Service
                     </a>
                   </li>
                 </div>
                 {/* open this comment for more services*/}
                 <div className="space-y-4 p-4">
                 <li>
-                        <h2 className=" text-1xl  font-bold">CISCO サービス</h2>
+                        <h2 className=" text-1xl  font-bold">Solutions</h2>
                     </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    CISCO サービス
+                    Microsoft Solution Service
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    CISCO サービス
+                    Security Solution Service
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    CISCO サービス
+                    Newtwork Solution Service
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    CISCO サービス
+                    Industry Solution Service
                     </a>
                   </li>
                 </div>
                 <div className="space-y-4 p-4">
                 <li>
-                        <h2 className=" text-1xl  font-bold">ネットワークサービス</h2>
+                        <h2 className=" text-1xl  font-bold">Network</h2>
                     </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      サーバー
+                      Enterprise Network
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      ストレージ
+                      DC Netwok
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      バックアップ
+                      Network Services
                     </a>
                   </li>
                 </div>
                 <div className="space-y-4 p-4">
                 <li>
-                        <h2 className=" text-1xl  font-bold">セキュリティー サービス</h2>
+                        <h2 className=" text-1xl  font-bold">Firewall & Security</h2>
                     </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    ファイアウォール
+                    Colud Based Security
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    セキュリティー
+                    Enterprise Security
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      F5
+                      DC/Core Security
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                      Firewall Services
                     </a>
                   </li>
                 </div>
                 <div className="space-y-4 p-4">
                 <li>
-                        <h2 className=" text-1xl  font-bold">Microsoft サービス</h2>
+                        <h2 className=" text-1xl  font-bold">Data & Applications</h2>
                     </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Professional Service
+                    Data & AI
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Support Service
+                    ERP
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Soultion 
+                    CRM
+                    </a>
+                  </li>
+                </div>
+                <div className="space-y-4 p-4">
+                <li>
+                        <h2 className=" text-1xl  font-bold">Partner Platform</h2>
+                    </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    AWS
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    Microsoft
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    CISCO
                     </a>
                   </li>
                 </div>
               </ul>
             </MegaMenu.Dropdown>
           </Navbar.Link>
-          <Navbar.Link href="about" className=" font-bold">NEX4について</Navbar.Link>
-          <Navbar.Link href="team" className=" font-bold">チーム</Navbar.Link>
-          <Navbar.Link href="blog" className=" font-bold">ブロック</Navbar.Link>
-          <Navbar.Link href="faq" className=" font-bold">お問い合わせ</Navbar.Link>
+          <Navbar.Link href="about" className=" font-bold hover:underline">NEX4について</Navbar.Link>
+          <Navbar.Link href="team" className=" font-bold hover:underline">チーム</Navbar.Link>
+          <Navbar.Link href="blog" className=" font-bold hover:underline">ブロック</Navbar.Link>
+          <Navbar.Link href="faq" className=" font-bold hover:underline">お問い合わせ</Navbar.Link>
         </Navbar.Collapse>
       </div>
     </MegaMenu>

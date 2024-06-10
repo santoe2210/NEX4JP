@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect }from 'react';
-import { Carousel } from "flowbite-react";
+import { Carousel,Card, Button } from "flowbite-react";
 import photo1 from "../assets/icons/homej.png";
 import photo2 from "../assets/icons/home.gif";
 import home2 from "../assets/icons/home2.png";
@@ -11,7 +11,6 @@ import clients from "../assets/icons/clients.png"
 import project1 from "../assets/icons/project1.png"
 import team from "../assets/icons/team.png"
 import dc from "../assets/icons/dc.png"
-import NavBar from "./TestNav";
 import enteam from "../assets/icons/enteam.png";
 import mg1 from "../assets/icons/mg1.png";
 import f5 from "../assets/icons/f5.png";
@@ -19,6 +18,12 @@ import cisco from "../assets/icons/cc1.png";
 import vmware from "../assets/icons/vm1.png";
 import {motion} from 'framer-motion';
 import {fadeIn} from '../variants';
+import bg from "../assets/icons/bg1.jpg";
+import imp from "../assets/icons/implementation.png";
+import AI from "../assets/icons/AI.jpg";
+import ms1 from "../assets/icons/ms1.jpg";
+import net from "../assets/icons/network.jpg";
+import security from "../assets/icons/security.jpg";
 
 // eslint-disable-next-line react/prop-types
 const Counter = ({ targetCount }) => {
@@ -36,7 +41,7 @@ const Counter = ({ targetCount }) => {
 
     return (
         <div>
-            <h4 className='text-2xl text-neturalGrey font-semibold'>{count}+</h4>
+            <h4 className='text-2xl text-white  font-semibold'>{count}+</h4>
             
         </div>
     );
@@ -89,7 +94,7 @@ const Home = () => {
                             企業ネットワークとセキュリティソリューションサービス <br />
                             メール、コラボレーション、エンドユーザー向けサービスソリューションとサービス <br />
                             コンサルティングと管理サービス </p><br />
-                            <h1 className='text-6xl font-bold mb-4 text-neturalDGrey md:w-3/4 leading-snug'><span className='text-bluehover'>AWSサービス<br />プロバイダー</span></h1>
+                            <h1 className='text-6xl font-bold mb-4 text-neturalDGrey md:w-3/4 leading-snug'><span className='text-bluehover'>サービス<br />プロバイダー</span></h1>
                             {/* <button className='btn-primary'>Register</button> */}
                         </div>
                     </div>
@@ -98,12 +103,7 @@ const Home = () => {
             <div>
             {/* about text*/}
             <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
-                <motion.div 
-                variants={fadeIn("up", 0.5)}
-                initial= "hidden"
-                whileInView={"show"}
-                viewport={{once: false,amount: 0.7}}
-                className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
+                <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
                     <div>
                     <img src={photo3} alt="" />
                     </div>
@@ -113,11 +113,122 @@ const Home = () => {
                     </p>
                     {/* <button className='btn-primary'>Learn More</button> */}
                 </div>
-                </motion.div>
+                </div>
+            </div>
+            <div className='items-center'>
+                <h2 className="text-4xl text-neturalDGrey text-center font-semibold mb-12 ">Service List</h2>
+                <div className='flex flex-wrap gap-12 items-center justify-center my-1'>
+                <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
+                    imgAlt="Meaningful alt text for an image that is not purely decorative"
+                    imgSrc={imp}>
+                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    AWS Implementation Service
+                </h5>
+                <p className="font-normal text-gray-700 dark:text-gray-400">  
+                </p>
+                <Button href='/service4'>
+                Read more
+                    <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                    />
+                    </svg>
+                </Button>
+                </Card>
+                <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
+                    imgAlt="Meaningful alt text for an image that is not purely decorative"
+                    imgSrc={AI}>
+                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Data & AI
+                </h5>
+                <p className="font-normal text-gray-700 dark:text-gray-400"> 
+                </p>
+                <Button href='/developing'>
+                Read more
+                    <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                    />
+                    </svg>
+                </Button>
+                </Card>
+                <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
+                    imgAlt="Meaningful alt text for an image that is not purely decorative"
+                    imgSrc={ms1}>
+                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Microsoft Solution Service
+                </h5>
+                <p className="font-normal text-gray-700 dark:text-gray-400">  
+                </p>
+                <Button href='/developing'>
+                Read more
+                    <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                    />
+                    </svg>
+                </Button>
+                </Card>
+                <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
+                    imgAlt="Meaningful alt text for an image that is not purely decorative"
+                    imgSrc={net}>
+                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Network Service
+                </h5>
+                <p className="font-normal text-gray-700 dark:text-gray-400"> 
+                </p>
+                <Button href='/developing'>
+                Read more
+                    <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                    />
+                    </svg>
+                </Button>
+                </Card><Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
+                    imgAlt="Meaningful alt text for an image that is not purely decorative"
+                    imgSrc={security}>
+                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    Security Service
+                </h5>
+                <p className="font-normal text-gray-700 dark:text-gray-400">
+                </p>
+                <Button href='developing'>
+                Read more
+                    <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                    />
+                    </svg>
+                </Button>
+                </Card>
+                </div>
+            </div>
+            <div className='flex items-center justify-center mb-10 my-12 px-10'>
+                <Button className='items-center justify-center rounded-md' href='/service'>
+                View All Services
+                    <svg className="-mr-1 ml-2 h-4 w-4 ite" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        fillRule="evenodd"
+                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                    />
+                    </svg>
+                </Button>
             </div>
             <div className="text-center items-center justify-center my-8 px-10">
                 <h2 className="text-4xl text-neturalDGrey font-semibold mb-2 ">パートナー</h2>
-                <p className="text-neturalDGrey font-semibold ">国内で200ご客様の為にAWSサービスをプロバイダーとしてしています。</p>
+                
                 <motion.div 
                 variants={fadeIn("up", 0.2)}
                 initial= "hidden"
@@ -194,11 +305,17 @@ const Home = () => {
         </motion.div>
             {/* added for web*/}
             <div
+            style={{
+                backgroundImage: `url(${bg})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                height: '300px',
+                }}
             className='px-10 lg:px-14 max-w-screen-2xl mx-auto bg-sky-300 py-16'>
                 <div className='flex flex-col md:flex-row justify-between items-center gap-8'>
                     <div className='md:w-1/2'>
-                        <h2 className='text-4xl text-neturalDGrey font-semibold mb-4 md:w-2/3'>プロジェクト状況</h2>
-                        <p className='md:w-3/4 text-lg text-neturalDGrey mb-8'>プロジェクト状況</p>
+                        <h2 className='text-4xl text-white font-semibold mb-4 md:w-2/3'>プロジェクト状況</h2>
+                        <p className='md:w-3/4 text-lg text-white mb-8'>プロジェクト状況</p>
                     </div>
                     {/* status for project done*/}
                     <div className='md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-12'>
@@ -208,33 +325,33 @@ const Home = () => {
                                     <div> 
                                         <Counter targetCount={110} />
                                         
-                                        <p className='text-xl text-neturalGrey font-normal'>プロジェクト</p>
+                                        <p className='text-xl text-white font-normal'>プロジェクト</p>
                                     </div>
                             </div>
                             <div className='flex items-center gap-4'> 
-                                <img src={project1} alt="" />
+                                <img src="https://img.icons8.com/dusk/64/server.png" alt="" />
                                     <div>
                                         <Counter targetCount={188} />
                                         
-                                        <p className='text-xl text-neturalGrey font-normal'>サーバー</p>
+                                        <p className='text-xl text-white  font-normal'>サーバー</p>
                                     </div>
                             </div>
                         </div>
                         <div className='space-y-8'>
                             <div className='flex items-center gap-4'> 
-                                <img src={team} alt="" />
+                                <img src="https://img.icons8.com/plasticine/100/conference-call.png" alt="" />
                                 <div>
                                     <Counter targetCount={120} />
                                     
-                                    <p className='text-xl text-neturalGrey font-normal'>チームメンバー</p>
+                                    <p className='text-xl text-white  font-normal'>チームメンバー</p>
                                 </div>
                             </div>
                             <div className='flex items-center gap-4'> 
-                                <img src={dc} alt="" />
+                                <img src="https://img.icons8.com/matisse/100/thin-client.png" alt="" />
                                 <div>
                                     <Counter targetCount={200} />
                                     
-                                    <p className='text-xl text-neturalGrey font-normal'>ネットワーク機器</p>
+                                    <p className='text-xl text-white  font-normal'>ネットワーク機器</p>
                                 </div>
                             </div>
                         </div>

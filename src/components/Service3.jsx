@@ -35,27 +35,29 @@ const Service3 = () =>{
     ]
 
     return(
-        <div path="service3" className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto">
+        <div path="service3" className="md-px-14  py-16 max-w-screen-2xl mx-auto">
             <div className="mb-16">
                 <NavBar/>
             </div>
             <div style={{
                 backgroundImage: `url(${bg})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center',}}className=" mb-8 items-center rounded-xl">
+                backgroundPosition: 'center',
+                height: '258px',
+                }}className=" mb-8 flex flex-col justify-center items-center rounded-xl">
                 <div>
                     <h1 className='text-6xl font-bold mb-4 text-white leading-snug text-center'>
-                        <span className='cursor-pointer hover:text-bluehover'>プロフェッショナルサービス</span>   
+                        <span className='cursor-pointer hover:text-black'>プロフェッショナルサービス</span>   
                     </h1>
                 </div>  
-                <div className=" text-4xl font-semibold text-white">
+                
+            </div>
+            <div className="mb-8 space-y-8 px-20">
+            <div className=" text-4xl font-semibold text-black mb-8">
                     <h2 className="text-center space-y-4 cursor-pointer hover:text-bluehover">
-                    サービスリスト一覧
+                    利点
                     </h2>
             </div>
-            </div>
-            <div className="mb-8 space-y-8">
-            
             {/* cards */}
             <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:w-11/12 mx-auto gap-12 px-10">
                 {
@@ -68,6 +70,11 @@ const Service3 = () =>{
                         </div>
                     </div>)
                 }
+            </div>
+            <div className=" text-4xl font-semibold text-black">
+                    <h2 className="text-center space-y-4 cursor-pointer hover:text-bluehover">
+                    サービスリスト一覧
+                    </h2>
             </div>
         <div className="mt-14 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 items-center text-center">
             <div className="flex flex-col items-center my-8 hover:border-indigo-700 ">
