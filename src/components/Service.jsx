@@ -7,6 +7,7 @@ import NavBar from "./TestNav";
 import MyFooter from "./MyFooter";
 import {motion} from 'framer-motion';
 import {fadeIn} from '../variants';
+
 const Services =() => {
     const services = [
         {

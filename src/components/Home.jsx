@@ -11,8 +11,6 @@ import clients from "../assets/icons/clients.png"
 import project1 from "../assets/icons/project1.png"
 import team from "../assets/icons/team.png"
 import dc from "../assets/icons/dc.png"
-import enteam from "../assets/icons/enteam.png";
-import mg1 from "../assets/icons/mg1.png";
 import f5 from "../assets/icons/f5.png";
 import cisco from "../assets/icons/cc1.png";
 import vmware from "../assets/icons/vm1.png";
@@ -101,28 +99,48 @@ const Home = () => {
                 </Carousel>
             </div>
             <div>
-            {/* about text*/}
-            <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
-                <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
-                    <div>
-                    <img src={photo3} alt="" />
+            {/* Reasons to choose */}
+            <div className='px-10 lg:px-14 max-w-screen-2xl mx-auto my-20 '>
+                    <h2 className="text-4xl text-neturalDGrey font-semibold mb-4 text-center">Reasons to Choose Us</h2>
+                    <div className='flex  gap-8 justify-center'>
+                        <div className='items-center justify-center gap-8'>
+                            <div>
+                                <img src={reward} alt="Quality Services"/>
+                                <h3 className='text-2xl font-semibold text-neturalDGrey mb-2'>High-Quality Services</h3>
+                                <p className='text-lg text-neturalDGrey'>We ensure top-notch quality in every service we provide, adhering to strict standards and procedures.</p>
+                            </div>
+                        </div>
+                        <div className='flex md:flex-row items-center gap-8'>
+                            <div>
+                                <img src={clients} alt="Trusted by Many" />
+                                <h3 className='text-2xl font-semibold text-neturalDGrey mb-2'>Trusted by Many</h3>
+                                <p className='text-lg text-neturalDGrey'>Our extensive list of satisfied clients speaks volumes about our reliability and expertise in the field.</p>
+                            </div>
+                        </div>
+                        <div className='flex md:flex-row items-center gap-8'>
+                            <div>
+                            <img src={team} alt="Experienced Team" />
+                                <h3 className='text-2xl font-semibold text-neturalDGrey mb-2'>Experienced Team</h3>
+                                <p className='text-lg text-neturalDGrey'>Our team comprises seasoned professionals with years of experience, ensuring your projects are in good hands.</p>
+                            </div>
+                        </div>
+                        <div className='flex md:flex-row items-center gap-8'>
+                            <div>
+                                <img src={project1} alt="Comprehensive Solutions" />
+                                <h3 className='text-2xl font-semibold text-neturalDGrey mb-2'>Comprehensive Solutions</h3>
+                                <p className='text-lg text-neturalDGrey'>From consultation to implementation, we offer end-to-end solutions tailored to your specific needs.</p>
+                            </div>
+                        </div>
                     </div>
-                <div className='md:w-3/5 mx-auto'>
-                    <h2 className='text-4xl text-neturalDGrey font-semibold mb-4 md:w-4/5'>品質、信頼性、コンプライアンスを兼ね備えたサービスを提供するリーディング会社です！</h2>
-                    <p className='md:w-3/4 text-lg text-neturalDGrey mb-8'>
-                    </p>
-                    {/* <button className='btn-primary'>Learn More</button> */}
                 </div>
-                </div>
-            </div>
             <div className='items-center'>
                 <h2 className="text-4xl text-neturalDGrey text-center font-semibold mb-12 ">Service List</h2>
                 <div className='flex flex-wrap gap-12 items-center justify-center my-1'>
-                <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
+                <Card className="max-w-xs hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
                     imgAlt="Meaningful alt text for an image that is not purely decorative"
                     imgSrc={imp}>
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    AWS Implementation Service
+                    Cloud Related Service
                 </h5>
                 <p className="font-normal text-gray-700 dark:text-gray-400">  
                 </p>
@@ -137,11 +155,11 @@ const Home = () => {
                     </svg>
                 </Button>
                 </Card>
-                <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
+                <Card className="max-w-xs hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
                     imgAlt="Meaningful alt text for an image that is not purely decorative"
                     imgSrc={AI}>
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Data & AI
+                    Security Solution Service
                 </h5>
                 <p className="font-normal text-gray-700 dark:text-gray-400"> 
                 </p>
@@ -156,7 +174,7 @@ const Home = () => {
                     </svg>
                 </Button>
                 </Card>
-                <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
+                <Card className="max-w-xs hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
                     imgAlt="Meaningful alt text for an image that is not purely decorative"
                     imgSrc={ms1}>
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -175,33 +193,15 @@ const Home = () => {
                     </svg>
                 </Button>
                 </Card>
-                <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
+                <Card className="max-w-xs hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
                     imgAlt="Meaningful alt text for an image that is not purely decorative"
                     imgSrc={net}>
                 <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Network Service
+                    Network Related Service
                 </h5>
                 <p className="font-normal text-gray-700 dark:text-gray-400"> 
                 </p>
                 <Button href='/developing'>
-                Read more
-                    <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        fillRule="evenodd"
-                        d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                    />
-                    </svg>
-                </Button>
-                </Card><Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
-                    imgAlt="Meaningful alt text for an image that is not purely decorative"
-                    imgSrc={security}>
-                <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    Security Service
-                </h5>
-                <p className="font-normal text-gray-700 dark:text-gray-400">
-                </p>
-                <Button href='developing'>
                 Read more
                     <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -358,42 +358,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
-            
-            <motion.div 
-            variants={fadeIn("right", 0.5)}
-            initial= "hidden"
-            whileInView={"show"}
-            viewport={{once: false,amount: 0.7}} 
-            className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
-                <div>
-                    <img src={enteam} alt="" />
-                </div>
-            <div className='md:w-3/5 mx-auto'>
-                <h2 className='text-4xl text-neturalDGrey font-semibold mb-4 md:w-4/5'>エンジニア・チーム</h2>
-                <p className='md:w-3/4 text-lg text-neturalDGrey mb-8'>デジタルで結ばれた今日の世界において、組織が業界のリーダーとなるためには、戦略のあらゆる部分を整合させることが不可欠であると私たちは考えています。<b/>私たちは、お客様がこの課題に対処し、新しいテクノロジーとの接続時に直面する可能性のある<b/>多くの障害を克服するための支援に専念しています。
-                </p>
-                {/* <button className='btn-primary'>Learn More</button> */}
-            </div>
-            </motion.div>
-            <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center bg-blue-400 bg-transparent'>
-            <div className=' mx-auto'>
-                <h2 className='text-2xl text-neturalDGrey font-semibold mb-4'>管理チーム</h2>
-                <p className='md:w-3/4 text-lg text-neturalDGrey mb-8'>
-                </p>
-            </div>
-                <motion.div variants={fadeIn("up", 0.4)}
-                initial= "hidden"
-                whileInView={"show"}
-                viewport={{once: false,amount: 0.7}} className="h-40 sm:h-60 xl:h-60  w-3/5">
-                <Carousel>
-                    <img src={mg1} alt="..." />
-                </Carousel>
-                </motion.div>
-            </div>
-            
-            
-        </div>
         {/* For Customers only if we get customers from japan*/}
         {/* <div className=' items-center mb-8 px-9'>
             <div>
