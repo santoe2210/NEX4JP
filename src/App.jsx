@@ -14,6 +14,8 @@ import Services from './components/Service'
 import NavBar from './components/NavBar'
 import Developing from './components/Developing'
 import ContactUs from './components/ContactUs'
+import AWS from './components/AWS'
+import Microsoft from './components/Microsoft'
 
 
 
@@ -34,6 +36,8 @@ function App() {
       <Route path="/service4" element={<Service4 />}/>
       <Route path="/developing" element={<Developing />}/>
       <Route path="/faq" element={<ContactUs />}/>
+      <Route path="/aws" element={<AWS />}/>
+      <Route path="/ms" element={<Microsoft />}/>
       </Routes>
       </BrowserRouter> 
     </>

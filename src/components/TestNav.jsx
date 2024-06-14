@@ -37,15 +37,15 @@ const TestNav = () => {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Navbar.Link href="/" className=" font-bold hover:underline">ホームページ</Navbar.Link>
+          <Navbar.Link href="/" className=" font-bold hover:underline">Why NEX4</Navbar.Link>
           <Navbar.Link>
             {/* use comment closed classname and ul under this comment*/}
-            <MegaMenu.Dropdown toggle={<a href="service" className=" w-4/5 font-semibold hover:underline">サービス</a>} > {/* className="w-4/5 font-semibold" */}
+            <MegaMenu.Dropdown toggle={<a href="service" className=" w-4/5 font-semibold hover:underline">Services</a>} > {/* className="w-4/5 font-semibold" */}
               <ul className="grid grid-cols-3 sm:gap-1 gap-0.5 sm:mt-4">
               {/* <ul> */}
                 <div className="space-y-4 p-4">
                     <li>
-                        <h2 className=" text-1xl font-bold">Services</h2>
+                        <h2 className=" text-1xl font-bold">Cloud Related Services</h2>
                     </li>
                   <li className="hover:text-bluehover">
                     <a href="/service1" className="hover:text-primary-600 dark:hover:text-primary-500">
@@ -64,138 +64,145 @@ const TestNav = () => {
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/service4" className="hover:text-primary-600 dark:hover:text-primary-500">
-                        Implemenation Suppot Service
+                        Design and Implemenation
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      Managed Service
+                      Security Operation
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      Optimization Service
+                      Cost Optimization Service
+                    </a>
+                  </li>
+                </div>
+                {/* for cloud */}
+                <div className="space-y-4 p-4">
+                <li>
+                        <h2 className=" text-1xl  font-bold">Network Related Services</h2>
+                    </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    Data Center Network
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    Enterprise Network
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    SD-WAN Network
                     </a>
                   </li>
                 </div>
                 {/* open this comment for more services*/}
                 <div className="space-y-4 p-4">
                 <li>
-                        <h2 className=" text-1xl  font-bold">Solutions</h2>
+                        <h2 className=" text-1xl  font-bold">System Related Services</h2>
                     </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Microsoft Solution Service
+                    Server Storage
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Security Solution Service
+                    HCI & VM
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Newtwork Solution Service
+                    Containers
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Industry Solution Service
+                    Kubernetes Backup
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    Diaster Recovery
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    Data Protection
                     </a>
                   </li>
                 </div>
                 <div className="space-y-4 p-4">
                 <li>
-                        <h2 className=" text-1xl  font-bold">Network</h2>
+                        <h2 className=" text-1xl  font-bold">Security Solution Services</h2>
                     </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      Enterprise Network
+                    Next Gen Firewall
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      DC Netwok
+                    Web application firewall
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      Network Services
+                    API Security
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    DNS Security
+                    </a>
+                  </li>
+                  <li className="hover:text-bluehover">
+                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
+                    Remote Access
                     </a>
                   </li>
                 </div>
                 <div className="space-y-4 p-4">
                 <li>
-                        <h2 className=" text-1xl  font-bold">Firewall & Security</h2>
+                    <h2 className=" text-1xl  font-bold">Microsoft Services</h2>
                     </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Colud Based Security
+                    Office 365 
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Enterprise Security
+                      Power BI
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      DC/Core Security
+                      Dynamic 365
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                      Firewall Services
-                    </a>
-                  </li>
-                </div>
-                <div className="space-y-4 p-4">
-                <li>
-                        <h2 className=" text-1xl  font-bold">Data & Applications</h2>
-                    </li>
-                  <li className="hover:text-bluehover">
-                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Data & AI
+                      Power App
                     </a>
                   </li>
                   <li className="hover:text-bluehover">
                     <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    ERP
-                    </a>
-                  </li>
-                  <li className="hover:text-bluehover">
-                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    CRM
-                    </a>
-                  </li>
-                </div>
-                <div className="space-y-4 p-4">
-                <li>
-                        <h2 className=" text-1xl  font-bold">Partner Platform</h2>
-                    </li>
-                  <li className="hover:text-bluehover">
-                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    AWS
-                    </a>
-                  </li>
-                  <li className="hover:text-bluehover">
-                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    Microsoft
-                    </a>
-                  </li>
-                  <li className="hover:text-bluehover">
-                    <a href="/developing" className="hover:text-primary-600 dark:hover:text-primary-500">
-                    CISCO
+                      Power Platform
                     </a>
                   </li>
                 </div>
               </ul>
             </MegaMenu.Dropdown>
           </Navbar.Link>
-          <Navbar.Link href="about" className=" font-bold hover:underline">NEX4について</Navbar.Link>
-          <Navbar.Link href="team" className=" font-bold hover:underline">チーム</Navbar.Link>
-          <Navbar.Link href="blog" className=" font-bold hover:underline">ブロック</Navbar.Link>
-          <Navbar.Link href="faq" className=" font-bold hover:underline">お問い合わせ</Navbar.Link>
+          <Navbar.Link href="about" className=" font-bold hover:underline">About</Navbar.Link>
+          <Navbar.Link href="aws" className=" font-bold hover:underline">AWS</Navbar.Link>
+          {/* <Navbar.Link href="team" className=" font-bold hover:underline">チーム</Navbar.Link> */}
+          <Navbar.Link href="blog" className=" font-bold hover:underline">Blog</Navbar.Link>
+          <Navbar.Link href="faq" className=" font-bold hover:underline">Contact us</Navbar.Link>
         </Navbar.Collapse>
       </div>
     </MegaMenu>

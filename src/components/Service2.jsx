@@ -11,6 +11,7 @@ import app1 from "../assets/icons/app1.png";
 import resource from "../assets/icons/resource.png";
 import pf from "../assets/icons/performance.png";
 import insight from "../assets/icons/insight.png";
+import aws from "../assets/aws1.jpg";
 
 const Service2 = () =>{
     return(
@@ -236,8 +237,22 @@ const Service2 = () =>{
         </Table.Body>
       </Table>
     </div>
+</div>
+</div>
+            <div className="mb-10 px-20">
+            <h2 className="text-center text-4xl font-bold">Meet our related partner platform to power your business</h2>
+            <div className="mb-8 flex items-center px-20">
+                <div className="mr-4">
+                    <a href="/aws"><img className="cursor-pointer hover:text-blue-500" src={aws}/></a>
+                </div>
+                <div>
+                    <a href="/aws"><h2 className="text-5xl font-bold cursor-pointer hover:text-blue-500">AWS </h2></a>
+                    <br />
+                    <a href="/aws"><p className="text-1xl font-bold cursor-pointer hover:text-blue-500">Find out more &#62;</p></a>
+                    <hr className="my-4 border-t-1 border-blue-400" />
+                    <p className="mt-4">A pioneer partner of public cloud , multi cloud, hybrid cloud infrastructure, it offers your business mature technology, complete services , golbal availability and a well-developed cloud ecosystem with an abunded of online resources </p>
+                </div>
             </div>
-            
             </div>
             <div>
            <MyFooter/> 
