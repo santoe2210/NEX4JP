@@ -45,9 +45,9 @@ const Counter = ({ targetCount }) => {
 const About =() => {
     return(
         <div path="about" className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto">
-            <div className="mb-16">
+            {/* <div className="mb-16">
             <NavBar/>
-            </div>
+            </div> */}
             {/* about text*/}
             <div className='px-4 lg:px-14 max-w-screen-2xl mx-auto my-8 '>
                 <div className='md:w-11/12 mx-auto flex flex-col md:flex-row justify-between items-center gap-12'>
@@ -216,7 +216,7 @@ const About =() => {
                 </div>
             </div>
             <div>
-           <MyFooter/> 
+           {/* <MyFooter/>  */}
         </div>
         </div>
     );

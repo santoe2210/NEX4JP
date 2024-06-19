@@ -14,15 +14,15 @@ const Service1 = () =>{
     return(
         
         <div path="service1" className="md-px-14  py-16 max-w-screen-2xl mx-auto">
-            <div className="mb-16">
+            {/* <div className="mb-16">
                 <NavBar/>
-            </div>
+            </div> */}
             <div style={{
                 backgroundImage: `url(${bg})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '320px',
-                }}className="w-full mb-8 items-center rounded-xl">
+                }}className="w-full mb-8 items-center mt-16 rounded-xl">
                 <div  className="h-500 w-500"> 
                     <h1 className='text-6xl font-bold mb-4 text-white leading-snug text-center h-200'>
                         <span className='cursor-pointer hover:text-black'>AWSの移行サービス</span>   
@@ -203,9 +203,9 @@ const Service1 = () =>{
                 </div>
             </div>
             </div>
-        <div>
+        {/* <div>
            <MyFooter/> 
-        </div>  
+        </div>   */}
         </div>
        
     );
