@@ -1,17 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/** @format */
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
 
-
-body{
-  font-family: "Inter", sans-serif;
-  font-family: "Noto Sans JP", sans-serif;
-  font-optical-sizing: auto;
+:root {
+	--heading-font: "Josefin Sans", sans-serif;
 }
-header{
-  z-index: 10001 !important;
+
+.heading-font {
+	font-family: var(--heading-font);
 }
-.btn-primary{
-  @apply px-7 py-2 bg-blue-500 text-white rounded hover:bg-neturalGrey transition-all duration-300 hover:translate-y-4
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+	font-family: "Josefin Sans", sans-serif;
 }
+
+body {
+	font-family: "Inter", sans-serif;
+	font-family: "Noto Sans JP", sans-serif;
+	font-optical-sizing: auto;
+}
+header {
+	z-index: 10001 !important;
+}
+.btn-primary {
+	@apply px-7 py-2 bg-blue-500 text-white rounded hover:bg-neturalGrey transition-all duration-300 hover:translate-y-4;
+}
+
+.slick-slide, .slick-slide div {
+  width: 90%; 
+  height: 100% !important;
+  @apply mx-auto
+}
+
+.slick-list {
+	padding: 1rem 0 !important; 
+}
+
+.slick-dots {
+	bottom : -20px !important;
+}
+
+.dot-white .slick-dots li.slick-active button:before {
+	color: white !important;
+}
+
+.btn-outline-primary {
+	@apply block w-fit py-[.35rem] mx-auto rounded-lg border-[1.6px] border-bluehover tracking-wide text-[.9rem] text-bluehover font-semibold hover:text-white hover:bg-bluehover transition duration-300
+}
+
+

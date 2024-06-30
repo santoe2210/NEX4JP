@@ -20,36 +20,36 @@ import Microsoft from "./components/Microsoft";
 import TestNav from "./components/TestNav";
 import { Footer } from "flowbite-react";
 import MyFooter from "./components/MyFooter";
+import CloudMigration from "./Pages/cloud_services/CloudMigration";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
-
-  const Layout = () => {
-    return (
+	const Layout = () => {
+		return (
 			<div>
-				<div>
-					<TestNav />
+				<TestNav />
+				<div className="mt-[120px]">
+					<Outlet />
 				</div>
-				<Outlet />
-				<MyFooter />
+				<div className="section-margin">
+					<MyFooter />
+				</div>
 			</div>
 		);
-  }
+	};
 	return (
 		<>
 			<BrowserRouter>
 				<Routes>
-					<Route
-						path="/"
-						element={
-							<Layout />
-						}
-					>
+					<Route path="/" element={<Layout />}>
 						<Route index element={<HomePage />} />
 						<Route path="about" element={<About />} />
 						<Route path="team" element={<Team />} />
 						<Route path="blog" element={<Blog />} />
 						<Route path="service" element={<Services />} />
-						<Route path="service1" element={<Service1 />} />
+						<Route path="service1" element={<CloudMigration />} />
 						<Route path="service2" element={<Service2 />} />
 						<Route path="service3" element={<Service3 />} />
 						<Route path="service4" element={<Service4 />} />

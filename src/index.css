@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.section-margin {
+    @apply mt-12;
+}
+
+.section-padding {
+    @apply p-12;
+}
+
+.gradient-1 {
+    @apply bg-gradient-to-bl from-cyan-200 to-cyan-400
+}
+
+.gradient-2 {
+     @apply bg-gradient-to-tl from-cyan-200 to-cyan-400
+}
+
+.card-padding {
+    @apply p-8
+}
+
+.card {
+    @apply p-8 cursor-pointer transform hover:-translate-y-2 drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 rounded-tl-lg rounded-br-lg space-y-4
+}
