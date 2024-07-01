@@ -8,7 +8,7 @@
 }
 
 .section-padding {
-    @apply p-12;
+    @apply p-1 pt-3 pb-6 md:p-12;
 }
 
 .gradient-1 {
@@ -25,4 +25,8 @@
 
 .card {
     @apply p-8 cursor-pointer transform hover:-translate-y-2 drop-shadow-lg hover:drop-shadow-xl transition-all duration-300 rounded-tl-lg rounded-br-lg space-y-4
+}
+
+.outer-padding {
+    @apply px-3  md:px-12
 }

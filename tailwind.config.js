@@ -19,6 +19,9 @@ export default {
         'bluehover':'#2194f3',
         'bgcolor':'#F6F5F9',
 
+      },
+      screens : {
+        customscreen : "1240px"
       }
     },
   },
