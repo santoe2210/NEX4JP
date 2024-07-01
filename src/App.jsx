@@ -24,6 +24,11 @@ import CloudMigration from "./Pages/cloud_services/CloudMigration";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import OperationAndMonitoring from "./Pages/cloud_services/OperationAndMonitoring";
+import Professional from "./Pages/cloud_services/Professional";
+import DesignAndImplementation from "./Pages/cloud_services/DesingAndImplementation";
+import SecurityOperation from "./Pages/cloud_services/SecurityOperation";
+import CostOptimization from "./Pages/cloud_services/CostOptimization";
 
 function App() {
 	const Layout = () => {
@@ -49,10 +54,12 @@ function App() {
 						<Route path="team" element={<Team />} />
 						<Route path="blog" element={<Blog />} />
 						<Route path="service" element={<Services />} />
-						<Route path="service1" element={<CloudMigration />} />
-						<Route path="service2" element={<Service2 />} />
-						<Route path="service3" element={<Service3 />} />
-						<Route path="service4" element={<Service4 />} />
+						<Route path="cloud/migration" element={<CloudMigration />} />
+						<Route path="cloud/operation-and-monitoring" element={<OperationAndMonitoring />} />
+						<Route path="cloud/professional" element={<Professional />} />
+						<Route path="cloud/design-and-implementation" element={<DesignAndImplementation />} />
+						<Route path="cloud/security-operation" element={<SecurityOperation />} />
+						<Route path="cloud/cost-optimization" element={<CostOptimization />} />
 						<Route path="developing" element={<Developing />} />
 						<Route path="faq" element={<ContactUs />} />
 						<Route path="aws" element={<AWS />} />

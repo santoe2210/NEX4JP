@@ -72,7 +72,7 @@ const TestNav = () => {
 											</li>
 											<li className="hover:text-bluehover">
 												<a
-													href="/service1"
+													href="/cloud/migration"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
 													Migration
@@ -80,7 +80,7 @@ const TestNav = () => {
 											</li>
 											<li className="hover:text-bluehover">
 												<a
-													href="/service2"
+													href="/cloud/operation-and-monitoring"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
 													Operation and Monitoring Service
@@ -88,7 +88,7 @@ const TestNav = () => {
 											</li>
 											<li className="hover:text-bluehover">
 												<a
-													href="/service3"
+													href="/cloud/professional"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
 													Professional Services
@@ -96,7 +96,7 @@ const TestNav = () => {
 											</li>
 											<li className="hover:text-bluehover">
 												<a
-													href="/service4"
+													href="/cloud/design-and-implementation"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
 													Design and Implemenation
@@ -104,7 +104,7 @@ const TestNav = () => {
 											</li>
 											<li className="hover:text-bluehover">
 												<a
-													href="/developing"
+													href="/cloud/security-operation"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
 													Security Operation
@@ -112,7 +112,7 @@ const TestNav = () => {
 											</li>
 											<li className="hover:text-bluehover">
 												<a
-													href="/developing"
+													href="/cloud/cost-optimization"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
 													Cost Optimization Service
