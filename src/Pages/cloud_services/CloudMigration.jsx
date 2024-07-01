@@ -289,7 +289,7 @@ const CloudMigration = () => {
 						Meet our related partner platform to power your business
 					</h2>
 					<div className=" flex flex-col md:flex-row items-center">
-						<Link className="block mr-4 w-96 shrink-0" to="/aws">
+						<Link className="block mr-4 w-60  md:w-96 shrink-0" to="/aws">
 							<img
 								className="cursor-pointer w-full aspect-square object-center object-cover hover:text-blue-500"
 								src={aws}

@@ -42,7 +42,8 @@ header {
 }
 
 .slick-list {
-	padding: 1rem 0 !important; 
+	@apply py-[.8rem]  md:py-[1rem] !important;
+	/* padding: 1rem 0 !important;  */
 }
 
 .slick-dots {

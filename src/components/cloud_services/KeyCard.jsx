@@ -13,7 +13,7 @@ const KeyCard = ({ img = "", title = "", desc = "", icon = "" }) => {
 				initial="hidden"
 				whileInView={"show"}
 				viewport={{ once: false, amount: 0.7 }}
-				className="w-36 md:w-48 shrink-0 text-white"
+				className="w-36 md:w-48 md:h-auto shrink-0 text-white"
 			>
 				{img ? (
 					<img

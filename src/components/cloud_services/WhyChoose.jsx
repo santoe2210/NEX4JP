@@ -40,7 +40,7 @@ const WhyChoose = ({ img, title, desc }) => {
 					className="mt-3 w-32 max-w-full mx-auto h-[.1rem] bg-bluehover "
 				/>
 
-				<motion.p className="container mx-auto text-white">{desc}</motion.p>
+				<motion.p className="container mx-auto text-justify lg:text-left text-white">{desc}</motion.p>
 			</motion.div>
 		</div>
 	);
