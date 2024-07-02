@@ -12,9 +12,9 @@ import {fadeIn} from '../variants';
 const Team = () => {
     return(
         <div path="team" className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto">
-            <div className="mb-16">
+            {/* <div className="mb-16">
                 <NavBar/>
-            </div>
+            </div> */}
         {/* about text*/}
         <motion.div 
         variants={fadeIn("right", 0.5)}
@@ -54,9 +54,9 @@ const Team = () => {
                 </motion.div>
             </div>
         {/* comapny status*/} 
-        <div>
+        {/* <div>
            <MyFooter/> 
-        </div>
+        </div> */}
     </div>
     
     );

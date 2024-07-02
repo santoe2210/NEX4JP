@@ -11,9 +11,9 @@ import MyFooter from './MyFooter';
 const AWS = () => {
   return (
     <div path='aws' className='items-center'>
-        <div className="mb-16">
+        {/* <div className="mb-16">
                 <NavBar/>
-            </div>
+            </div> */}
     <h2 className="text-4xl text-neturalDGrey text-center font-semibold mb-12 ">AWS Service List</h2>
     <div className='flex flex-wrap gap-12 items-center justify-center my-1'>
     <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
@@ -111,9 +111,9 @@ const AWS = () => {
     </Button>
     </Card>
     </div>
-    <div>
+    {/* <div>
         <MyFooter/>
-    </div>
+    </div> */}
 </div>
   );
 };

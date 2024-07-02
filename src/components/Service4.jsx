@@ -31,9 +31,9 @@ const Service4 = () =>{
 
     return(
         <div path="service4" className="md-px-14  py-16 max-w-screen-2xl mx-auto">
-            <div className="mb-16">
+            {/* <div className="mb-16">
                 <NavBar/>
-            </div>
+            </div> */}
             <div style={{
                 backgroundImage: `url(${bg})`,
                 backgroundSize: 'cover',
@@ -180,9 +180,9 @@ const Service4 = () =>{
                 </div>
             </div>
             </div>
-        <div>
+        {/* <div>
            <MyFooter/> 
-        </div> 
+        </div>  */}
             
         </div>
        

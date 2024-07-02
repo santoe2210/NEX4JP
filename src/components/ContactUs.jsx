@@ -51,10 +51,10 @@ const ContactForm = () => {
 
   return (
     <div path="faq" className="md-px-14 px-20 py-12 max-w-screen-2xl mx-auto items-center justify-center w-full">
-        <div className="mb-16">
+        {/* <div className="mb-16">
                 <NavBar/>    
-        </div>
-        <div className='flex items-center justify-center'>
+        </div> */}
+        <div className='flex items-center justify-center mt-20'>
         <form className="flex max-w-md flex-col gap-4 w-full" onSubmit={handleSubmit}>
         <div>
         <div className="mb-2 block">
@@ -122,9 +122,9 @@ const ContactForm = () => {
       <Button type="submit">送信する</Button>
     </form>
     </div>
-    <div>
+    {/* <div>
            <MyFooter/> 
-        </div> 
+        </div>  */}
     </div>
   );
 };
