@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /** @format */
 
 import React from "react";
@@ -10,14 +11,14 @@ import BenifitCard from "../../components/cloud_services/BenifitCard";
 import MultipleCarousel from "../../components/MultipleCarousel";
 import TestiCard from "../../components/cloud_services/TestiCard";
 
-import { MdOutlineAssessment } from "react-icons/md";
-import { MdOutlineCloudUpload } from "react-icons/md";
-import { MdSupportAgent } from "react-icons/md";
+import {MdAddAlert} from "react-icons/md";
 import { LuDatabase } from "react-icons/lu";
-import { IoApps } from "react-icons/io5";
+import { PiSecurityCamera } from "react-icons/pi";
+import {MdDashboard} from "react-icons/md";
+import { IoIosTime } from "react-icons/io";
 
 import aws from "../../assets/aws1.jpg";
-import cloudMigration from "../../assets/cloudMigration.jpg";
+import WhyMonitor from "../../assets/WhyMonitor.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import WhyChoose from "../../components/cloud_services/WhyChoose";
 
@@ -40,7 +41,7 @@ const OperationAndMonitoring = () => {
 					viewport={{ once: true, amount: 0.7 }}
 					className="text-white text-3xl font-semibold z-10"
 				>
-					Cloud Migration Services
+					Cloud Operation and Monitoring Services
 				</motion.h1>
 			</div>
 
@@ -53,7 +54,7 @@ const OperationAndMonitoring = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="text-2xl font-semibold text-bluehover"
 				>
-					Seamlessly Transition to the Cloud with Our Expert Migration Services
+					Ensure Optimal Performance and Security with Comprehensive Cloud Monitoring
 				</h2>
 				<motion.div
 					variants={fadeIn(".", 0.25)}
@@ -70,9 +71,9 @@ const OperationAndMonitoring = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="container mx-auto"
 				>
-					Unlock the full potential of cloud computing with our comprehensive
-					migration services. We ensure a smooth, secure, and efficient
-					transition of your applications and data to the cloud.
+					Keep your cloud infrastructure secure and running smoothly with our advanced monitoring services. 
+					We provide real-time insights and proactive management to maintain peak performance and 
+					address issues before they impact your business.
 				</motion.p>
 			</div>
 
@@ -88,7 +89,7 @@ const OperationAndMonitoring = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl font-semibold text-bluehover"
 					>
-						Our Key Migration Services
+						Our Key Monitoring Services
 					</h2>
 					<motion.div
 						variants={fadeIn(".", 0.25)}
@@ -100,45 +101,45 @@ const OperationAndMonitoring = () => {
 
 					<KeyCard
 						img=""
-						icon={<MdOutlineAssessment className=" size-full text-cyan-400" />}
-						title="Assessment and Planning "
-						desc="We conduct a thorough assessment of your current infrastructure and applications. Based on this analysis, we create a detailed migration plan tailored to your specific needs"
+						icon={<IoIosTime className=" size-full text-cyan-400" />}
+						title="Real-Time Performance Monitoring "
+						desc="Track the performance of your cloud infrastructure in real-time. We monitor key metrics and system health to ensure your applications and services run smoothly."
 					/>
 					<KeyCard
 						img=""
-						icon={<IoApps className=" size-[80%] text-cyan-400" />}
-						title="Application Migration "
-						desc="Move your applications to the cloud with minimal disruption. Our experts handle the entire process, ensuring compatibility, performance, and security."
+						icon={<PiSecurityCamera className=" size-[80%] text-cyan-400" />}
+						title="Security Monitoring "
+						desc="Protect your cloud environment with continuous security monitoring. We detect and respond to potential threats, ensuring your data remains secure and compliant with industry standards."
 					/>
 					<KeyCard
 						img=""
 						icon={<LuDatabase className=" size-[80%] text-cyan-400" />}
-						title="Data Migration "
-						desc="Securely transfer your data to the cloud. We use advanced tools and techniques to ensure data integrity and minimize risks during the migration process."
+						title="Resource Utilization Tracking  "
+						desc="Optimize your cloud resources by monitoring usage patterns. Our services help you manage capacity, avoid over-provisioning, and reduce costs."
 					/>
 					<KeyCard
 						img=""
 						icon={
-							<MdOutlineCloudUpload className=" size-[90%] text-cyan-400" />
+							<MdAddAlert className=" size-[90%] text-cyan-400" />
 						}
-						title=" Hybrid Cloud Integration "
-						desc="Integrate your on-premises infrastructure with cloud services for a seamless hybrid environment. Our solutions enable you to leverage the best of both worlds."
+						title=" Automated Alerts and Notifications "
+						desc="Receive instant alerts and notifications for any unusual activity or performance degradation. Our automated system ensures you are always informed and can act quickly to resolve issues."
 					/>
 					<KeyCard
 						img=""
-						icon={<MdSupportAgent className=" size-[85%] text-cyan-400" />}
-						title="Post-Migration Support  "
-						desc="Receive ongoing support after migration to ensure everything runs smoothly. We offer monitoring, troubleshooting, and optimization services to keep your cloud environment efficient and secure."
+						icon={<MdDashboard className=" size-[85%] text-cyan-400" />}
+						title="Customizable Dashboards and Reports  "
+						desc="Access detailed dashboards and reports tailored to your specific needs. Gain insights into your cloud environment's performance, security, and resource utilization."
 					/>
 				</div>
 
 				{/* Why Choose Section */}
 				<WhyChoose
-					img={cloudMigration}
-					title="Why Choose Our Migration Services?"
-					desc="Migrating to the cloud can be complex and challenging. Our
-						experienced team simplifies this process, minimizing downtime and
-						ensuring your business continues to operate without interruption."
+					img={WhyMonitor}
+					title="Why Choose Our Monitoring Services?"
+					desc="In the dynamic cloud environment, continuous monitoring is crucial to ensure reliability, security, and performance. 
+					Our cloud monitoring services offer 24/7 oversight, helping you detect and resolve issues swiftly 
+					while optimizing resource utilization."
 				/>
 
 				{/* <hr className="section-margin w-[90%] block mx-auto" /> */}
@@ -167,24 +168,24 @@ const OperationAndMonitoring = () => {
 							slides={4}
 						>
 							<BenifitCard
-								title="Reduced Downtime"
-								desc="Minimize disruptions to your business operations during migration."
-							/>
-							<BenifitCard
 								title="Enhanced Security"
-								desc="Ensure your data and applications are securely migrated and protected."
+								desc="Continuous monitoring to protect your data and infrastructure."
 							/>
 							<BenifitCard
-								title="Scalability"
-								desc="Leverage the scalability of the cloud to meet your growing business needs."
+								title="Improved Performance"
+								desc="Real-time insights to ensure optimal performance of your cloud services."
 							/>
 							<BenifitCard
 								title="Cost Efficiency"
-								desc="Reduce operational costs with optimized cloud solutions."
+								desc="Optimize resource utilization and reduce unnecessary expenses."
 							/>
 							<BenifitCard
-								title="Expert Guidance"
-								desc="Benefit from our team’s expertise and experience in cloud migrations."
+								title="Proactive Issue Resolution"
+								desc="Detect and address issues before they impact your operations."
+							/>
+							<BenifitCard
+								title="Actionable Insights"
+								desc="Customizable dashboards and reports for informed decision-making."
 							/>
 						</MultipleCarousel>
 					</div>
@@ -216,12 +217,12 @@ const OperationAndMonitoring = () => {
 							>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="With NEX4's monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
 									img=""
 								/>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="The real-time monitoring and automated alerts provided have been invaluable. We can now address issues immediately and maintain seamless operations."
 									img=""
 								/>
 								<TestiCard
@@ -248,8 +249,8 @@ const OperationAndMonitoring = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl  text-bluehover font-semibold"
 					>
-						Ready to <span className="text-bold text-cyan-400">migrate</span> to
-						the <span className="text-cyan-400 font-bold">CLOUD ?</span>
+						Ready to <span className="text-bold text-cyan-400">enhance your  </span> cloud infrastructure 
+						<span className="text-cyan-400 font-bold"> with our monitoring services</span>
 					</motion.h2>
 					<motion.p
 						variants={fadeIn("up", 0.2)}
@@ -259,9 +260,8 @@ const OperationAndMonitoring = () => {
 						className="text-bluehover max-w-[1080px] mx-auto leading-loose tracking-wide"
 					>
 						Reach out our experts to learn more about our migration service and
-						how we can help you. Take the first step forwards a more efficient
-						and scalable IT infrastructure. Contact us now to discover how our
-						migration services can benifit your orgainzation.
+						how we can help you. Take the first step towards a more reliable and efficient cloud environment. 
+						Contact us now to discover how our monitoring services can benefit your organization.
 					</motion.p>
 					<motion.button
 						variants={fadeIn(".", 0.2)}

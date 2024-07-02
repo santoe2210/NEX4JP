@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /** @format */
 
 import React from "react";
@@ -10,14 +11,14 @@ import BenifitCard from "../../components/cloud_services/BenifitCard";
 import MultipleCarousel from "../../components/MultipleCarousel";
 import TestiCard from "../../components/cloud_services/TestiCard";
 
-import { MdOutlineAssessment } from "react-icons/md";
-import { MdOutlineCloudUpload } from "react-icons/md";
-import { MdSupportAgent } from "react-icons/md";
+
+import { MdSecurity } from "react-icons/md";
 import { LuDatabase } from "react-icons/lu";
-import { IoApps } from "react-icons/io5";
+import {IoAlert} from "react-icons/io5";
+import {MdBugReport} from "react-icons/md";
 
 import aws from "../../assets/aws1.jpg";
-import cloudMigration from "../../assets/cloudMigration.jpg";
+import WhySecurity from "../../assets/cloudMigration.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import WhyChoose from "../../components/cloud_services/WhyChoose";
 
@@ -40,7 +41,7 @@ const SecurityOperation = () => {
 					viewport={{ once: true, amount: 0.7 }}
 					className="text-white text-3xl font-semibold z-10"
 				>
-					Cloud Migration Services
+					Security Operation Service
 				</motion.h1>
 			</div>
 
@@ -53,7 +54,7 @@ const SecurityOperation = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="text-2xl font-semibold text-bluehover"
 				>
-					Seamlessly Transition to the Cloud with Our Expert Migration Services
+					Secure Your Cloud Environment with Proactive Security Operations
 				</h2>
 				<motion.div
 					variants={fadeIn(".", 0.25)}
@@ -70,9 +71,8 @@ const SecurityOperation = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="container mx-auto"
 				>
-					Unlock the full potential of cloud computing with our comprehensive
-					migration services. We ensure a smooth, secure, and efficient
-					transition of your applications and data to the cloud.
+					Protect your cloud infrastructure with our comprehensive security operation services, 
+					designed to detect, respond to, and mitigate threats in real-time.
 				</motion.p>
 			</div>
 
@@ -88,7 +88,7 @@ const SecurityOperation = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl font-semibold text-bluehover"
 					>
-						Our Key Migration Services
+						Our Key Security Operation Services
 					</h2>
 					<motion.div
 						variants={fadeIn(".", 0.25)}
@@ -100,45 +100,38 @@ const SecurityOperation = () => {
 
 					<KeyCard
 						img=""
-						icon={<MdOutlineAssessment className=" size-full text-cyan-400" />}
-						title="Assessment and Planning "
-						desc="We conduct a thorough assessment of your current infrastructure and applications. Based on this analysis, we create a detailed migration plan tailored to your specific needs"
+						icon={<MdBugReport className=" size-full text-cyan-400" />}
+						title="Continuous Monitoring and Threat Detection "
+						desc="Implement real-time monitoring of your cloud environment to detect and respond to potential threats instantly. Our advanced tools and techniques ensure your infrastructure is always secure."
 					/>
 					<KeyCard
 						img=""
-						icon={<IoApps className=" size-[80%] text-cyan-400" />}
-						title="Application Migration "
-						desc="Move your applications to the cloud with minimal disruption. Our experts handle the entire process, ensuring compatibility, performance, and security."
+						icon={<IoAlert className=" size-[80%] text-cyan-400" />}
+						title="Incident Response and Management "
+						desc="Develop and manage effective incident response procedures. We work with you to handle security incidents swiftly and efficiently, minimizing impact and downtime."
 					/>
 					<KeyCard
 						img=""
 						icon={<LuDatabase className=" size-[80%] text-cyan-400" />}
-						title="Data Migration "
-						desc="Securely transfer your data to the cloud. We use advanced tools and techniques to ensure data integrity and minimize risks during the migration process."
+						title="Vulnerability Management "
+						desc="Conduct regular vulnerability assessments and implement patch management strategies. Our proactive approach helps identify and remediate security weaknesses before they can be exploited."
 					/>
 					<KeyCard
 						img=""
 						icon={
-							<MdOutlineCloudUpload className=" size-[90%] text-cyan-400" />
+							<MdSecurity className=" size-[90%] text-cyan-400" />
 						}
-						title=" Hybrid Cloud Integration "
-						desc="Integrate your on-premises infrastructure with cloud services for a seamless hybrid environment. Our solutions enable you to leverage the best of both worlds."
-					/>
-					<KeyCard
-						img=""
-						icon={<MdSupportAgent className=" size-[85%] text-cyan-400" />}
-						title="Post-Migration Support  "
-						desc="Receive ongoing support after migration to ensure everything runs smoothly. We offer monitoring, troubleshooting, and optimization services to keep your cloud environment efficient and secure."
+						title="Security Information and Event Management (SIEM) "
+						desc="Leverage SIEM tools to correlate and analyze security events across your cloud infrastructure. Our experts provide continuous oversight to detect and respond to anomalies."
 					/>
 				</div>
 
 				{/* Why Choose Section */}
 				<WhyChoose
-					img={cloudMigration}
-					title="Why Choose Our Migration Services?"
-					desc="Migrating to the cloud can be complex and challenging. Our
-						experienced team simplifies this process, minimizing downtime and
-						ensuring your business continues to operate without interruption."
+					img={WhySecurity}
+					title="Why Security Operations Matter?"
+					desc="In the evolving landscape of cloud computing, robust security operations are essential to safeguard your data and applications. 
+					Our security operation services provide continuous protection and peace of mind."
 				/>
 
 				{/* <hr className="section-margin w-[90%] block mx-auto" /> */}
@@ -167,24 +160,16 @@ const SecurityOperation = () => {
 							slides={4}
 						>
 							<BenifitCard
-								title="Reduced Downtime"
-								desc="Minimize disruptions to your business operations during migration."
+								title="Proactive Security Measures"
+								desc="Protect your data and infrastructure with proactive security strategies."
 							/>
 							<BenifitCard
-								title="Enhanced Security"
-								desc="Ensure your data and applications are securely migrated and protected."
+								title="Reduced Risk and Downtime"
+								desc="Minimize the impact of security incidents and ensure business continuity."
 							/>
 							<BenifitCard
-								title="Scalability"
-								desc="Leverage the scalability of the cloud to meet your growing business needs."
-							/>
-							<BenifitCard
-								title="Cost Efficiency"
-								desc="Reduce operational costs with optimized cloud solutions."
-							/>
-							<BenifitCard
-								title="Expert Guidance"
-								desc="Benefit from our team’s expertise and experience in cloud migrations."
+								title="Peace of Mind"
+								desc="Rest assured that your cloud environment is secure and compliant with industry standards."
 							/>
 						</MultipleCarousel>
 					</div>
@@ -216,17 +201,12 @@ const SecurityOperation = () => {
 							>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="Partnering with this security operation service has significantly improved our threat detection and response times, giving us greater confidence in our cloud security."
 									img=""
 								/>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
-									img=""
-								/>
-								<TestiCard
-									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="The continuous monitoring and automated policies have reduced our risk exposure and freed up our team to focus on core business activities."
 									img=""
 								/>
 							</MultipleCarousel>
@@ -248,8 +228,7 @@ const SecurityOperation = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl  text-bluehover font-semibold"
 					>
-						Ready to <span className="text-bold text-cyan-400">migrate</span> to
-						the <span className="text-cyan-400 font-bold">CLOUD ?</span>
+						Ready to <span className="text-bold text-cyan-400">enhance your </span> cloud security?
 					</motion.h2>
 					<motion.p
 						variants={fadeIn("up", 0.2)}
@@ -258,10 +237,9 @@ const SecurityOperation = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-bluehover max-w-[1080px] mx-auto leading-loose tracking-wide"
 					>
-						Reach out our experts to learn more about our migration service and
-						how we can help you. Take the first step forwards a more efficient
-						and scalable IT infrastructure. Contact us now to discover how our
-						migration services can benifit your orgainzation.
+						Get in touch with our experts to learn more about our security operation services.
+						Take the first step towards a more secure cloud environment. 
+						Contact us now to discover how our security operation services can protect your business from evolving threats.
 					</motion.p>
 					<motion.button
 						variants={fadeIn(".", 0.2)}

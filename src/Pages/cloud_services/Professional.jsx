@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /** @format */
 
 import React from "react";
@@ -10,14 +11,16 @@ import BenifitCard from "../../components/cloud_services/BenifitCard";
 import MultipleCarousel from "../../components/MultipleCarousel";
 import TestiCard from "../../components/cloud_services/TestiCard";
 
-import { MdOutlineAssessment } from "react-icons/md";
+import { MdDesignServices } from "react-icons/md";
 import { MdOutlineCloudUpload } from "react-icons/md";
-import { MdSupportAgent } from "react-icons/md";
-import { LuDatabase } from "react-icons/lu";
-import { IoApps } from "react-icons/io5";
+import { MdOutlineSecurity } from "react-icons/md";
+import { SiMicrostrategy } from "react-icons/si";
+import { MdOutlineCloudSync } from "react-icons/md";
+
+
 
 import aws from "../../assets/aws1.jpg";
-import cloudMigration from "../../assets/cloudMigration.jpg";
+import WhyProfessional from "../../assets/WhyProfessional.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import WhyChoose from "../../components/cloud_services/WhyChoose";
 
@@ -40,7 +43,7 @@ const Professional = () => {
 					viewport={{ once: true, amount: 0.7 }}
 					className="text-white text-3xl font-semibold z-10"
 				>
-					Cloud Migration Services
+					Professional Cloud Services
 				</motion.h1>
 			</div>
 
@@ -53,7 +56,7 @@ const Professional = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="text-2xl font-semibold text-bluehover"
 				>
-					Seamlessly Transition to the Cloud with Our Expert Migration Services
+					Maximize Your Cloud Potential with Expert Professional Services
 				</h2>
 				<motion.div
 					variants={fadeIn(".", 0.25)}
@@ -70,9 +73,9 @@ const Professional = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="container mx-auto"
 				>
-					Unlock the full potential of cloud computing with our comprehensive
-					migration services. We ensure a smooth, secure, and efficient
-					transition of your applications and data to the cloud.
+					Leverage our expert professional services to optimize your cloud infrastructure, enhance performance, and 
+					ensure seamless operations. Our team of experienced cloud professionals is dedicated 
+					to helping you achieve your business goals through tailored solutions and strategic guidance.
 				</motion.p>
 			</div>
 
@@ -88,7 +91,7 @@ const Professional = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl font-semibold text-bluehover"
 					>
-						Our Key Migration Services
+						Our Key Professional Services
 					</h2>
 					<motion.div
 						variants={fadeIn(".", 0.25)}
@@ -100,45 +103,44 @@ const Professional = () => {
 
 					<KeyCard
 						img=""
-						icon={<MdOutlineAssessment className=" size-full text-cyan-400" />}
-						title="Assessment and Planning "
-						desc="We conduct a thorough assessment of your current infrastructure and applications. Based on this analysis, we create a detailed migration plan tailored to your specific needs"
+						icon={<SiMicrostrategy className=" size-[80%] text-cyan-400" />}
+						title="Cloud Strategy and Consulting  "
+						desc="Develop a comprehensive cloud strategy aligned with your business objectives. Our consultants work with you to assess your needs, plan your cloud journey, and implement best practices."
 					/>
 					<KeyCard
 						img=""
-						icon={<IoApps className=" size-[80%] text-cyan-400" />}
-						title="Application Migration "
-						desc="Move your applications to the cloud with minimal disruption. Our experts handle the entire process, ensuring compatibility, performance, and security."
+						icon={<MdDesignServices className=" size-[80%] text-cyan-400" />}
+						title="Cloud Architecture Design "
+						desc="Design robust and scalable cloud architectures tailored to your specific requirements. Our architects ensure your infrastructure is optimized for performance, security, and cost-efficiency."
 					/>
 					<KeyCard
 						img=""
-						icon={<LuDatabase className=" size-[80%] text-cyan-400" />}
-						title="Data Migration "
-						desc="Securely transfer your data to the cloud. We use advanced tools and techniques to ensure data integrity and minimize risks during the migration process."
+						icon={<MdOutlineCloudSync className=" size-[80%] text-cyan-400" />}
+						title="Migration Services "
+						desc="Seamlessly migrate your applications, data, and workloads to the cloud with minimal disruption. Our migration experts handle the entire process, ensuring a smooth transition and immediate benefits."
 					/>
 					<KeyCard
 						img=""
 						icon={
 							<MdOutlineCloudUpload className=" size-[90%] text-cyan-400" />
 						}
-						title=" Hybrid Cloud Integration "
-						desc="Integrate your on-premises infrastructure with cloud services for a seamless hybrid environment. Our solutions enable you to leverage the best of both worlds."
+						title=" Cloud Management and Optimization "
+						desc="Manage and optimize your cloud environment for peak performance and cost-effectiveness. Our ongoing support and optimization services ensure your cloud infrastructure evolves with your business needs."
 					/>
 					<KeyCard
 						img=""
-						icon={<MdSupportAgent className=" size-[85%] text-cyan-400" />}
-						title="Post-Migration Support  "
-						desc="Receive ongoing support after migration to ensure everything runs smoothly. We offer monitoring, troubleshooting, and optimization services to keep your cloud environment efficient and secure."
+						icon={<MdOutlineSecurity className=" size-[85%] text-cyan-400" />}
+						title="Security and Compliance  "
+						desc="Implement comprehensive security measures and ensure compliance with industry standards. Our security professionals help protect your cloud environment against threats and vulnerabilities."
 					/>
 				</div>
 
 				{/* Why Choose Section */}
 				<WhyChoose
-					img={cloudMigration}
-					title="Why Choose Our Migration Services?"
-					desc="Migrating to the cloud can be complex and challenging. Our
-						experienced team simplifies this process, minimizing downtime and
-						ensuring your business continues to operate without interruption."
+					img={WhyProfessional}
+					title="Why Choose Our Professional Services?"
+					desc="In the ever-evolving landscape of cloud technology, having a trusted partner can make all the difference. Our professional services provide the expertise and support needed to navigate the complexities of cloud adoption, 
+					management, and optimization, ensuring your organization remains competitive and agile."
 				/>
 
 				{/* <hr className="section-margin w-[90%] block mx-auto" /> */}
@@ -167,24 +169,24 @@ const Professional = () => {
 							slides={4}
 						>
 							<BenifitCard
-								title="Reduced Downtime"
-								desc="Minimize disruptions to your business operations during migration."
+								title="Expert Guidance"
+								desc="Gain insights from industry experts to enhance your cloud strategy and operations."
 							/>
 							<BenifitCard
-								title="Enhanced Security"
-								desc="Ensure your data and applications are securely migrated and protected."
-							/>
-							<BenifitCard
-								title="Scalability"
-								desc="Leverage the scalability of the cloud to meet your growing business needs."
+								title="Optimized Performance"
+								desc="Ensure your cloud infrastructure is running at its best, with tailored optimizations."
 							/>
 							<BenifitCard
 								title="Cost Efficiency"
-								desc="Reduce operational costs with optimized cloud solutions."
+								desc="Reduce costs through efficient cloud management and resource optimization."
 							/>
 							<BenifitCard
-								title="Expert Guidance"
-								desc="Benefit from our team’s expertise and experience in cloud migrations."
+								title="Enhanced Security"
+								desc="Protect your data and applications with robust security and compliance solutions."
+							/>
+							<BenifitCard
+								title="Seamless Migration"
+								desc="Transition to the cloud smoothly with minimal disruption and maximum benefits."
 							/>
 						</MultipleCarousel>
 					</div>
@@ -216,17 +218,12 @@ const Professional = () => {
 							>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="Partnering with NEX4 for our cloud migration was the best decision we made. Their expertise and seamless execution transformed our IT infrastructure."
 									img=""
 								/>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
-									img=""
-								/>
-								<TestiCard
-									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="The strategic guidance and ongoing support from NEX4 have been invaluable. Our cloud environment is now more secure, efficient, and aligned with our business goals."
 									img=""
 								/>
 							</MultipleCarousel>
@@ -248,8 +245,7 @@ const Professional = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl  text-bluehover font-semibold"
 					>
-						Ready to <span className="text-bold text-cyan-400">migrate</span> to
-						the <span className="text-cyan-400 font-bold">CLOUD ?</span>
+						Ready to <span className="text-bold text-cyan-400">elevate your cloud strategy with </span> our professional services?
 					</motion.h2>
 					<motion.p
 						variants={fadeIn("up", 0.2)}
@@ -258,10 +254,9 @@ const Professional = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-bluehover max-w-[1080px] mx-auto leading-loose tracking-wide"
 					>
-						Reach out our experts to learn more about our migration service and
-						how we can help you. Take the first step forwards a more efficient
-						and scalable IT infrastructure. Contact us now to discover how our
-						migration services can benifit your orgainzation.
+						Reach out our experts to learn more about our professional service and
+						how we can help you. Take the first step towards a more efficient and secure cloud environment. 
+						Contact us now to explore how our professional services can benefit your organization.
 					</motion.p>
 					<motion.button
 						variants={fadeIn(".", 0.2)}

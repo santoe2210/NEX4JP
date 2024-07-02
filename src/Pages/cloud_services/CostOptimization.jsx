@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /** @format */
 
 import React from "react";
@@ -12,12 +13,14 @@ import TestiCard from "../../components/cloud_services/TestiCard";
 
 import { MdOutlineAssessment } from "react-icons/md";
 import { MdOutlineCloudUpload } from "react-icons/md";
-import { MdSupportAgent } from "react-icons/md";
 import { LuDatabase } from "react-icons/lu";
-import { IoApps } from "react-icons/io5";
+import { GrResources } from "react-icons/gr";
+import { RiInstanceFill } from "react-icons/ri";
+import { IoPricetagsOutline } from "react-icons/io5";
+import { FaTools } from "react-icons/fa";
 
 import aws from "../../assets/aws1.jpg";
-import cloudMigration from "../../assets/cloudMigration.jpg";
+import WhyCost from "../../assets/WhyCost.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import WhyChoose from "../../components/cloud_services/WhyChoose";
 
@@ -40,7 +43,7 @@ const CostOptimization = () => {
 					viewport={{ once: true, amount: 0.7 }}
 					className="text-white text-3xl font-semibold z-10"
 				>
-					Cloud Migration Services
+					Cost Optimization Service
 				</motion.h1>
 			</div>
 
@@ -53,7 +56,7 @@ const CostOptimization = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="text-2xl font-semibold text-bluehover"
 				>
-					Seamlessly Transition to the Cloud with Our Expert Migration Services
+					Maximize Your Cloud ROI with Expert Cost Optimization
 				</h2>
 				<motion.div
 					variants={fadeIn(".", 0.25)}
@@ -70,9 +73,7 @@ const CostOptimization = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="container mx-auto"
 				>
-					Unlock the full potential of cloud computing with our comprehensive
-					migration services. We ensure a smooth, secure, and efficient
-					transition of your applications and data to the cloud.
+					Unlock significant savings and improve your cloud resource efficiency with our tailored cost optimization services.
 				</motion.p>
 			</div>
 
@@ -88,7 +89,7 @@ const CostOptimization = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl font-semibold text-bluehover"
 					>
-						Our Key Migration Services
+						Our Key Cost Optimization Services
 					</h2>
 					<motion.div
 						variants={fadeIn(".", 0.25)}
@@ -101,44 +102,75 @@ const CostOptimization = () => {
 					<KeyCard
 						img=""
 						icon={<MdOutlineAssessment className=" size-full text-cyan-400" />}
-						title="Assessment and Planning "
-						desc="We conduct a thorough assessment of your current infrastructure and applications. Based on this analysis, we create a detailed migration plan tailored to your specific needs"
+						title="Cost Analysis and Assessment "
+						desc="We conduct a thorough analysis of your current cloud spending, identifying areas where you can save. Our detailed assessment provides actionable insights to optimize costs without compromising performance."
 					/>
 					<KeyCard
 						img=""
-						icon={<IoApps className=" size-[80%] text-cyan-400" />}
-						title="Application Migration "
-						desc="Move your applications to the cloud with minimal disruption. Our experts handle the entire process, ensuring compatibility, performance, and security."
+						icon={<GrResources className=" size-[80%] text-cyan-400" />}
+						title="Resource Management "
+						desc="Optimize your resource allocation to reduce waste and ensure that you're only paying for what you need. We help you right-size your resources to match your workload requirements."
 					/>
 					<KeyCard
 						img=""
 						icon={<LuDatabase className=" size-[80%] text-cyan-400" />}
-						title="Data Migration "
-						desc="Securely transfer your data to the cloud. We use advanced tools and techniques to ensure data integrity and minimize risks during the migration process."
+						title="Pricing Model Optimization "
+						desc="Evaluate and transition to the most cost-effective pricing plans. We analyze your usage patterns to recommend the best pricing models, including Reserved Instances and Savings Plans."
 					/>
 					<KeyCard
 						img=""
 						icon={
 							<MdOutlineCloudUpload className=" size-[90%] text-cyan-400" />
 						}
-						title=" Hybrid Cloud Integration "
-						desc="Integrate your on-premises infrastructure with cloud services for a seamless hybrid environment. Our solutions enable you to leverage the best of both worlds."
+						title=" Auto-Scaling and Load Balancing "
+						desc="Implement auto-scaling and load balancing strategies to ensure your resources are used efficiently and cost-effectively. Scale up during peak times and scale down when demand is low to save on costs."
+					/>
+				</div>
+				{/* Advanced Strategies */}
+				<div className="text-center  section-margin rounded-tl-2xl space-y-6 rounded-br-2xl">
+					<h2
+						variants={fadeIn("down", 0.2)}
+						initial="hidden"
+						whileInView={"show"}
+						viewport={{ once: false, amount: 0.7 }}
+						className="text-2xl font-semibold text-bluehover"
+					>
+						Advanced Strategies for Savings
+					</h2>
+					<motion.div
+						variants={fadeIn(".", 0.25)}
+						initial="hidden"
+						whileInView={"show"}
+						viewport={{ once: false, amount: 0.7 }}
+						className="mt-3 w-32 max-w-full mx-auto h-[.1rem] bg-bluehover "
+					/>
+
+					<KeyCard
+						img=""
+						icon={<RiInstanceFill className=" size-full text-cyan-400" />}
+						title="Spot Instances Utilization "
+						desc="Leverage spot instances for significant savings on workloads that are flexible with interruption. Our strategies ensure you benefit from the lowest possible rates while maintaining operational efficiency."
 					/>
 					<KeyCard
 						img=""
-						icon={<MdSupportAgent className=" size-[85%] text-cyan-400" />}
-						title="Post-Migration Support  "
-						desc="Receive ongoing support after migration to ensure everything runs smoothly. We offer monitoring, troubleshooting, and optimization services to keep your cloud environment efficient and secure."
+						icon={<IoPricetagsOutline className=" size-[80%] text-cyan-400" />}
+						title="Cost Allocation and Tagging "
+						desc="Implement best practices for cost allocation and tagging to track and manage your cloud expenses effectively. Gain better visibility into your spending and make informed decisions."
+					/>
+					<KeyCard
+						img=""
+						icon={<FaTools className=" size-[80%] text-cyan-400" />}
+						title="Cloud Cost Management Tools "
+						desc="Utilize advanced cloud cost management tools to monitor and control your expenses in real-time. Custom dashboards and automated alerts keep you informed and in control."
 					/>
 				</div>
 
 				{/* Why Choose Section */}
 				<WhyChoose
-					img={cloudMigration}
-					title="Why Choose Our Migration Services?"
-					desc="Migrating to the cloud can be complex and challenging. Our
-						experienced team simplifies this process, minimizing downtime and
-						ensuring your business continues to operate without interruption."
+					img={WhyCost}
+					title="Why Cost Optimization Matters?"
+					desc="Cloud services offer incredible flexibility and scalability, but without proper cost management, expenses can quickly spiral out of control. 
+					Our cost optimization service ensures you get the most value from your cloud investment."
 				/>
 
 				{/* <hr className="section-margin w-[90%] block mx-auto" /> */}
@@ -167,24 +199,16 @@ const CostOptimization = () => {
 							slides={4}
 						>
 							<BenifitCard
-								title="Reduced Downtime"
-								desc="Minimize disruptions to your business operations during migration."
+								title="Reduced Cloud Spend"
+								desc="Achieve demonstrable cost savings and improve your bottom line."
 							/>
 							<BenifitCard
 								title="Enhanced Security"
-								desc="Ensure your data and applications are securely migrated and protected."
+								desc="Optimize resource usage and eliminate waste."
 							/>
 							<BenifitCard
-								title="Scalability"
-								desc="Leverage the scalability of the cloud to meet your growing business needs."
-							/>
-							<BenifitCard
-								title="Cost Efficiency"
-								desc="Reduce operational costs with optimized cloud solutions."
-							/>
-							<BenifitCard
-								title="Expert Guidance"
-								desc="Benefit from our team’s expertise and experience in cloud migrations."
+								title="Financial Transparency"
+								desc="Gain clear insights into your cloud spending with detailed reports and dashboards."
 							/>
 						</MultipleCarousel>
 					</div>
@@ -216,17 +240,12 @@ const CostOptimization = () => {
 							>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="Thanks to the cost optimization strategies implemented by the team, we reduced our cloud spending by 30% while maintaining high performance and reliability."
 									img=""
 								/>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
-									img=""
-								/>
-								<TestiCard
-									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="The comprehensive cost analysis provided by the service revealed several inefficiencies in our resource usage, which we quickly addressed to achieve significant savings."
 									img=""
 								/>
 							</MultipleCarousel>
@@ -248,8 +267,7 @@ const CostOptimization = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl  text-bluehover font-semibold"
 					>
-						Ready to <span className="text-bold text-cyan-400">migrate</span> to
-						the <span className="text-cyan-400 font-bold">CLOUD ?</span>
+						Ready to <span className="text-bold text-cyan-400">start saving on</span> your cloud costs?
 					</motion.h2>
 					<motion.p
 						variants={fadeIn("up", 0.2)}
@@ -258,10 +276,8 @@ const CostOptimization = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-bluehover max-w-[1080px] mx-auto leading-loose tracking-wide"
 					>
-						Reach out our experts to learn more about our migration service and
-						how we can help you. Take the first step forwards a more efficient
-						and scalable IT infrastructure. Contact us now to discover how our
-						migration services can benifit your orgainzation.
+						Reach out to our experts for a consultation. Take the first step towards maximizing your cloud ROI. 
+						Contact us now to learn more about our cost optimization services and how we can help you achieve your financial goals.
 					</motion.p>
 					<motion.button
 						variants={fadeIn(".", 0.2)}
