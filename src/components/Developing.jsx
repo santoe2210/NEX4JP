@@ -7,9 +7,9 @@ import bg from "../assets/icons/bg1.jpg";
 export default function Developing() {
   return (
     <div path="developing">
-      <div className="mb-16">
+      {/* <div className="mb-16">
                 <NavBar/>    
-            </div>
+            </div> */}
             <div style={{
                 backgroundImage: `url(${bg})`,
                 backgroundSize: 'cover',
@@ -23,9 +23,9 @@ export default function Developing() {
                     
                 </div>  
             </div>
-     <div>
+     {/* <div>
         <MyFooter/>
-     </div>
+     </div> */}
     </div>
   )
 }

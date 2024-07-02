@@ -23,9 +23,9 @@ const Services =() => {
     ]
     return(
         <div path="service" className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto">
-            <div className="mb-16">
+            {/* <div className="mb-16">
                 <NavBar/>    
-            </div> 
+            </div>  */}
             <div className="text-center my-8">
                 {/* services card */}
                 <div>
@@ -53,9 +53,9 @@ const Services =() => {
                     </div>)
                 }
             </motion.div>
-        <div>
+        {/* <div>
            <MyFooter/> 
-        </div>
+        </div> */}
         </div>
 
     );

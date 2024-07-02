@@ -12,9 +12,9 @@ import MyFooter from '../components/MyFooter'
 const HomePage = () => {
   return (
     <div>
-      <TestNav/>
+      {/* <TestNav/> */}
       <Home />
-      <MyFooter/>
+      {/* <MyFooter/> */}
     </div>
   )
 }

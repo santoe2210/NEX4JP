@@ -14,9 +14,9 @@ const Blog = () => {
     ];
     return(
         <div className="md-px-14 px-20 py-16 max-w-screen-2xl mx-auto" id="blog">
-            <div className="mb-16">
+            {/* <div className="mb-16">
                 <NavBar/>
-            </div>
+            </div> */}
             <div className="text-center md:w-1/2 mx-auto">
             <h2 className='text-4xl text-neturalDGrey font-semibold mb-4 cursor-pointer hover:text-bluehover'><a href="https://nex4.blog/">ブロック</a></h2>
             <p className="text-sm text-neturalGrey mb-8 md:w-3/4 mx-auto"></p>
@@ -52,9 +52,9 @@ const Blog = () => {
                     </div>)
                 }
             </div>
-            <div>
+            {/* <div>
                 <MyFooter/>
-            </div>
+            </div> */}
         </div>
     );
 };
