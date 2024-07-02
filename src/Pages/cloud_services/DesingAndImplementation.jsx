@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /** @format */
 
 import React from "react";
@@ -11,13 +12,13 @@ import MultipleCarousel from "../../components/MultipleCarousel";
 import TestiCard from "../../components/cloud_services/TestiCard";
 
 import { MdOutlineAssessment } from "react-icons/md";
-import { MdOutlineCloudUpload } from "react-icons/md";
-import { MdSupportAgent } from "react-icons/md";
-import { LuDatabase } from "react-icons/lu";
-import { IoApps } from "react-icons/io5";
+import { MdOutlineSecurity } from "react-icons/md";
+import { MdMoveDown } from "react-icons/md";
+import { GrDeploy } from "react-icons/gr";
+import { MdFormatIndentIncrease} from "react-icons/md";
 
 import aws from "../../assets/aws1.jpg";
-import cloudMigration from "../../assets/cloudMigration.jpg";
+import WhyDesign from "../../assets/WhyDesign.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import WhyChoose from "../../components/cloud_services/WhyChoose";
 
@@ -40,7 +41,7 @@ const DesignAndImplementation = () => {
 					viewport={{ once: true, amount: 0.7 }}
 					className="text-white text-3xl font-semibold z-10"
 				>
-					Cloud Migration Services
+					Design and Implementation Services
 				</motion.h1>
 			</div>
 
@@ -53,7 +54,7 @@ const DesignAndImplementation = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="text-2xl font-semibold text-bluehover"
 				>
-					Seamlessly Transition to the Cloud with Our Expert Migration Services
+					Transform Your IT Infrastructure with Expert Cloud Design and Implementation
 				</h2>
 				<motion.div
 					variants={fadeIn(".", 0.25)}
@@ -70,9 +71,7 @@ const DesignAndImplementation = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="container mx-auto"
 				>
-					Unlock the full potential of cloud computing with our comprehensive
-					migration services. We ensure a smooth, secure, and efficient
-					transition of your applications and data to the cloud.
+					Leverage our expertise to design and implement a cloud environment that meets your business needs. Our comprehensive services ensure a smooth transition and optimal performance of your cloud infrastructure.
 				</motion.p>
 			</div>
 
@@ -88,7 +87,7 @@ const DesignAndImplementation = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl font-semibold text-bluehover"
 					>
-						Our Key Migration Services
+						Our Key Design and Implementation Services
 					</h2>
 					<motion.div
 						variants={fadeIn(".", 0.25)}
@@ -101,44 +100,44 @@ const DesignAndImplementation = () => {
 					<KeyCard
 						img=""
 						icon={<MdOutlineAssessment className=" size-full text-cyan-400" />}
-						title="Assessment and Planning "
-						desc="We conduct a thorough assessment of your current infrastructure and applications. Based on this analysis, we create a detailed migration plan tailored to your specific needs"
+						title="Cloud Architecture Design  "
+						desc="Develop a robust and scalable cloud architecture that aligns with your business goals. We design custom solutions to optimize performance, cost, and security."
 					/>
 					<KeyCard
 						img=""
-						icon={<IoApps className=" size-[80%] text-cyan-400" />}
-						title="Application Migration "
-						desc="Move your applications to the cloud with minimal disruption. Our experts handle the entire process, ensuring compatibility, performance, and security."
+						icon={<MdMoveDown className=" size-[80%] text-cyan-400" />}
+						title="Migration Planning and Strategy "
+						desc="Create a detailed migration plan, ensuring a smooth transition with minimal disruption. Our strategies are designed to meet your specific business needs and technical requirements."
 					/>
 					<KeyCard
 						img=""
-						icon={<LuDatabase className=" size-[80%] text-cyan-400" />}
-						title="Data Migration "
-						desc="Securely transfer your data to the cloud. We use advanced tools and techniques to ensure data integrity and minimize risks during the migration process."
+						icon={<GrDeploy className=" size-[60%] text-cyan-400" />}
+						title="Implementation and Deployment "
+						desc="Deploy your cloud infrastructure with precision and expertise. Our team handles the entire implementation process, from initial setup to final deployment, ensuring everything runs smoothly."
 					/>
 					<KeyCard
 						img=""
 						icon={
-							<MdOutlineCloudUpload className=" size-[90%] text-cyan-400" />
+							<MdOutlineSecurity className=" size-[90%] text-cyan-400" />
 						}
-						title=" Hybrid Cloud Integration "
-						desc="Integrate your on-premises infrastructure with cloud services for a seamless hybrid environment. Our solutions enable you to leverage the best of both worlds."
+						title=" Security and Compliance "
+						desc="Implement advanced security measures to protect your cloud environment. We ensure compliance with industry standards and regulations, safeguarding your data and applications."
 					/>
 					<KeyCard
 						img=""
-						icon={<MdSupportAgent className=" size-[85%] text-cyan-400" />}
-						title="Post-Migration Support  "
-						desc="Receive ongoing support after migration to ensure everything runs smoothly. We offer monitoring, troubleshooting, and optimization services to keep your cloud environment efficient and secure."
+						icon={<MdFormatIndentIncrease className=" size-[85%] text-cyan-400" />}
+						title="Performance Optimization  "
+						desc="Optimize your cloud infrastructure for peak performance. We continuously monitor and fine-tune your environment to ensure optimal efficiency and cost-effectiveness."
 					/>
 				</div>
 
 				{/* Why Choose Section */}
 				<WhyChoose
-					img={cloudMigration}
-					title="Why Choose Our Migration Services?"
-					desc="Migrating to the cloud can be complex and challenging. Our
-						experienced team simplifies this process, minimizing downtime and
-						ensuring your business continues to operate without interruption."
+					img={WhyDesign}
+					title="Why Choose Our Design and Implementation Services?"
+					desc="Creating an efficient and scalable cloud environment requires expert planning and execution. 
+						Our team provides end-to-end design and implementation services, tailored to your unique 
+						requirements, ensuring a seamless and successful cloud adoption."
 				/>
 
 				{/* <hr className="section-margin w-[90%] block mx-auto" /> */}
@@ -167,24 +166,24 @@ const DesignAndImplementation = () => {
 							slides={4}
 						>
 							<BenifitCard
-								title="Reduced Downtime"
-								desc="Minimize disruptions to your business operations during migration."
+								title="Customized Solutions"
+								desc="Tailor-made cloud architectures designed to meet your specific needs."
+							/>
+							<BenifitCard
+								title="Expert Execution"
+								desc="Professional implementation ensures a seamless transition to the cloud."
 							/>
 							<BenifitCard
 								title="Enhanced Security"
-								desc="Ensure your data and applications are securely migrated and protected."
+								desc="Robust security measures to protect your data and ensure compliance."
 							/>
 							<BenifitCard
-								title="Scalability"
-								desc="Leverage the scalability of the cloud to meet your growing business needs."
+								title="Optimized Performance"
+								desc="Continuous monitoring and optimization for peak efficiency."
 							/>
 							<BenifitCard
-								title="Cost Efficiency"
-								desc="Reduce operational costs with optimized cloud solutions."
-							/>
-							<BenifitCard
-								title="Expert Guidance"
-								desc="Benefit from our team’s expertise and experience in cloud migrations."
+								title="Scalable Infrastructure"
+								desc="Flexible solutions that grow with your business."
 							/>
 						</MultipleCarousel>
 					</div>
@@ -216,17 +215,17 @@ const DesignAndImplementation = () => {
 							>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="The design and implementation services from [Your Company] transformed our IT infrastructure. We now have a scalable and efficient cloud environment that meets all our needs."
 									img=""
 								/>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="Thanks to NEX4,our transition to the cloud was smooth and hassle-free. Their expertise and support were invaluable throughout the process."
 									img=""
 								/>
 								<TestiCard
 									name="clientX"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="With NEX4's monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
 									img=""
 								/>
 							</MultipleCarousel>
@@ -247,9 +246,9 @@ const DesignAndImplementation = () => {
 						whileInView={"show"}
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl  text-bluehover font-semibold"
-					>
-						Ready to <span className="text-bold text-cyan-400">migrate</span> to
-						the <span className="text-cyan-400 font-bold">CLOUD ?</span>
+					>	
+						Ready to <span className="text-bold text-cyan-400">design and implement</span>
+						a cloud solution <span className="text-cyan-400 font-bold"> tailored to your business</span>
 					</motion.h2>
 					<motion.p
 						variants={fadeIn("up", 0.2)}
@@ -258,10 +257,9 @@ const DesignAndImplementation = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-bluehover max-w-[1080px] mx-auto leading-loose tracking-wide"
 					>
-						Reach out our experts to learn more about our migration service and
-						how we can help you. Take the first step forwards a more efficient
-						and scalable IT infrastructure. Contact us now to discover how our
-						migration services can benifit your orgainzation.
+						Reach out to our experts to learn more about our design and implementation service and
+						how we can help you.Take the first step towards a more reliable and 
+						efficient cloud environment. Contact us now to discover how our monitoring services can benefit your organization.
 					</motion.p>
 					<motion.button
 						variants={fadeIn(".", 0.2)}
