@@ -214,17 +214,17 @@ const DesignAndImplementation = () => {
 								slides={3}
 							>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="The design and implementation services from [Your Company] transformed our IT infrastructure. We now have a scalable and efficient cloud environment that meets all our needs."
 									img=""
 								/>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="Thanks to NEX4,our transition to the cloud was smooth and hassle-free. Their expertise and support were invaluable throughout the process."
 									img=""
 								/>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="With NEX4's monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
 									img=""
 								/>

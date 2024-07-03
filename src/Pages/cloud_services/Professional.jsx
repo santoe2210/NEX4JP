@@ -217,12 +217,12 @@ const Professional = () => {
 								slides={3}
 							>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="Partnering with NEX4 for our cloud migration was the best decision we made. Their expertise and seamless execution transformed our IT infrastructure."
 									img=""
 								/>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="The strategic guidance and ongoing support from NEX4 have been invaluable. Our cloud environment is now more secure, efficient, and aligned with our business goals."
 									img=""
 								/>

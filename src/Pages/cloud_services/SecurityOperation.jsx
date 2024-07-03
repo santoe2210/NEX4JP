@@ -200,12 +200,12 @@ const SecurityOperation = () => {
 								slides={3}
 							>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="Partnering with this security operation service has significantly improved our threat detection and response times, giving us greater confidence in our cloud security."
 									img=""
 								/>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="The continuous monitoring and automated policies have reduced our risk exposure and freed up our team to focus on core business activities."
 									img=""
 								/>

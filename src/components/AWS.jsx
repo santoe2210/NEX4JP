@@ -11,16 +11,13 @@ import MyFooter from './MyFooter';
 const AWS = () => {
   return (
     <div path='aws' className='items-center'>
-        {/* <div className="mb-16">
-                <NavBar/>
-            </div> */}
     <h2 className="text-4xl text-neturalDGrey text-center font-semibold mb-12 ">AWS Service List</h2>
     <div className='flex flex-wrap gap-12 items-center justify-center my-1'>
     <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={imp}>
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        AWS Implementation Service
+        AWS Design And Implementation Service
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-400">  
     </p>
@@ -77,7 +74,7 @@ const AWS = () => {
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={net}>
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Professional Service
+        Professional Services
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-400"> 
     </p>
@@ -95,11 +92,30 @@ const AWS = () => {
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={security}>
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Security Service
+        Security Operation
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-400">
     </p>
     <Button href='developing'>
+    Read more
+        <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path
+            fillRule="evenodd"
+            d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+            clipRule="evenodd"
+        />
+        </svg>
+    </Button>
+    </Card>
+    <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
+        imgAlt="Meaningful alt text for an image that is not purely decorative"
+        imgSrc={imp}>
+    <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        Cost Optimization
+    </h5>
+    <p className="font-normal text-gray-700 dark:text-gray-400">  
+    </p>
+    <Button href='cost-optimization'>
     Read more
         <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path

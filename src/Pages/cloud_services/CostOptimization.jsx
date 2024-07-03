@@ -239,12 +239,12 @@ const CostOptimization = () => {
 								slides={3}
 							>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="Thanks to the cost optimization strategies implemented by the team, we reduced our cloud spending by 30% while maintaining high performance and reliability."
 									img=""
 								/>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="The comprehensive cost analysis provided by the service revealed several inefficiencies in our resource usage, which we quickly addressed to achieve significant savings."
 									img=""
 								/>

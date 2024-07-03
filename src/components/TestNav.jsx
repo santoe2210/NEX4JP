@@ -56,7 +56,7 @@ const TestNav = () => {
                 className="border-b"
 									toggle={
 										<p className=" flex items-center w-full border-b md:border-b-0 pl-3 py-2 md:pl-0 md:py-0 hover:text-bluehover font-bold text-gray-700 text-left hover:underline">
-											Services
+											サービス
 										</p>
 									}
 								>
@@ -67,7 +67,7 @@ const TestNav = () => {
 										<div className="space-y-4 p-4">
 											<li>
 												<h2 className=" text-1xl font-bold">
-													Cloud Related Services
+												クラウドサービス
 												</h2>
 											</li>
 											<li className="hover:text-bluehover">
@@ -75,7 +75,7 @@ const TestNav = () => {
 													href="/cloud/migration"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Migration
+													移動
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -83,7 +83,7 @@ const TestNav = () => {
 													href="/cloud/operation-and-monitoring"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Operation and Monitoring Service
+													運用・監視サービス
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -91,7 +91,7 @@ const TestNav = () => {
 													href="/cloud/professional"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Professional Services
+													プロフェッショナル・サービス
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -99,7 +99,7 @@ const TestNav = () => {
 													href="/cloud/design-and-implementation"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Design and Implemenation
+													設計と実装
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -107,7 +107,7 @@ const TestNav = () => {
 													href="/cloud/security-operation"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Security Operation
+													セキュリティー・オペレーション
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -115,7 +115,7 @@ const TestNav = () => {
 													href="/cloud/cost-optimization"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Cost Optimization Service
+													コスト最適化サービス
 												</a>
 											</li>
 										</div>
@@ -123,7 +123,7 @@ const TestNav = () => {
 										<div className="space-y-4 p-4">
 											<li>
 												<h2 className=" text-1xl  font-bold">
-													Network Related Services
+												ネットワーク関連サービス
 												</h2>
 											</li>
 											<li className="hover:text-bluehover">
@@ -131,7 +131,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Data Center Network
+													データセンター・ネットワーク
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -139,7 +139,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Enterprise Network
+													企業ネットワーク
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -147,7 +147,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													SD-WAN Network
+													SD-WANネットワーク
 												</a>
 											</li>
 										</div>
@@ -155,7 +155,7 @@ const TestNav = () => {
 										<div className="space-y-4 p-4">
 											<li>
 												<h2 className=" text-1xl  font-bold">
-													System Related Services
+												システム関連サービス
 												</h2>
 											</li>
 											<li className="hover:text-bluehover">
@@ -163,7 +163,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Server Storage
+													サーバー・ストレージ
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -179,7 +179,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Containers
+													コンテナ
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -187,7 +187,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Kubernetes Backup
+													Kubernetes バックアップ
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -195,7 +195,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Diaster Recovery
+													災害復興
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -203,14 +203,14 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Data Protection
+													データ保護
 												</a>
 											</li>
 										</div>
 										<div className="space-y-4 p-4">
 											<li>
 												<h2 className=" text-1xl  font-bold">
-													Security Solution Services
+												セキュリティ・ソリューション・サービス
 												</h2>
 											</li>
 											<li className="hover:text-bluehover">
@@ -218,7 +218,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Next Gen Firewall
+													Next Gen ファイアウォール
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -226,7 +226,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Web application firewall
+													ウェブアプリケーションファイアウォール
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -234,7 +234,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													API Security
+													API セキュリティー
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -242,7 +242,7 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													DNS Security
+													DNS セキュリティー
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
@@ -250,14 +250,14 @@ const TestNav = () => {
 													href="/developing"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													Remote Access
+													リモートアクセス
 												</a>
 											</li>
 										</div>
 										<div className="space-y-4 p-4">
 											<li>
 												<h2 className=" text-1xl  font-bold">
-													Microsoft Services
+												モダンワークプレイスサービス
 												</h2>
 											</li>
 											<li className="hover:text-bluehover">
@@ -313,10 +313,10 @@ const TestNav = () => {
 							</Navbar.Link>
 							{/* <Navbar.Link href="team" className=" font-bold hover:underline">チーム</Navbar.Link> */}
 							<Navbar.Link href="blog" className=" font-bold hover:underline">
-								Blog
+							ブログ
 							</Navbar.Link>
 							<Navbar.Link href="faq" className=" font-bold hover:underline">
-								Contact us
+							お問い合わせ
 							</Navbar.Link>
 						</Navbar.Collapse>
 					</div>
