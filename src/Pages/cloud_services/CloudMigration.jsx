@@ -216,17 +216,17 @@ const CloudMigration = () => {
 								slides={3}
 							>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
 									img=""
 								/>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
 									img=""
 								/>
 								<TestiCard
-									name="clientX"
+									name="Client"
 									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
 									img=""
 								/>

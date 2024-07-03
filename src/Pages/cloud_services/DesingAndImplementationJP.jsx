@@ -11,18 +11,18 @@ import BenifitCard from "../../components/cloud_services/BenifitCard";
 import MultipleCarousel from "../../components/MultipleCarousel";
 import TestiCard from "../../components/cloud_services/TestiCard";
 
-import {MdAddAlert} from "react-icons/md";
-import { LuDatabase } from "react-icons/lu";
-import { PiSecurityCamera } from "react-icons/pi";
-import {MdDashboard} from "react-icons/md";
-import { IoIosTime } from "react-icons/io";
+import { MdOutlineAssessment } from "react-icons/md";
+import { MdOutlineSecurity } from "react-icons/md";
+import { MdMoveDown } from "react-icons/md";
+import { GrDeploy } from "react-icons/gr";
+import { MdFormatIndentIncrease} from "react-icons/md";
 
 import aws from "../../assets/aws1.jpg";
-import WhyMonitor from "../../assets/WhyMonitor.jpg";
+import WhyDesign from "../../assets/WhyDesign.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import WhyChoose from "../../components/cloud_services/WhyChoose";
 
-const OperationAndMonitoring = () => {
+const DesignAndImplementation = () => {
 	const navigate = useNavigate();
 
 	return (
@@ -41,7 +41,7 @@ const OperationAndMonitoring = () => {
 					viewport={{ once: true, amount: 0.7 }}
 					className="text-white text-3xl font-semibold z-10"
 				>
-					Cloud Operation and Monitoring Services
+					設計と実装サービス
 				</motion.h1>
 			</div>
 
@@ -54,7 +54,7 @@ const OperationAndMonitoring = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="text-2xl font-semibold text-bluehover"
 				>
-					Ensure Optimal Performance and Security with Comprehensive Cloud Monitoring
+					専門家によるクラウド設計と実装でITインフラを変革
 				</h2>
 				<motion.div
 					variants={fadeIn(".", 0.25)}
@@ -71,9 +71,7 @@ const OperationAndMonitoring = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="container mx-auto"
 				>
-					Keep your cloud infrastructure secure and running smoothly with our advanced monitoring services. 
-					We provide real-time insights and proactive management to maintain peak performance and 
-					address issues before they impact your business.
+					当社の専門知識を活用し、お客様のビジネス要件に合ったクラウド環境を設計・導入します。当社の包括的なサービスは、お客様のクラウドインフラストラクチャのスムーズな移行と最適な<br/>パフォーマンスを保証します。
 				</motion.p>
 			</div>
 
@@ -89,7 +87,7 @@ const OperationAndMonitoring = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl font-semibold text-bluehover"
 					>
-						Our Key Monitoring Services
+						主な設計と実装サービス
 					</h2>
 					<motion.div
 						variants={fadeIn(".", 0.25)}
@@ -101,45 +99,45 @@ const OperationAndMonitoring = () => {
 
 					<KeyCard
 						img=""
-						icon={<IoIosTime className=" size-full text-cyan-400" />}
-						title="Real-Time Performance Monitoring "
-						desc="Track the performance of your cloud infrastructure in real-time. We monitor key metrics and system health to ensure your applications and services run smoothly."
+						icon={<MdOutlineAssessment className=" size-full text-cyan-400" />}
+						title="クラウド・アーキテクチャ設計  "
+						desc="お客様のビジネス目標に沿った、堅牢でスケーラブルなクラウドアーキテクチャを開発します。パフォーマンス、コスト、セキュリティを最適化するカスタムソリューションを設計します。"
 					/>
 					<KeyCard
 						img=""
-						icon={<PiSecurityCamera className=" size-[80%] text-cyan-400" />}
-						title="Security Monitoring "
-						desc="Protect your cloud environment with continuous security monitoring. We detect and respond to potential threats, ensuring your data remains secure and compliant with industry standards."
+						icon={<MdMoveDown className=" size-[80%] text-cyan-400" />}
+						title="移行計画と戦略 "
+						desc="最小限の混乱でスムーズな移行を保証する、詳細な移行計画を作成します。当社の戦略は、お客様固有のビジネス要件と技術要件を満たすように設計されています。"
 					/>
 					<KeyCard
 						img=""
-						icon={<LuDatabase className=" size-[80%] text-cyan-400" />}
-						title="Resource Utilization Tracking  "
-						desc="Optimize your cloud resources by monitoring usage patterns. Our services help you manage capacity, avoid over-provisioning, and reduce costs."
+						icon={<GrDeploy className=" size-[60%] text-cyan-400" />}
+						title="実施と展開 "
+						desc="クラウドインフラストラクチャを正確かつ専門的に展開します。私たちのチームは、初期設定から最終的な導入まで、導入プロセス全体を担当し、すべてがスムーズに進むようにします。"
 					/>
 					<KeyCard
 						img=""
 						icon={
-							<MdAddAlert className=" size-[90%] text-cyan-400" />
+							<MdOutlineSecurity className=" size-[90%] text-cyan-400" />
 						}
-						title=" Automated Alerts and Notifications "
-						desc="Receive instant alerts and notifications for any unusual activity or performance degradation. Our automated system ensures you are always informed and can act quickly to resolve issues."
+						title=" セキュリティとコンプライアンス "
+						desc="高度なセキュリティ対策を導入し、クラウド環境を保護します。業界標準と規制への準拠を保証し、お客様のデータとアプリケーションを保護します。"
 					/>
 					<KeyCard
 						img=""
-						icon={<MdDashboard className=" size-[85%] text-cyan-400" />}
-						title="Customizable Dashboards and Reports  "
-						desc="Access detailed dashboards and reports tailored to your specific needs. Gain insights into your cloud environment's performance, security, and resource utilization."
+						icon={<MdFormatIndentIncrease className=" size-[85%] text-cyan-400" />}
+						title="パフォーマンスの最適化  "
+						desc="クラウドインフラストラクチャを最適化し、最高のパフォーマンスを実現します。お客様の環境を継続的に監視し、微調整することで、最適な効率性と費用対効果を実現します。"
 					/>
 				</div>
 
 				{/* Why Choose Section */}
 				<WhyChoose
-					img={WhyMonitor}
-					title="Why Choose Our Monitoring Services?"
-					desc="In the dynamic cloud environment, continuous monitoring is crucial to ensure reliability, security, and performance. 
-					Our cloud monitoring services offer 24/7 oversight, helping you detect and resolve issues swiftly 
-					while optimizing resource utilization."
+					img={WhyDesign}
+					title="当社の設計と実装サービスを選ぶ理由"
+					desc="効率的でスケーラブルなクラウド環境を構築するには、専門家による計画と実行が必要です。私たちのチームは、
+					お客様独自の要件に合わせたエンドツーエンドの設計と実装サービスを提供し、
+					クラウド導入を成功に導きます。"
 				/>
 
 				{/* <hr className="section-margin w-[90%] block mx-auto" /> */}
@@ -153,7 +151,7 @@ const OperationAndMonitoring = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl font-semibold text-bluehover"
 					>
-						Our Benifits
+						メリット
 					</h2>
 					<motion.div
 						variants={fadeIn(".", 0.25)}
@@ -168,24 +166,24 @@ const OperationAndMonitoring = () => {
 							slides={4}
 						>
 							<BenifitCard
-								title="Enhanced Security"
-								desc="Continuous monitoring to protect your data and infrastructure."
+								title="個別ソリューション"
+								desc="お客様の要件に合わせたクラウドアーキテクチャ。"
 							/>
 							<BenifitCard
-								title="Improved Performance"
-								desc="Real-time insights to ensure optimal performance of your cloud services."
+								title="専門家による実行"
+								desc="プロフェッショナルな導入により、クラウドへのシームレスな移行を実現します。"
 							/>
 							<BenifitCard
-								title="Cost Efficiency"
-								desc="Optimize resource utilization and reduce unnecessary expenses."
+								title="セキュリティ強化"
+								desc="お客様のデータを保護し、コンプライアンスを確保するための強固なセキュリティ対策。"
 							/>
 							<BenifitCard
-								title="Proactive Issue Resolution"
-								desc="Detect and address issues before they impact your operations."
+								title="最適化されたパフォーマンス"
+								desc="継続的なモニタリングと最適化により、最高の効率を実現します。"
 							/>
 							<BenifitCard
-								title="Actionable Insights"
-								desc="Customizable dashboards and reports for informed decision-making."
+								title="スケーラブルなインフラストラクチャー"
+								desc="ビジネスとともに成長する柔軟なソリューション"
 							/>
 						</MultipleCarousel>
 					</div>
@@ -201,7 +199,7 @@ const OperationAndMonitoring = () => {
 							viewport={{ once: false, amount: 0.7 }}
 							className="text-2xl font-semibold text-white"
 						>
-							Success Stories
+							成功事例
 						</h2>
 						<motion.div
 							variants={fadeIn(".", 0.25)}
@@ -217,17 +215,17 @@ const OperationAndMonitoring = () => {
 							>
 								<TestiCard
 									name="Client"
-									desc="With NEX4's monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="T御社]の設計と導入サービスにより、当社のITインフラは一変しました。今では、すべてのニーズを満たすスケーラブルで効率的なクラウド環境を手に入れることができました。"
 									img=""
 								/>
 								<TestiCard
 									name="Client"
-									desc="The real-time monitoring and automated alerts provided have been invaluable. We can now address issues immediately and maintain seamless operations."
+									desc="NEX4のおかげで、クラウドへの移行はスムーズで手間がかかりませんでした。NEX4の専門知識とサポートは、プロセス全体を通して非常に貴重なものでした。"
 									img=""
 								/>
 								<TestiCard
 									name="Client"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="NEX4の監視サービスにより、クラウドインフラのパフォーマンスとセキュリティが大幅に改善されました。NEX4の積極的なアプローチにより、潜在的な問題を未然に防ぐことができます。"
 									img=""
 								/>
 							</MultipleCarousel>
@@ -240,7 +238,7 @@ const OperationAndMonitoring = () => {
 				{/* Get Started Today */}
 				<div className="section-margin max-w-[1240px] drop-shadow-lg rounded-b-lg px-6 bg-white pb-8 space-y-8 text-center mx-auto">
 					<p className="text-cyan-300 text-xs font-semibold uppercase">
-						get started today
+					今すぐ始めよう
 					</p>
 					<motion.h2
 						variants={fadeIn("up", 0.2)}
@@ -248,9 +246,9 @@ const OperationAndMonitoring = () => {
 						whileInView={"show"}
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-2xl  text-bluehover font-semibold"
-					>
-						Ready to <span className="text-bold text-cyan-400">enhance your  </span> cloud infrastructure 
-						<span className="text-cyan-400 font-bold"> with our monitoring services</span>
+					>	
+						お客様のビジネスに <span className="text-bold text-cyan-400">合わせたクラウド・ソリューションの</span>
+						設計と導入
 					</motion.h2>
 					<motion.p
 						variants={fadeIn("up", 0.2)}
@@ -259,9 +257,9 @@ const OperationAndMonitoring = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-bluehover max-w-[1080px] mx-auto leading-loose tracking-wide"
 					>
-						Reach out our experts to learn more about our migration service and
-						how we can help you. Take the first step towards a more reliable and efficient cloud environment. 
-						Contact us now to discover how our monitoring services can benefit your organization.
+						設計・導入サービスの詳細と、どのようなお手伝いができるかについては、当社のエキスパートにお問い合わせください。
+						の第一歩を踏み出しましょう。今すぐお問い合わせいただき、
+						当社の監視サービスがお客様の組織にどのようなメリットをもたらすかをお問い合わせください。
 					</motion.p>
 					<motion.button
 						variants={fadeIn(".", 0.2)}
@@ -271,7 +269,7 @@ const OperationAndMonitoring = () => {
 						className="px-4 btn-outline-primary"
 						onClick={() => navigate("/faq")}
 					>
-						Contact Us
+						お問い合わせ
 					</motion.button>
 				</div>
 
@@ -286,7 +284,7 @@ const OperationAndMonitoring = () => {
 					className="section-margin max-w-[1240px] mx-auto"
 				>
 					<h2 className="text-center text-2xl font-bold">
-						Meet our related partner platform to power your business
+					お客様のビジネスを強力にサポートする関連パートナー・プラットフォームのご紹介
 					</h2>
 					<div className=" flex flex-col md:flex-row items-center">
 						<Link className="block mr-4 w-60  md:w-96 shrink-0" to="/aws">
@@ -304,15 +302,15 @@ const OperationAndMonitoring = () => {
 							<br />
 							<a href="/aws">
 								<p className="text-xl font-bold cursor-pointer hover:text-blue-500">
-									Find out more &#62;
+								詳細を見る &#62;
 								</p>
 							</a>
 							<hr className="my-4 border-t-1 border-blue-400" />
 							<p className="mt-4">
-								A pioneer partner of public cloud , multi cloud, hybrid cloud
-								infrastructure, it offers your business mature technology,
-								complete services , golbal availability and a well-developed
-								cloud ecosystem with an abunded of online resources{" "}
+							パブリッククラウド、マルチクラウド、ハイブリッドクラウドのパイオニアパートナーです。
+							インフラストラクチャのパイオニアであり、お客様のビジネスに成熟したテクノロジーを提供します、
+							完全なサービス、グローバルな可用性、そして豊富なオンラインリソースを備えた
+							クラウドエコシステムを提供します。{" "}
 							</p>
 						</div>
 					</div>
@@ -322,4 +320,4 @@ const OperationAndMonitoring = () => {
 	);
 };
 
-export default OperationAndMonitoring;
+export default DesignAndImplementation;

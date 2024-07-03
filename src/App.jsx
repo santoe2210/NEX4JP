@@ -20,15 +20,15 @@ import Microsoft from "./components/Microsoft";
 import TestNav from "./components/TestNav";
 import { Footer } from "flowbite-react";
 import MyFooter from "./components/MyFooter";
-import CloudMigration from "./Pages/cloud_services/CloudMigration";
+import CloudMigration from "./Pages/cloud_services/CloudMigrationJP";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import OperationAndMonitoring from "./Pages/cloud_services/OperationAndMonitoring";
-import Professional from "./Pages/cloud_services/Professional";
-import DesignAndImplementation from "./Pages/cloud_services/DesingAndImplementation";
-import SecurityOperation from "./Pages/cloud_services/SecurityOperation";
-import CostOptimization from "./Pages/cloud_services/CostOptimization";
+import OperationAndMonitoring from "./Pages/cloud_services/OperationAndMonitoringJP";
+import Professional from "./Pages/cloud_services/ProfessionalJP";
+import DesignAndImplementation from "./Pages/cloud_services/DesingAndImplementationJP";
+import SecurityOperation from "./Pages/cloud_services/SecurityOperationJP";
+import CostOptimization from "./Pages/cloud_services/CostOptimizationJP";
 
 function App() {
 	const Layout = () => {
