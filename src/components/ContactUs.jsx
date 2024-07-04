@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Button, Checkbox, Label, TextInput, Textarea } from "flowbite-react";
 import NavBar from './TestNav';
 import MyFooter from './MyFooter';
+import headerImage from '../assets/icons/background (2).jpg';
+import '../assets/css/contact.css';
 
 const ContactForm = () => {
   // Initialize state to store form data
@@ -56,13 +58,17 @@ const ContactForm = () => {
   };
 
   return (
-    <div path="faq" className="md-px-14 px-20 py-12 max-w-screen-2xl mx-auto items-center justify-center w-full">
+    <div path="faq" className="py-12 max-w-screen-2xl mx-auto items-center justify-center w-full">
       {/* Uncomment to include the NavBar */}
       {/* <div className="mb-16">
           <NavBar/>
       </div> */}
-      <div className='flex items-center justify-center mt-20'>
-        <form className="flex max-w-md flex-col gap-4 w-full" onSubmit={handleSubmit}>
+      <div className='header_photo'>
+        <img src={headerImage} alt="Header Image" />
+        <h1>Contact Us</h1>
+      </div>
+      <div className='flex items-center justify-center contact_form faq-container'>
+        <form className="flex max-w-md mx-auto flex-col gap-4 w-full" onSubmit={handleSubmit}>
           <div>
             <div className="mb-2 block">
               <Label htmlFor="cname" value="会社名" /><span className="text-red-500">*</span>
@@ -142,6 +148,46 @@ const ContactForm = () => {
           />
           <Button type="submit">送信する</Button>
         </form>
+      </div>
+      {/* Map and contact details */}
+      <div className="contact-section">
+        <h2 className="section-title">Find Us Here</h2>
+        <div className="contact-buttons">
+          <div className="contact-button">
+            <span className="icon">&#128222;</span>
+            <div className="text-content">
+              <div className="text-title">Phone</div>
+              <div className="text-detail">123-456-7890</div>
+            </div>
+          </div>
+          <div className="contact-button">
+            <span className="icon">&#9993;</span>
+            <div className="text-content">
+              <div className="text-title">Email</div>
+              <div className="text-detail">hello@contactcenter.prohealth.com</div>
+            </div>
+          </div>
+          <div className="contact-button">
+            <span className="icon">&#127759;</span>
+            <div className="text-content">
+              <div className="text-title">Location</div>
+              <div className="text-detail">123 Anywhere St, Any City, 12345</div>
+            </div>
+          </div>
+        </div>
+        <div className='map-container'>
+          <iframe width="1000"
+            height="400"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=%20tokyo+()&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+          </iframe>
+          <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=e2244c045b2c1f22bb7d1c1cb90d0da91a16c75d'>
+          </script>
+        </div>
       </div>
       {/* Uncomment to include the Footer */}
       {/* <div>

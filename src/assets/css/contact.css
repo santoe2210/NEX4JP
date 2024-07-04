@@ -1,0 +1,146 @@
+.header_photo img {
+    width: 100vw;
+    /* Sets the width to the full width of the viewport */
+    height: 50vh;
+    ;
+    object-fit: cover;
+    /* Ensures the image covers the full container without being stretched */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* Keeps the image behind the content */
+}
+
+.header_photo h1 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+/* Base margin for all screens */
+.contact_form {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/* No margin from small screens and up */
+@media (min-width: 640px) {
+    .contact_form {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-button {
+        width: 80%;
+        /* Adjust width to fit mobile screens better */
+        margin-bottom: 10px;
+        /* Space between buttons */
+    }
+}
+
+/* 14px margin from medium screens and up */
+@media (min-width: 768px) {
+    .contact_form {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    .contact-buttons {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* 15em margin from large screens and up */
+@media (min-width: 1024px) {
+    .contact_form {
+        margin-left: 15em;
+        margin-right: 15em;
+    }
+
+    .contact-buttons {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+.contact_form {
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 50px;
+    border-width: 2px;
+    border-radius: 20px;
+}
+
+.contact-section {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f4f8;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    background-color: #17a2b8;
+    /* Teal background */
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 12px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s, transform 0.3s;
+    flex: 1 1 250px;
+    /* Allows buttons to grow and have a minimum width of 250px */
+}
+
+.contact-button:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.text-title {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text-detail {
+    font-size: 14px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
