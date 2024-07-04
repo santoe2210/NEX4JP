@@ -59,4 +59,65 @@ const Blog = () => {
     );
 };
 
+export const HomeBlog = () => {
+    const blogs = [
+			{
+				id: 1,
+				title:
+					"ENHANCING SECURITY AND PERFORMANCE THROUGH CI/CD AND CLOUDFRONT",
+				image: blog1,
+			},
+			{
+				id: 2,
+				title: "CLOUD SECURITY OPERATIONS ON AWS SHARING SESSION",
+				image: blog2,
+			},
+			{
+				id: 3,
+				title:
+					"ENHANCING SECURITY AND PERFORMANCE THROUGH CI/CD AND CLOUDFRONTHOW CORPORATE",
+				image: blog3,
+			},
+		];
+    return (
+			<div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 items-center justify-between">
+				{blogs.map((blog) => (
+					<div
+						key={blog.id}
+						className="mx-auto relative mb-12 cursor-pointer hover:text-bluehover"
+					>
+						<img
+							src={blog.image}
+							alt=""
+							className="hover:scale-95 transition-all duration-300"
+						/>
+						<div className="text-center px-4 py-8 bg-white shadow-lg rounded-md md:w-3/4 mx-auto absolute left-0 right-0 -bottom-12">
+							<h3 className="mb-3 text-neturalGrey font-semibold hover:text-bluehover">
+								{blog.title}
+							</h3>
+							<div className="flex items-center justify-center gap-8">
+								<button
+									href="https://nex4.blog/"
+									className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded"
+								>
+									もっと見る{" "}
+									<svg
+										xmlns="http://www.google.com/2000/svg"
+										width="17"
+										height="17"
+										viewBox="0 0 17 11"
+										fill="none"
+										className="inline-block ml-2"
+									>
+										<path />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				))}
+			</div>
+		);
+}
+
 export default Blog;
