@@ -65,7 +65,7 @@ const ContactForm = () => {
       </div> */}
       <div className='header_photo'>
         <img src={headerImage} alt="Header Image" />
-        <h1>Contact Us</h1>
+        <h1>お問い合わせ</h1>
       </div>
       <div className='flex items-center justify-center contact_form faq-container'>
         <form className="flex max-w-md mx-auto flex-col gap-4 w-full" onSubmit={handleSubmit}>
@@ -151,26 +151,26 @@ const ContactForm = () => {
       </div>
       {/* Map and contact details */}
       <div className="contact-section">
-        <h2 className="section-title">Find Us Here</h2>
+        <h2 className="section-title">連絡先</h2>
         <div className="contact-buttons">
           <div className="contact-button">
             <span className="icon">&#128222;</span>
             <div className="text-content">
-              <div className="text-title">Phone</div>
+              <div className="text-title">電話番号</div>
               <div className="text-detail">123-456-7890</div>
             </div>
           </div>
           <div className="contact-button">
             <span className="icon">&#9993;</span>
             <div className="text-content">
-              <div className="text-title">Email</div>
+              <div className="text-title">Eメール</div>
               <div className="text-detail">hello@contactcenter.prohealth.com</div>
             </div>
           </div>
           <div className="contact-button">
             <span className="icon">&#127759;</span>
             <div className="text-content">
-              <div className="text-title">Location</div>
+              <div className="text-title">オフィスの所在地</div>
               <div className="text-detail">123 Anywhere St, Any City, 12345</div>
             </div>
           </div>
