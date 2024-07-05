@@ -185,7 +185,7 @@ const SecurityOperation = () => {
 							viewport={{ once: false, amount: 0.7 }}
 							className="text-2xl font-semibold text-white"
 						>
-							成功事例
+							事例
 						</h2>
 						<motion.div
 							variants={fadeIn(".", 0.25)}

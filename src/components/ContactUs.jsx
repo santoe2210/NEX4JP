@@ -163,14 +163,14 @@ const ContactForm = () => {
           <div className="contact-button">
             <span className="icon">&#9993;</span>
             <div className="text-content">
-              <div className="text-title">Eメール</div>
-              <div className="text-detail">hello@contactcenter.prohealth.com</div>
+              <div className="text-title">メール</div>
+              <div className="text-detail"> info@nex4.net</div>
             </div>
           </div>
           <div className="contact-button">
             <span className="icon">&#127759;</span>
             <div className="text-content">
-              <div className="text-title">オフィスの所在地</div>
+              <div className="text-title">会社の所在地</div>
               <div className="text-detail">123 Anywhere St, Any City, 12345</div>
             </div>
           </div>
@@ -178,10 +178,10 @@ const ContactForm = () => {
         <div className='map-container'>
           <iframe width="1000"
             height="400"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
-            marginheight="0"
-            marginwidth="0"
+            marginHeight="0"
+            marginWidth="0"
             id="gmap_canvas"
             src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=%20tokyo+()&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
           </iframe>
