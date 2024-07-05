@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -17,7 +18,7 @@ const MemberCard = ({ img, name, roles = [] }) => {
 		>
 			<img
 				className="size-24 rounded-full object-cover "
-				src={avatar || img}
+				src={img}
 				alt="name"
 			/>
 			<div className="text-center">

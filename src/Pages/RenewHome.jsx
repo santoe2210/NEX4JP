@@ -13,6 +13,9 @@ import WhyChooseCard from "../components/home/WhyChooseCard";
 import ApprovementCard from "../components/home/ApprovementCard";
 import KeyCard from "../components/home/KeyCard";
 import { HomeBlog } from "../components/Blog";
+import F5 from "../assets/F5.png";
+import Cisco from "../assets/icons/cisco.jpg";
+import AWS from "../assets/aws.png";
 
 import { GiAchievement } from "react-icons/gi";
 import { FaTasks, FaServer } from "react-icons/fa";
@@ -44,19 +47,18 @@ const RenewHome = () => {
 				<Carousel>
 					<SlideCard
 						bgImg={bgImg1}
-						title="Delivering advanced security, infrastructure, and cloud services with
-					a commitment to excellence and customer satisfaction.​"
+						title="卓越性と顧客満足度を追求し、高度なセキュリティ、インフラ、クラウドサービスを提供します。​"
 						to="/about"
 						img={sliderPhoto1}
 					/>
 					<SlideCard
 						bgImg={bgImg1}
-						title="Empower your business with our cloud services, designed to boost efficiency, scalability, and security. Experience the freedom of seamless integration and unparalleled support tailored to your unique needs.​"
+						title="効率性、拡張性、セキュリティを高めるために設計されたクラウドサービスで、お客様のビジネスを強化します。シームレスな統合と、お客様固有の要件に合わせた比類のないサポートによる自由を体験しています。​"
 						to="/about"
 					/>
 					<SlideCard
 						bgImg={bgImg1}
-						title="Our mission is to deliver innovative ICT solutions that enhance security, efficiency, and reliability. We strive to exceed customer expectations through personalized support and cutting-edge technology, ensuring your business stays ahead in a rapidly evolving digital landscape.​"
+						title="私たちのミッションは、セキュリティ、効率性、信頼性を高める革新的なICTソリューションを提供することです。お客様のご要望に合わせたサポートと最先端技術により、お客様のビジネスが急速に進化するデジタル環境の中で常に優位に立てるよう努めます。​"
 						to="/about"
 					/>
 				</Carousel>
@@ -66,22 +68,22 @@ const RenewHome = () => {
 			<section className="section-margin outer-padding grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6">
 				<ApprovementCard
 					icon={<GiAchievement className=" size-36 text-cyan-300" />}
-					title="AWS Advanced Tier Partner in Myanmar"
+					title="ミャンマーにおけるAWS上級パートナー"
 					prize="1 st"
 				/>
 				<ApprovementCard
 					icon={<FaTasks className=" size-28 text-cyan-300" />}
-					title="Project Done"
+					title="終了プロジェクト"
 					count="110"
 				/>
 				<ApprovementCard
 					icon={<FaServer className=" size-28 text-cyan-300" />}
-					title="Servers"
+					title="サーバー"
 					count="180"
 				/>
 				<ApprovementCard
 					icon={<PiCertificateFill className=" size-36 text-cyan-300" />}
-					title="Certifiaction Awarded"
+					title="認証授与"
 					count="80"
 				/>
 			</section>
@@ -96,8 +98,8 @@ const RenewHome = () => {
 					className="xl:w-1/2 text-gray-800"
 				>
 					<h2 className="text-4xl tracking-wider">
-						<span className="text-xl tracking-wide">A Brief History Of</span>
-						<br /> Our Journey
+						<span className="text-xl tracking-wide">NEX4の</span>
+						<br /> 歴史
 					</h2>
 
 					<div className="w-24 h-1 rounded-lg gradient-1 mt-2"></div>
@@ -111,15 +113,11 @@ const RenewHome = () => {
 						alt=""
 					/>
 					<p className="mt-3 text-lg leading-relaxed text-justify">
-						NEX4 was founded in 2013 with a mission to revolutionize network
-						solutions through innovative technology and exceptional service.
-						Starting as a small startup, NEX4 quickly grew by prioritizing
-						customer satisfaction and adopting cutting-edge technologies. Over
-						the years, the company expanded its offerings to include advanced
-						network solutions, managed services, cloud computing, and robust
-						cybersecurity measures. Today, NEX4 is a leader in the network
-						services industry, known for its reliable, sustainable, and
-						customer-centric approach
+					NEX4は、革新的な技術と卓越したサービスによってネットワークソリューションを革命的に変えることをミッションとして、
+					2013年に設立されました。小さなスタートアップとして始まり、顧客満足を最優先し、最先端技術を取り入れることで急速に成長しました。
+					年々、同社は高度なネットワークソリューション、マネージドサービス、クラウドコンピューティング、
+					強固なサイバーセキュリティ対策を含むサービスを拡充してきました。
+					現在、NEX4は信頼性、持続可能性、顧客中心のアプローチで知られるネットワークサービス業界のリーダーです。
 					</p>
 				</motion.div>
 				<motion.img
@@ -135,7 +133,7 @@ const RenewHome = () => {
 
 			{/* Why Choose NEX4 */}
 			<section className="section-margin outer-padding text-center">
-				<h2 className="text-3xl font-semibold">Why Choose NEX4</h2>
+				<h2 className="text-3xl font-semibold">選ばれる5つの理由</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 				<div className="mt-6">
 					<MultipleCarousel
@@ -144,30 +142,30 @@ const RenewHome = () => {
 					>
 						<WhyChooseCard
 							icon={<MdOutlineSecurity className=" size-32 text-white" />}
-							title="Advanced Security"
-							desc="NEX4 specializes in enterprise security, ensuring your data and systems are protected against threats."
+							title="高度なセキュリティ"
+							desc="NEX4は企業のセキュリティに特化し、お客様のデータとシステムを脅威から確実に保護します。"
 						/>
 						<WhyChooseCard
 							icon={
 								<MdOutlineMiscellaneousServices className=" size-32 text-white" />
 							}
-							title="Comprehensive Service"
-							desc="From data center and network infrastructure to cloud solutions and modern workspace technologies, NEX4 offers a full suite of ICT services."
+							title="総合サービス"
+							desc="データセンター、ネットワークインフラからクラウドソリューション、最新ワークスペース技術まで、NEX4はICTサービス一式を提供しています。"
 						/>
 						<WhyChooseCard
 							icon={<MdOutlineSpeed className=" size-36 text-white" />}
-							title="Reliability and Speed"
-							desc="NEX4 is committed to delivering reliable and fast solutions, enhancing your business operations."
+							title="信頼性とスピード "
+							desc="NEX4は、信頼性が高く迅速なソリューションを提供し、お客様の業務を強化することをお約束します。"
 						/>
 						<WhyChooseCard
 							icon={<MdSupportAgent className=" size-36 text-white" />}
-							title="Tailored Support"
-							desc="We provide personalized consultation and technical support to meet the unique needs of each client."
+							title="要件に合わせたサポート"
+							desc="お客様一人ひとりのご要件に合わせたコンサルティングと技術サポートを提供します。"
 						/>
 						<WhyChooseCard
 							icon={<TiGroupOutline className=" size-36 text-white" />}
-							title="Trusted Expertise"
-							desc="Our expertise is trusted by leading banks and enterprises, reflecting our commitment to excellence and customer satisfaction."
+							title="信頼される専門知識"
+							desc="信頼される専門知識当社の専門知識は、卓越性と顧客満足度へのコミットメントを反映し、大手銀行や企業から信頼されています。"
 						/>
 					</MultipleCarousel>
 				</div>
@@ -177,31 +175,29 @@ const RenewHome = () => {
 
 			{/* Key Achievements */}
 			<section className="section-margin outer-padding text-center">
-				<h2 className="text-3xl font-semibold">Key Achievements</h2>
+				<h2 className="text-3xl font-semibold">実績</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 				<div className="mt-6 max-w-7xl mx-auto md:mt-12 grid grid-cols-1 sm:grid-cols-2 justify-items-stretch lg:grid-cols-3 gap-6 md-gap-12">
 					<KeyCard
-						logo={avatar}
+						logo={F5}
 						achievements={[
-							"First and only F5 Gold Partner in Myanmar",
-							"Founders with extensive experience at F5",
-							"Serving top banks and telecoms with ADCs and WAF solutions",
+							"ミャンマーで最初で唯一のF5ゴールドパートナー",
+							"F5での豊富な経験を持つ創業者",
+							"ADCとWAFソリューションでトップ銀行と通信会社にサービスを提供",
 						]}
 					/>
 					<KeyCard
-						logo={avatar}
+						logo={Cisco}
 						achievements={[
-							"First and only F5 Gold Partner in Myanmar",
-							"Founders with extensive experience at F5",
-							"Serving top banks and telecoms with ADCs and WAF solutions",
+							"ミャンマー初の現地Ciscoゴールドパートナー",
+							"銀行2行と通信会社1社にCisco ACIを導入。",
 						]}
 					/>
 					<KeyCard
-						logo={avatar}
+						logo={AWS}
 						achievements={[
-							"First and only F5 Gold Partner in Myanmar",
-							"Founders with extensive experience at F5",
-							"Serving top banks and telecoms with ADCs and WAF solutions",
+							"ミャンマーにおけるAWS上級パートナー",
+							"AWSウェルアーキテクトパートナープログラム",
 						]}
 					/>
 				</div>
@@ -211,7 +207,7 @@ const RenewHome = () => {
 
 			{/* Service List */}
 			<section className="section-margin outer-padding text-center">
-				<h2 className="text-3xl font-semibold">Service List</h2>
+				<h2 className="text-3xl font-semibold">サービス一覧</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 				<motion.div
 					variants={fadeIn("up", 0.25)}
@@ -226,11 +222,11 @@ const RenewHome = () => {
 						imgSrc={imp}
 					>
 						<motion.h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-							Cloud Related Service
+						クラウドサービス
 						</motion.h5>
 						<p className="font-normal text-gray-700 dark:text-gray-400"></p>
-						<Button href="/service4">
-							Read more
+						<Button href="/aws">
+						もっと見る
 							<svg
 								className="-mr-1 ml-2 h-4 w-4"
 								fill="currentColor"
@@ -251,11 +247,11 @@ const RenewHome = () => {
 						imgSrc={AI}
 					>
 						<h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-							Security Solution Service
+						セキュリティ・ソリューション・サービス
 						</h5>
 						<p className="font-normal text-gray-700 dark:text-gray-400"></p>
 						<Button href="/developing">
-							Read more
+						もっと見る
 							<svg
 								className="-mr-1 ml-2 h-4 w-4"
 								fill="currentColor"
@@ -276,11 +272,11 @@ const RenewHome = () => {
 						imgSrc={ms1}
 					>
 						<h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-							Microsoft Solution Service
+						Microsoft ソリューションサービス
 						</h5>
 						<p className="font-normal text-gray-700 dark:text-gray-400"></p>
 						<Button href="/developing">
-							Read more
+						もっと見る
 							<svg
 								className="-mr-1 ml-2 h-4 w-4"
 								fill="currentColor"
@@ -301,11 +297,11 @@ const RenewHome = () => {
 						imgSrc={net}
 					>
 						<h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-							Network Related Service
+						ネットワークサービス
 						</h5>
 						<p className="font-normal text-gray-700 dark:text-gray-400"></p>
 						<Button href="/developing">
-							Read more
+						もっと見る
 							<svg
 								className="-mr-1 ml-2 h-4 w-4"
 								fill="currentColor"
@@ -326,7 +322,7 @@ const RenewHome = () => {
 						className="items-center justify-center rounded-md"
 						href="/service"
 					>
-						View All Services
+						全てのサービスを見る
 						<svg
 							className="-mr-1 ml-2 h-4 w-4 ite"
 							fill="currentColor"
@@ -347,7 +343,7 @@ const RenewHome = () => {
 
 			{/* Partners And Alliances */}
 			<section className=" section-margin outer-padding text-center">
-				<h2 className="text-3xl font-semibold">Partners And Alliances</h2>
+				<h2 className="text-3xl font-semibold">パートナーと提携</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 				<motion.img
 					variants={fadeIn("right", 0.25)}
@@ -364,7 +360,7 @@ const RenewHome = () => {
 
 			{/* Our Strong Engineering Team */}
 			<section className=" section-margin outer-padding text-center">
-				<h2 className="text-3xl font-semibold">Our Strong Engineering Team</h2>
+				<h2 className="text-3xl font-semibold">エンジニアリング・チーム</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 				<motion.img
 					variants={fadeIn("left", 0.25)}
@@ -381,7 +377,7 @@ const RenewHome = () => {
 
 			{/* Blogs */}
 			<section className=" section-margin outer-padding text-center">
-				<h2 className="text-3xl font-semibold">Blogs</h2>
+				<h2 className="text-3xl font-semibold">ブログ</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 				<motion.div
 					variants={fadeIn("up", 0.25)}

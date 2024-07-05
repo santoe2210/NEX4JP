@@ -11,18 +11,18 @@ import MyFooter from './MyFooter';
 const AWS = () => {
   return (
     <div path='aws' className='items-center'>
-    <h2 className="text-4xl text-neturalDGrey text-center font-semibold mb-12 ">AWS Service List</h2>
+    <h2 className="text-4xl text-neturalDGrey text-center font-semibold mb-12 ">AWSサービス一覧</h2>
     <div className='flex flex-wrap gap-12 items-center justify-center my-1'>
     <Card className="max-w-sm hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300" 
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={imp}>
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        AWS Design And Implementation Service
+        設計と実装
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-400">  
     </p>
-    <Button href='/service4'>
-    Read more
+    <Button href='/cloud/design-and-implementation'>
+    もっと見る
         <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path
             fillRule="evenodd"
@@ -36,12 +36,12 @@ const AWS = () => {
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={AI}>
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Migration
+    移動
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-400"> 
     </p>
-    <Button href='/service1'>
-    Read more
+    <Button href='/cloud/migration'>
+    もっと見る
         <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path
             fillRule="evenodd"
@@ -55,12 +55,12 @@ const AWS = () => {
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={ms1}>
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Operation and Monitoring
+    運用・監視サービス
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-400">  
     </p>
-    <Button href='/service2'>
-    Read more
+    <Button href='/cloud/operation-and-monitoring'>
+    もっと見る
         <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path
             fillRule="evenodd"
@@ -74,12 +74,12 @@ const AWS = () => {
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={net}>
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Professional Services
+    プロフェッショナル・サービス
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-400"> 
     </p>
-    <Button href='/service3'>
-    Read more
+    <Button href='/cloud/professional'>
+    もっと見る
         <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path
             fillRule="evenodd"
@@ -92,12 +92,12 @@ const AWS = () => {
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={security}>
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Security Operation
+    セキュリティー・オペレーション
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-400">
     </p>
-    <Button href='developing'>
-    Read more
+    <Button href='/cloud/security-operation'>
+    もっと見る
         <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path
             fillRule="evenodd"
@@ -111,12 +111,12 @@ const AWS = () => {
         imgAlt="Meaningful alt text for an image that is not purely decorative"
         imgSrc={imp}>
     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Cost Optimization
+    コスト最適化サービス
     </h5>
     <p className="font-normal text-gray-700 dark:text-gray-400">  
     </p>
-    <Button href='cost-optimization'>
-    Read more
+    <Button href='/cloud/cost-optimization'>
+    もっと見る
         <svg className="-mr-1 ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <path
             fillRule="evenodd"

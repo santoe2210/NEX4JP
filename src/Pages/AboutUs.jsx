@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /** @format */
 
 import React from "react";
@@ -23,12 +24,34 @@ import AwardCard from "../components/about/AwardCard";
 import MemberCard from "../components/about/MemberCard";
 import TestiCard from "../components/cloud_services/TestiCard";
 import { fadeIn } from "../variants";
+import AWS from "../assets/aws.png";
+import Network from "../assets/icons/Op12.png";
+import Security from "../assets/icons/Op13.png";
+import Microsoft from "../assets/icons/microsoft.png";
+import System from "../assets/icons/Op10.png";
+import F5 from "../assets/F5.png";
+import Cisco from "../assets/icons/cisco.jpg";
+import vmware from "../assets/icons/vm1.jpg";
+import p3 from "../assets/icons/partner3.png";
+import p4 from "../assets/icons/p4.jpg";
+import p5 from "../assets/icons/p5.png";
+import c1 from "../assets/icons/c1.jpg";
+import c2 from "../assets/icons/c2.jpg";
+import c3 from "../assets/icons/c3.jpg";
+import c4 from "../assets/icons/c4.jpg";
+import c5 from "../assets/icons/c5.jpg";
+import c6 from "../assets/icons/c6.jpg";
+import p1 from "../assets/icons/p1.png";
+import p2 from "../assets/icons/p2.png";
+import profile3 from "../assets/icons/p3.png";
+import profile4 from "../assets/icons/profile4.png";
+import profile5 from "../assets/icons/profile5.png";
 
 const AboutUs = () => {
 	return (
 		<section>
 			<h2 className="text-3xl md:text-4xl font-semibold text-center">
-				About Us
+			NEX4について
 			</h2>
 			<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 
@@ -50,14 +73,12 @@ const AboutUs = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="leading-loose font-medium text-lg text-justify md:text-center mt-4 md:mt-6 max-w-[1240px] mx-auto"
 				>
-					At NEX4 ICT Solutions, we are committed to delivering cutting-edge
-					information and communication technology services. Based in Myanmar,
-					we specialize in enterprise security, data center and network
-					infrastructure, cloud solutions, and modern workspace solutions like
-					Office 365. Our mission is to ensure security, speed, and reliability,
-					making us a trusted partner for many leading banks. With a strong
-					focus on customer satisfaction, we provide tailored consultation and
-					technical support to meet the unique needs of our clients.
+					NEX4 ICT Solutionsでは、最先端の情報通信技術サービスを提供することをお約束します。ミャンマーを拠点とし、
+					企業向けセキュリティ、データセンター、ネットワーク・インフラ、クラウド・ソリューション、
+					Office 365などの最新ワークスペース・ソリューションを専門としています。当社のミッションは、
+					セキュリティ、スピード、信頼性を確保することであり、多くの大手銀行から信頼されるパートナーとなっています。
+					顧客満足度を重視し、お客様固有の要件に合わせたコンサルティングと技術サポートを提供しています。
+
 				</motion.p>
 			</section>
 
@@ -65,7 +86,7 @@ const AboutUs = () => {
 
 			{/* Mission */}
 			<section className="section-margin outer-padding">
-				<h2 className="text-3xl font-semibold text-center">Our Mission</h2>
+				<h2 className="text-3xl font-semibold text-center">ミッション</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 rounded-lg mx-auto"></div>
 
 				<div className="mt-6 divide-y sm:divide-y-0 md:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 lg:grid-cols-4">
@@ -74,12 +95,12 @@ const AboutUs = () => {
 							<BsShieldLockFill className="size-20 text-gray-700 text-center" />
 						}
 						titleBg=" bg-green-400"
-						title={"Security"}
+						title={"セキュリティ"}
 						list={[
-							"Network",
-							"Infrastructure",
-							"Web Application",
-							"Enterprise access Security",
+							"ネットワーク",
+							"インフラストラクチャ",
+							"ウェブアプリケーション",
+							"企業アクセスセキュリティ",
 						]}
 					/>
 					<MissionCard
@@ -87,12 +108,12 @@ const AboutUs = () => {
 							<MdRocketLaunch className="size-20 text-gray-700  text-center" />
 						}
 						titleBg=" bg-yellow-400"
-						title={"Speed"}
+						title={"スピード"}
 						list={[
-							"Network",
-							"Infrastructure",
-							"Web Application",
-							"Enterprise access Security",
+							"ネットワークの制御",
+							"パフォーマンス",
+							"高速化",
+							"管理可能な ネットワークインフラ",
 						]}
 					/>
 					<MissionCard
@@ -100,12 +121,12 @@ const AboutUs = () => {
 							<VscWorkspaceTrusted className="size-20 text-gray-700  text-center" />
 						}
 						titleBg=" bg-red-400"
-						title={"Reliability"}
+						title={"信頼性"}
 						list={[
-							"Network",
-							"Infrastructure",
-							"Web Application",
-							"Enterprise access Security",
+							"管理しやすい",
+							"スケーラブル",
+							"柔軟な冗長性",
+							"俊敏なネットワークインフラ",
 						]}
 					/>
 					<MissionCard
@@ -113,12 +134,9 @@ const AboutUs = () => {
 							<MdRecommend className="size-20 text-gray-700  text-center" />
 						}
 						titleBg=" bg-blue-400"
-						title={"Satisfication"}
+						title={"満足"}
 						list={[
-							"Network",
-							"Infrastructure",
-							"Web Application",
-							"Enterprise access Security",
+							"ビジネスとITマネジメント",
 						]}
 					/>
 				</div>
@@ -146,13 +164,9 @@ const AboutUs = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-md md:text-lg max-w-[1024px]  bg-gray-300/50 p-4 rounded-md tracking-wider text-center leading-relaxed mx-auto text-black font-semibold"
 					>
-						“At NEX4 ICT Solutions, we are dedicated to providing advanced ICT
-						services, focusing on enterprise security, data center and network
-						infrastructure, and cloud solutions. Our commitment to security,
-						speed, and reliability ensures we meet the highest standards of
-						customer satisfaction. Trusted by leading banks, we offer tailored
-						consultation and technical support to address the unique needs of
-						each client.”
+						“NEX4 ICT ソリューションでは、企業向けセキュリティ、データセンター、ネットワークインフラ、クラウドソリューションを中心に、
+						高度なICTサービスの提供に努めています。セキュリティ、スピード、信頼性へのこだわりにより、最高水準の顧客満足をお約束します。
+						大手銀行からの信頼も厚く、お客様それぞれの要件に合わせたコンサルティングと技術サポートを提供しています”
 					</motion.p>
 					<motion.h2
 						variants={fadeIn("up", 0.2)}
@@ -161,7 +175,7 @@ const AboutUs = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="px-12 w-fit mx-auto text-xl md:text-2xl font-medium mt-6 pt-2 pb-1 bg-violet-400 text-white"
 					>
-						NEX4 ICT SOLUTIONS
+						NEX4 ICT ソリューション
 					</motion.h2>
 				</div>
 			</motion.section>
@@ -182,39 +196,39 @@ const AboutUs = () => {
 					/>
 				</div>
 				<div className="md:w-1/2 grid grid-cols-2 gap-2 md:gap-6">
-					<LocationCard img={myanmar} name="Myanmar" />
-					<LocationCard img={japan} name="Japan" />
-					<LocationCard img={thailand} name="Thailand" />
-					<LocationCard img={cambodia} name="Cambodia" />
+					<LocationCard img={myanmar} name="ミャンマー " />
+					<LocationCard img={japan} name="日本" />
+					<LocationCard img={thailand} name="タイ" />
+					<LocationCard img={cambodia} name="カンボジア" />
 				</div>
 			</section>
 
 			<hr className="w-[90%] mx-auto section-margin" />
 			{/* Our Services */}
 			<section className="section-margin outer-padding">
-				<h2 className="text-3xl font-semibold text-center">Our Services</h2>
+				<h2 className="text-3xl font-semibold text-center">サービス</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 rounded-lg mx-auto"></div>
 
 				<div className="mt-6 max-w-[1300px] mx-auto md:mt-12 divide-y sm:divide-y-0 grid grid-cols-1 sm:grid-cols-2 gap-2 gap-y-6 md:gap-x-6 md:gap-y-12 lg:grid-cols-3 place-content-center">
-					<ServiceCard logo={avatar} name="AWS" bgName="bg-orange-300" />
+					<ServiceCard logo={AWS} name="クラウドサービス" bgName="bg-orange-300" />
 					<ServiceCard
-						logo={avatar}
-						name="Netword Related Services"
+						logo={Network}
+						name="ネットワークサービス"
 						bgName="bg-green-300"
 					/>
 					<ServiceCard
-						logo={avatar}
-						name="System Related Services"
+						logo={System}
+						name="システム関連サービス"
 						bgName="bg-blue-300"
 					/>
 					<ServiceCard
-						logo={avatar}
-						name="Security Solution Services"
+						logo={Security}
+						name="セキュリティ・ソリューション・サービス"
 						bgName="bg-red-300"
 					/>
 					<ServiceCard
-						logo={avatar}
-						name="Microsoft Services"
+						logo={Microsoft}
+						name="モダン・ワークスペース・サービス"
 						bgName="bg-yellow-200"
 					/>
 				</div>
@@ -230,32 +244,31 @@ const AboutUs = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-xl md:text-2xl font-medium  max-w-[1080px] mx-auto text-center"
 					>
-						Delivering advanced security, infrastructure, and cloud services
-						with a commitment to excellence and customer satisfaction.
+						高度なセキュリティ、インフラ、クラウドサービスを、卓越性と顧客満足度にこだわって提供する。
 					</motion.h2>
 				</div>
 			</section>
 
 			{/* Partner Platform */}
 			<section className="section-margin outer-padding">
-				<h2 className="text-3xl font-semibold text-center">Partner Platform</h2>
+				<h2 className="text-3xl font-semibold text-center">パートナー・プラットフォーム</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 rounded-lg mx-auto"></div>
 
 				<div className="mt-6 max-w-[1300px] divide-y sm:divide-y-0 mx-auto md:mt-12 grid sm:grid-cols-2 gap-2 gap-y-6 md:gap-x-6 md:gap-y-12 md:grid-cols-4 place-content-center">
-					<ServiceCard logo={avatar} name="AWS Partner Since 2019" />
-					<ServiceCard logo={avatar} name="Cisco Gold Partner since 2017" />
-					<ServiceCard logo={avatar} name="VMWARE Partner since 2016 " />
-					<ServiceCard logo={avatar} name="PaloAlto Networks since 2015" />
+					<ServiceCard logo={AWS} name="AWS Partner Since 2019" />
+					<ServiceCard logo={Cisco} name="Cisco Gold Partner since 2017" />
+					<ServiceCard logo={vmware} name="VMWARE Partner since 2016 " />
+					<ServiceCard logo={p3} name="PaloAlto Networks since 2015" />
 					<ServiceCard
-						logo={avatar}
+						logo={p4}
 						name="DellEMC Platinum Partner since 2017"
 					/>
 					<ServiceCard
-						logo={avatar}
+						logo={Microsoft}
 						name="Microsoft Cloud Service Provider and Solutions Partner, since 2017"
 					/>
-					<ServiceCard logo={avatar} name="Fortinet since 2018" />
-					<ServiceCard logo={avatar} name="F5 since 2014" />
+					<ServiceCard logo={p5} name="Fortinet since 2018" />
+					<ServiceCard logo={F5} name="F5 since 2014" />
 				</div>
 			</section>
 
@@ -271,9 +284,9 @@ const AboutUs = () => {
 								viewport={{ once: false, amount: 0.7 }}
 								className="text-2xl text-center md:text-left md:text-4xl lg:text-6xl md:leading-snug"
 							>
-								<span className="text-white">Our</span>{" "}
-								<br className="hidden md:block" /> Team{" "}
-								<br className="hidden md:block" /> Member
+								<span className="text-white">チーム</span>{" "}
+								<br className="hidden md:block" /> メンバー{" "}
+								
 							</motion.h2>
 							<div className="w-24 md:hidden h-1 bg-gradient-to-tl from-cyan-300 to-white mt-2 rounded-lg mx-auto"></div>
 						</div>
@@ -281,30 +294,30 @@ const AboutUs = () => {
 						<div className="mx-auto">
 							<div className="grid grid-cols-1 sm:grid-cols-2 mx-auto gap-6 md:gap-12 w-fit">
 								<MemberCard
-									img=""
+									img={p1}
 									name="Aung Thurein"
 									roles={["Founder", "Managing Director"]}
 								/>
 								<MemberCard
-									img=""
+									img={p2}
 									name="Min Myat Soe"
 									roles={["Co-Founder", "Director"]}
 								/>
 							</div>
 							<div className="grid mt-6 grid-cols-1 sm:grid-cols-3 mx-auto gap-6 md:gap-12 w-fit">
 								<MemberCard
-									img=""
+									img={profile3}
 									name="Thant Zin Soe"
 									roles={["Chief Architect"]}
 								/>
 								<MemberCard
-									img=""
+									img={profile4}
 									name="Yan Naing Oo"
 									roles={["Chief Technical Officer"]}
 								/>
 								<MemberCard
-									img=""
-									name="Kaung Htet Zae"
+									img={profile5}
+									name="Kaung Htet Zaw"
 									roles={["Director", "Business Development"]}
 								/>
 							</div>
@@ -315,7 +328,7 @@ const AboutUs = () => {
 
 			{/* Awards */}
 			<section className="section-margin outer-padding">
-				<h2 className="text-3xl font-semibold text-center">Awards</h2>
+				<h2 className="text-3xl font-semibold text-center">アワード</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 rounded-lg mx-auto"></div>
 
 				<div className="mt-6 max-w-[1280px] mx-auto">
@@ -324,28 +337,28 @@ const AboutUs = () => {
 						breakpoints={{ mobile: 1, sm: 2, md: 2 }}
 					>
 						<AwardCard
-							img=""
+							img={AWS}
 							awards={[
-								"Enterprise Solution Provider in Myanmar",
-								"Networking and Security Partner of the Year 2017",
+								"AWS アドバンスド ティア パートナー",
+								"AWS ウェルアーキテクトパートナープログラム",
 							]}
 						/>
 						<AwardCard
-							img=""
+							img={Cisco}
 							awards={[
-								"Premier Partner Advanced Data Center",
-								"Architecture Specialization Premier Partner of the Year Indochina (2016) (2017)",
-								"Premier Certified Partner (2017)",
+								"プレミアパートナー アドバンスドデータセンター",
+								"アーキテクチャ専門",
+								"インドシナの年間最優秀プレミアパートナー（2016年,2017年）",
+								"プレミア認定パートナー（2017年）",
 							]}
 						/>
 						<AwardCard
-							img=""
+							img={F5}
 							awards={[
-								"Unity Gold Partner in Myanmar",
-								"F5 Networks High Five Award of the Year (2014,2015)",
-								"Extra – Mile Effort Award",
-								"Top Partner of the Year ROSEAN (2016)",
-								"Outstanding Dedication Commitment (2019)",
+								"ミャンマーのUnityゴールドパートナー",
+								"F5ネットワークス年間ハイファイブ賞 (2014, 2015年)",
+								"エクストラマイル努力賞ROSEANの年間トップパートナー (2016年)",
+								"優れた献身とコミットメント (2019)",
 							]}
 						/>
 					</MultipleCarousel>
@@ -356,28 +369,28 @@ const AboutUs = () => {
 
 			{/* Our Clients */}
 			<section className="section-margin outer-padding">
-				<h2 className="text-3xl font-semibold text-center">Our Clients</h2>
+				<h2 className="text-3xl font-semibold text-center">お客様</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 rounded-lg mx-auto"></div>
 
 				<div className="mt-6 max-w-[1300px] mx-auto md:mt-12 divide-y sm:divide-y-0 grid grid-cols-1 sm:grid-cols-2 gap-2 gap-y-6 md:gap-x-6 md:gap-y-12 lg:grid-cols-4 place-content-center">
-					<ServiceCard logo={avatar} name="MNCS" bgName="bg-orange-300" />
+					<ServiceCard logo={c1} name="MNCS" bgName="bg-orange-300" />
 					<ServiceCard
-						logo={avatar}
-						name="SME  and Large Enterprise"
+						logo={c2}
+						name="中小企業と大企業"
 						bgName="bg-green-300"
 					/>
 					<ServiceCard
-						logo={avatar}
-						name="System Related Services"
+						logo={c3}
+						name="金融機関"
 						bgName="bg-blue-300"
 					/>
-					<ServiceCard logo={avatar} name="Oil and Gas" bgName="bg-green-300" />
+					<ServiceCard logo={c4} name="石油とガス" bgName="bg-green-300" />
 					<ServiceCard
-						logo={avatar}
-						name="Telecommunication Service Providers"
+						logo={c5}
+						name="通信事業者"
 						bgName="bg-blue-300"
 					/>
-					<ServiceCard logo={avatar} icon="" name="Healthcare" bgName="bg-green-300" />
+					<ServiceCard logo={c6} icon="" name="医療" bgName="bg-green-300" />
 				</div>
 			</section>
 
@@ -408,17 +421,17 @@ const AboutUs = () => {
 							>
 								<TestiCard
 									name="Client"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="NEX4は技術チームとプロジェクト管理チームにおいて強力であり、またNEX4への対応も非常に柔軟です。私たちAYA銀行は、常に信頼を第一に考えており、NEX4は信頼できるパートナーの一つです。"
 									img=""
 								/>
 								<TestiCard
 									name="Client"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="NEX4は、いくつかの問題が発見された場合、すぐに解決するための短期的な解決策をアドバイスすることができる。"
 									img=""
 								/>
 								<TestiCard
 									name="Client"
-									desc="With [Your Company]'s monitoring services, we have significantly improved our cloud infrastructure's performance and security. Their proactive approach keeps us ahead of potential issues."
+									desc="NEX4は、技術面で私たちの銀行の要件とこの要件を満たすことができる唯一のSI企業です。"
 									img=""
 								/>
 							</MultipleCarousel>

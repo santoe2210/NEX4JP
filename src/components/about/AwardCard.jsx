@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React, { useState } from "react";
@@ -23,8 +24,8 @@ const AwardCard = ({ img, awards = [] }) => {
 			className="relative aspect-square rounded-md overflow-hidden"
 		>
 			<img
-				className="w-full h-full object-cover"
-				src={img || avatar}
+				className="w-40% h-40% object-cover"
+				src={img}
 				alt="awards"
 			/>
 

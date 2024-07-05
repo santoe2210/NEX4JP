@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -35,7 +36,7 @@ const SlideCard = ({ bgImg, title, to, img = "" }) => {
 							!img && "mx-auto"
 						} block w-fit px-4 py-2 shadow-lg shadow-cyan-300 text-sm font-semibold bg-gray-200/60 rounded-md hover:bg-cyan-300 hover:text-white transition`}
 					>
-						Discover More
+						もっと見る
 					</Link>
 				</motion.div>
 				{img && (
