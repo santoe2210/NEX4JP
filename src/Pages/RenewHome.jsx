@@ -30,9 +30,11 @@ import AI from "../assets/icons/AI.jpg";
 import ms1 from "../assets/icons/ms1.jpg";
 import net from "../assets/icons/network.jpg";
 import security from "../assets/icons/security.jpg";
-import partners from "../assets/partners.jpg"
-import engineeringTeam from "../assets/engineeringTeam.jpg"
+import partners from "../assets/partners.jpg";
+import engineeringTeam from "../assets/engineeringTeam.jpg";
 
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const RenewHome = () => {
 	return (
@@ -85,14 +87,29 @@ const RenewHome = () => {
 			</section>
 
 			{/* Our Journey Section */}
-			<section className="section-margin flex items-center gap-6 lg:gap-12 section-padding gradient-2">
-				<div className="w-1/2 text-gray-800">
+			<section className="section-margin flex items-center gap-6 flex-col md:flex-row lg:gap-12 section-bgImg-padding gradient-2">
+				<motion.div
+					variants={fadeIn("right", 0.25)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.7 }}
+					className="xl:w-1/2 text-gray-800"
+				>
 					<h2 className="text-4xl tracking-wider">
 						<span className="text-xl tracking-wide">A Brief History Of</span>
 						<br /> Our Journey
 					</h2>
 
 					<div className="w-24 h-1 rounded-lg gradient-1 mt-2"></div>
+					<motion.img
+						variants={fadeIn("left", 0.3)}
+						initial="hidden"
+						whileInView={"show"}
+						viewport={{ once: false, amount: 0.7 }}
+						className="w-1/2 m-4 lg:m-6 float-right hidden md:block xl:hidden object-cover rounded-md"
+						src={sliderPhoto1}
+						alt=""
+					/>
 					<p className="mt-3 text-lg leading-relaxed text-justify">
 						NEX4 was founded in 2013 with a mission to revolutionize network
 						solutions through innovative technology and exceptional service.
@@ -104,9 +121,13 @@ const RenewHome = () => {
 						services industry, known for its reliable, sustainable, and
 						customer-centric approach
 					</p>
-				</div>
-				<img
-					className="w-1/2 object-cover rounded-md"
+				</motion.div>
+				<motion.img
+					variants={fadeIn("left", 0.25)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.7 }}
+					className="w-full xl:w-1/2 md:hidden xl:block object-cover rounded-md"
 					src={sliderPhoto1}
 					alt=""
 				/>
@@ -152,13 +173,21 @@ const RenewHome = () => {
 				</div>
 			</section>
 
-			{/* <hr className="w-[90%] mx-auto section-margin" /> */}
+			<hr className="w-[90%] mx-auto section-margin" />
 
 			{/* Key Achievements */}
-			{/* <section className="section-margin outer-padding text-center">
+			<section className="section-margin outer-padding text-center">
 				<h2 className="text-3xl font-semibold">Key Achievements</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
-				<div className="mt-6 max-w-7xl mx-auto md:mt-12 grid grid-cols-1 justify-items-stretch md:grid-cols-2 gap-6 md-gap-12">
+				<div className="mt-6 max-w-7xl mx-auto md:mt-12 grid grid-cols-1 sm:grid-cols-2 justify-items-stretch lg:grid-cols-3 gap-6 md-gap-12">
+					<KeyCard
+						logo={avatar}
+						achievements={[
+							"First and only F5 Gold Partner in Myanmar",
+							"Founders with extensive experience at F5",
+							"Serving top banks and telecoms with ADCs and WAF solutions",
+						]}
+					/>
 					<KeyCard
 						logo={avatar}
 						achievements={[
@@ -176,7 +205,7 @@ const RenewHome = () => {
 						]}
 					/>
 				</div>
-			</section> */}
+			</section>
 
 			<hr className="w-[90%] mx-auto section-margin" />
 
@@ -184,15 +213,21 @@ const RenewHome = () => {
 			<section className="section-margin outer-padding text-center">
 				<h2 className="text-3xl font-semibold">Service List</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
-				<div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mt-6 items-center justify-center">
+				<motion.div
+					variants={fadeIn("up", 0.25)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.3 }}
+					className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mt-6 items-center justify-center"
+				>
 					<Card
 						className="max-w-xs hover:-translate-y-5 hover:border-b-4 hover:border-indigo-700 transition-all duration-300"
 						imgAlt="Meaningful alt text for an image that is not purely decorative"
 						imgSrc={imp}
 					>
-						<h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+						<motion.h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 							Cloud Related Service
-						</h5>
+						</motion.h5>
 						<p className="font-normal text-gray-700 dark:text-gray-400"></p>
 						<Button href="/service4">
 							Read more
@@ -285,7 +320,7 @@ const RenewHome = () => {
 							</svg>
 						</Button>
 					</Card>
-				</div>
+				</motion.div>
 				<div className="flex items-center justify-center mb-10 my-12 px-10">
 					<Button
 						className="items-center justify-center rounded-md"
@@ -314,7 +349,11 @@ const RenewHome = () => {
 			<section className=" section-margin outer-padding text-center">
 				<h2 className="text-3xl font-semibold">Partners And Alliances</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
-				<img
+				<motion.img
+					variants={fadeIn("right", 0.25)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.4 }}
 					className="w-full mt-6 object-cover"
 					src={partners}
 					alt="NEX$ Partners And Alliances"
@@ -327,7 +366,11 @@ const RenewHome = () => {
 			<section className=" section-margin outer-padding text-center">
 				<h2 className="text-3xl font-semibold">Our Strong Engineering Team</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
-				<img
+				<motion.img
+					variants={fadeIn("left", 0.25)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.4 }}
 					className="w-full mt-6 object-cover"
 					src={engineeringTeam}
 					alt="NEX$ Our Strong Engineering Team"
@@ -340,9 +383,15 @@ const RenewHome = () => {
 			<section className=" section-margin outer-padding text-center">
 				<h2 className="text-3xl font-semibold">Blogs</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
-				<div className="mt-6">
+				<motion.div
+					variants={fadeIn("up", 0.25)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.4 }}
+					className="mt-6"
+				>
 					<HomeBlog />
-				</div>
+				</motion.div>
 			</section>
 		</div>
 	);

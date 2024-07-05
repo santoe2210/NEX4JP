@@ -2,21 +2,31 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../variants";
 
 const SlideCard = ({ bgImg, title, to, img = "" }) => {
 	return (
-		<div className="relative section-padding flex items-center min-h-fit h-96 sm:h-96 xl:h-96 2xl:h-96">
+		<div className="relative section-padding flex items-center min-h-fit h-[30rem] xl:h-96 2xl:h-96">
 			<img
 				className="absolute w-full h-full top-0 left-0 object-cover"
 				src={bgImg}
 				alt="carousel bg img"
 			/>
 
-			<div className={`flex items-center h-full ${img && "justify-between gap-6"}`}>
-				<div
+			<div
+				className={`flex items-center h-full ${
+					img && "justify-between sm:justify-center gap-6"
+				}`}
+			>
+				<motion.div
+					variants={fadeIn("up", 0.35)}
+					initial="hidden"
+					whileInView={"show"}
+					viewport={{ once: false, amount: 0.7 }}
 					className={`${
-						!img && "mx-auto"
-					} bg-gray-100/40 w-1/2 p-6 rounded-r-lg z-10`}
+						!img ? "mx-auto" : "mx-auto sm:mx-0"
+					} bg-gray-100/40 w-[80%] md:w-2/3 p-6 rounded-r-lg z-10`}
 				>
 					<h2 className="text-2xl">{title}</h2>
 					<Link
@@ -27,8 +37,14 @@ const SlideCard = ({ bgImg, title, to, img = "" }) => {
 					>
 						Discover More
 					</Link>
-				</div>
-				{img && <img className="w-1/2 h-[90%] object-cover rounded-3xl z-10" src={img} alt="Slider Photo" />}
+				</motion.div>
+				{img && (
+					<img
+						className="hidden md:block w-1/2 h-[90%] object-cover rounded-md z-10"
+						src={img}
+						alt="Slider Photo"
+					/>
+				)}
 			</div>
 		</div>
 	);
