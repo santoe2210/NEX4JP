@@ -305,17 +305,17 @@ const TestNav = () => {
 								</MegaMenu.Dropdown>
 							</li>
 							{/* </Navbar.Link> */}
-							<Navbar.Link href="about" className=" font-bold hover:underline">
+							<Navbar.Link href="/about" className=" font-bold hover:underline">
 								About
 							</Navbar.Link>
-							<Navbar.Link href="aws" className=" font-bold hover:underline">
+							<Navbar.Link href="/aws" className=" font-bold hover:underline">
 								AWS
 							</Navbar.Link>
 							{/* <Navbar.Link href="team" className=" font-bold hover:underline">チーム</Navbar.Link> */}
-							<Navbar.Link href="blog" className=" font-bold hover:underline">
+							<Navbar.Link href="/blog" className=" font-bold hover:underline">
 							ブログ
 							</Navbar.Link>
-							<Navbar.Link href="faq" className=" font-bold hover:underline">
+							<Navbar.Link href="/faq" className=" font-bold hover:underline">
 							お問い合わせ
 							</Navbar.Link>
 						</Navbar.Collapse>

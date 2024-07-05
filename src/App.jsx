@@ -31,6 +31,7 @@ import SecurityOperation from "./Pages/cloud_services/SecurityOperationJP";
 import CostOptimization from "./Pages/cloud_services/CostOptimizationJP";
 import Home from "./components/Home";
 import RenewHome from "./Pages/RenewHome";
+import AboutUs from "./Pages/AboutUs";
 
 function App() {
 	const Layout = () => {
@@ -52,7 +53,7 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Layout />}>
 						<Route index element={<RenewHome />} />
-						<Route path="about" element={<About />} />
+						<Route path="about" element={<AboutUs />} />
 						<Route path="team" element={<Team />} />
 						<Route path="blog" element={<Blog />} />
 						<Route path="service" element={<Services />} />

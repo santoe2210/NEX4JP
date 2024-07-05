@@ -11,6 +11,8 @@ import avatar from "../assets/avatar.jpeg";
 import MultipleCarousel from "../components/MultipleCarousel";
 import WhyChooseCard from "../components/home/WhyChooseCard";
 import ApprovementCard from "../components/home/ApprovementCard";
+import KeyCard from "../components/home/KeyCard";
+import { HomeBlog } from "../components/Blog";
 
 import { GiAchievement } from "react-icons/gi";
 import { FaTasks, FaServer } from "react-icons/fa";
@@ -22,14 +24,15 @@ import {
 	MdSupportAgent,
 } from "react-icons/md";
 import { TiGroupOutline } from "react-icons/ti";
-import KeyCard from "../components/home/KeyCard";
 
 import imp from "../assets/icons/implementation.png";
 import AI from "../assets/icons/AI.jpg";
 import ms1 from "../assets/icons/ms1.jpg";
 import net from "../assets/icons/network.jpg";
 import security from "../assets/icons/security.jpg";
-import { HomeBlog } from "../components/Blog";
+import partners from "../assets/partners.jpg"
+import engineeringTeam from "../assets/engineeringTeam.jpg"
+
 
 const RenewHome = () => {
 	return (
@@ -149,10 +152,10 @@ const RenewHome = () => {
 				</div>
 			</section>
 
-			<hr className="w-[90%] mx-auto section-margin" />
+			{/* <hr className="w-[90%] mx-auto section-margin" /> */}
 
 			{/* Key Achievements */}
-			<section className="section-margin outer-padding text-center">
+			{/* <section className="section-margin outer-padding text-center">
 				<h2 className="text-3xl font-semibold">Key Achievements</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 				<div className="mt-6 max-w-7xl mx-auto md:mt-12 grid grid-cols-1 justify-items-stretch md:grid-cols-2 gap-6 md-gap-12">
@@ -173,7 +176,7 @@ const RenewHome = () => {
 						]}
 					/>
 				</div>
-			</section>
+			</section> */}
 
 			<hr className="w-[90%] mx-auto section-margin" />
 
@@ -313,10 +316,12 @@ const RenewHome = () => {
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 				<img
 					className="w-full mt-6 object-cover"
-					src={sliderPhoto1}
+					src={partners}
 					alt="NEX$ Partners And Alliances"
 				/>
 			</section>
+
+			<hr className="w-[90%] mx-auto section-margin" />
 
 			{/* Our Strong Engineering Team */}
 			<section className=" section-margin outer-padding text-center">
@@ -324,7 +329,7 @@ const RenewHome = () => {
 				<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 				<img
 					className="w-full mt-6 object-cover"
-					src={sliderPhoto1}
+					src={engineeringTeam}
 					alt="NEX$ Our Strong Engineering Team"
 				/>
 			</section>
