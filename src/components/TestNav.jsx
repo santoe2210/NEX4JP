@@ -46,7 +46,7 @@ const TestNav = () => {
 								href="/"
 								className=" font-bold hover:underline shrink-0"
 							>
-								<p className="w-fit">Why NEX4</p>
+								<p className="w-fit">ホームページ</p>
 							</Navbar.Link>
 							{/* <Navbar.Link> */}
 							{/* use comment closed classname and ul under this comment*/}
@@ -257,7 +257,7 @@ const TestNav = () => {
 										<div className="space-y-4 p-4">
 											<li>
 												<h2 className=" text-1xl  font-bold">
-												モダンワークプレイスサービス
+												モダン・ワークスペース・サービス
 												</h2>
 											</li>
 											<li className="hover:text-bluehover">
@@ -305,17 +305,17 @@ const TestNav = () => {
 								</MegaMenu.Dropdown>
 							</li>
 							{/* </Navbar.Link> */}
-							<Navbar.Link href="about" className=" font-bold hover:underline">
-								About
+							<Navbar.Link href="/about" className=" font-bold hover:underline">
+							NEX4について
 							</Navbar.Link>
-							<Navbar.Link href="aws" className=" font-bold hover:underline">
+							<Navbar.Link href="/aws" className=" font-bold hover:underline">
 								AWS
 							</Navbar.Link>
 							{/* <Navbar.Link href="team" className=" font-bold hover:underline">チーム</Navbar.Link> */}
-							<Navbar.Link href="blog" className=" font-bold hover:underline">
+							<Navbar.Link href="/blog" className=" font-bold hover:underline">
 							ブログ
 							</Navbar.Link>
-							<Navbar.Link href="faq" className=" font-bold hover:underline">
+							<Navbar.Link href="/faq" className=" font-bold hover:underline">
 							お問い合わせ
 							</Navbar.Link>
 						</Navbar.Collapse>

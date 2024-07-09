@@ -39,10 +39,10 @@ const NavBar = () => {
                 { id: 4, link: "AWS導入支援サービス", path: "/service4" }
             ]
         },
-        { link: "NEX4について", path: "about" },
-        { link: "チーム", path: "product" },
-        { link: "ブロック", path: "blog" },
-        { link: "お問い合わせ", path: "faq" },
+        { link: "NEX4について", path: "/about" },
+        { link: "チーム", path: "/product" },
+        { link: "ブロック", path: "/blog" },
+        { link: "お問い合わせ", path: "/faq" },
     ];
 
     return (
