@@ -1,8 +1,10 @@
+/* Container settings for responsiveness */
 .container {
     width: 90%;
     margin: 0 auto;
 }
 
+/* Latest featured blogs section */
 .latest-featured-blogs {
     text-align: center;
     padding: 60px 0;
@@ -68,6 +70,7 @@
     height: auto;
 }
 
+/* Latest blogs section */
 .latest-blogs {
     text-align: center;
     padding: 60px 0;
@@ -126,7 +129,8 @@
 }
 
 .blog-item {
-    width: 30%;
+    width: 100%;
+    max-width: 300px;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #ddd;
@@ -208,4 +212,46 @@
 
 .pagination .page-numbers button:hover {
     background-color: #f1f1f1;
+}
+
+.center-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.center-carousel .swiper-container {
+    width: 80%;
+}
+
+.center-carousel .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .blog-item {
+        width: 100%;
+    }
+
+    .latest-featured-blogs .blog-item {
+        min-width: 100%;
+    }
+    
+    .pagination .page-numbers button {
+        padding: 5px 10px;
+    }
+
+    .category-search {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 10px; /* Add gap between stacked elements */
+    }
+
+    .category-dropdown,
+    .search-bar {
+        width: 70%; /* Full width for dropdown, input, and button */
+    }
 }

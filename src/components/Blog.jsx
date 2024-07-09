@@ -3,17 +3,17 @@ import blog1 from "../assets/blog1.jpg";
 import blog2 from "../assets/blog2.jpg";
 import blog3 from "../assets/blog3.jpg";
 import blog4 from "../assets/blog/blog1.png";
+import blog5 from "../assets/blog/Imperva-Data-Security-Capabilities.png";
 import NavBar from "./TestNav";
 import MyFooter from "./MyFooter";
 import '../assets/css/blog.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
+import 'swiper/css/autoplay';
+import SwiperCore, { Autoplay } from 'swiper/modules';
 
 // Install Swiper modules
-// SwiperCore.use([Navigation, Pagination]);
+// SwiperCore.use([Autoplay]);
 
 const Blog = () => {
     return (
@@ -24,23 +24,39 @@ const Blog = () => {
             <section className="latest-featured-blogs">
                 <div className="container">
                     <h1 className="title">新しい注目のブログ</h1>
-                    <Swiper
-                        spaceBetween={50}
-                        slidesPerView={3}
-                        navigation
-                        pagination={{ clickable: true }}
-                    >
-                        {featuredBlogData.map((blog, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="blog-item">
-                                    <img src={blog.image} alt={blog.title} />
-                                    <h3>{blog.title}</h3>
-                                    <p>{blog.description}</p>
-                                    <a href={blog.link}>Read More</a>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
+                    <div className="center-carousel">
+                        <Swiper
+                            modules={[Autoplay]}
+                            spaceBetween={20}
+                            breakpoints={{
+                                640: {
+                                    slidesPerView: 1,
+                                },
+                                768: {
+                                    slidesPerView: 2,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                },
+                                1245: {
+                                    slidesPerView: 4,
+                                },
+                            }}
+                            autoplay={{ delay: 3000 }}  // Auto scroll every 3 seconds
+                            loop={true}                 // Enable looping
+                        >
+                            {featuredBlogData.map((blog, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className="blog-item">
+                                        <img src={blog.image} alt={blog.title} />
+                                        <h3>{blog.title}</h3>
+                                        <p>{blog.description}</p>
+                                        <a href={blog.link}>Read More</a>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                 </div>
             </section>
 
@@ -113,6 +129,12 @@ const featuredBlogData = [
         image: blog4,
         title: 'FEATURED BLOG 4',
         description: 'Description for featured blog 4',
+        link: '#',
+    },
+    {
+        image: blog5,
+        title: 'FEATURED BLOG 5',
+        description: 'Description for featured blog 5',
         link: '#',
     },
 ];
