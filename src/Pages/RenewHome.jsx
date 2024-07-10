@@ -14,8 +14,8 @@ import ApprovementCard from "../components/home/ApprovementCard";
 import KeyCard from "../components/home/KeyCard";
 import Blog from "../components/Blog"; // Changed to import Blog
 import F5 from "../assets/F5.png";
-import Cisco from "../assets/icons/cisco.jpg";
-import AWS from "../assets/aws.png";
+import Cisco from "../assets/icons/cisco-square.png";
+import AWS from "../assets/icons/AWS-Square.jpg";
 
 import { GiAchievement } from "react-icons/gi";
 import { FaTasks, FaServer } from "react-icons/fa";
