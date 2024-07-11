@@ -23,11 +23,9 @@ const AwardCard = ({ img, awards = [] }) => {
 			viewport={{ once: false, amount: 0.7 }}
 			className="relative aspect-square rounded-md overflow-hidden"
 		>
-			<img
-				className="w-40% h-40% object-cover"
-				src={img}
-				alt="awards"
-			/>
+			<div className="flex items-center justify-center">
+				<img className="w-[80%] object-center object-cover" src={img} alt="awards" />
+			</div>
 
 			<motion.div
 				animate={isOpen ? "open" : "closed"}
@@ -44,9 +42,9 @@ const AwardCard = ({ img, awards = [] }) => {
 				className="absolute right-4 bottom-2"
 			>
 				{isOpen ? (
-					<RxCrossCircled className="size-9" />
+					<RxCrossCircled className="size-9 text-cyan-300" />
 				) : (
-					<BsFillPlusCircleFill className="size-8 text-gray-100" />
+					<BsFillPlusCircleFill className="size-8 text-cyan-300" />
 				)}
 			</button>
 		</motion.article>
