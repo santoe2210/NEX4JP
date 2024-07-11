@@ -51,7 +51,7 @@ const AboutUs = () => {
 	return (
 		<section>
 			<h2 className="text-3xl md:text-4xl font-semibold text-center">
-			NEX4について
+				NEX4について
 			</h2>
 			<div className="w-24 h-1 gradient-1 mt-2 mx-auto"></div>
 
@@ -73,12 +73,13 @@ const AboutUs = () => {
 					viewport={{ once: false, amount: 0.7 }}
 					className="leading-loose font-medium text-lg text-justify md:text-center mt-4 md:mt-6 max-w-[1240px] mx-auto"
 				>
-					NEX4 ICT Solutionsでは、最先端の情報通信技術サービスを提供することをお約束します。ミャンマーを拠点とし、
+					NEX4 ICT
+					Solutionsでは、最先端の情報通信技術サービスを提供することをお約束します。ミャンマーを拠点とし、
 					企業向けセキュリティ、データセンター、ネットワーク・インフラ、クラウド・ソリューション、
-					Office 365などの最新ワークスペース・ソリューションを専門としています。当社のミッションは、
+					Office
+					365などの最新ワークスペース・ソリューションを専門としています。当社のミッションは、
 					セキュリティ、スピード、信頼性を確保することであり、多くの大手銀行から信頼されるパートナーとなっています。
 					顧客満足度を重視し、お客様固有の要件に合わせたコンサルティングと技術サポートを提供しています。
-
 				</motion.p>
 			</section>
 
@@ -135,9 +136,7 @@ const AboutUs = () => {
 						}
 						titleBg=" bg-blue-400"
 						title={"満足"}
-						list={[
-							"ビジネスとITマネジメント",
-						]}
+						list={["ビジネスとITマネジメント"]}
 					/>
 				</div>
 			</section>
@@ -149,7 +148,7 @@ const AboutUs = () => {
 				whileInView={"show"}
 				viewport={{ once: false, amount: 0.7 }}
 				style={{
-					backgroundImage: "url(src/assets/photo3.jpg)",
+					backgroundImage: `url(${aboutUsPhoto})`,
 					backgroundRepeat: "no-repeat",
 					backgroundSize: "cover",
 					backgroundPosition: "center center",
@@ -164,7 +163,8 @@ const AboutUs = () => {
 						viewport={{ once: false, amount: 0.7 }}
 						className="text-md md:text-lg max-w-[1024px]  bg-gray-300/50 p-4 rounded-md tracking-wider text-center leading-relaxed mx-auto text-black font-semibold"
 					>
-						“NEX4 ICT ソリューションでは、企業向けセキュリティ、データセンター、ネットワークインフラ、クラウドソリューションを中心に、
+						“NEX4 ICT
+						ソリューションでは、企業向けセキュリティ、データセンター、ネットワークインフラ、クラウドソリューションを中心に、
 						高度なICTサービスの提供に努めています。セキュリティ、スピード、信頼性へのこだわりにより、最高水準の顧客満足をお約束します。
 						大手銀行からの信頼も厚く、お客様それぞれの要件に合わせたコンサルティングと技術サポートを提供しています”
 					</motion.p>
@@ -210,7 +210,11 @@ const AboutUs = () => {
 				<div className="w-24 h-1 gradient-1 mt-2 rounded-lg mx-auto"></div>
 
 				<div className="mt-6 max-w-[1300px] mx-auto md:mt-12 divide-y sm:divide-y-0 grid grid-cols-1 sm:grid-cols-2 gap-2 gap-y-6 md:gap-x-6 md:gap-y-12 lg:grid-cols-3 place-content-center">
-					<ServiceCard logo={AWS} name="クラウドサービス" bgName="bg-orange-300" />
+					<ServiceCard
+						logo={AWS}
+						name="クラウドサービス"
+						bgName="bg-orange-300"
+					/>
 					<ServiceCard
 						logo={Network}
 						name="ネットワークサービス"
@@ -251,7 +255,9 @@ const AboutUs = () => {
 
 			{/* Partner Platform */}
 			<section className="section-margin outer-padding">
-				<h2 className="text-3xl font-semibold text-center">パートナー・プラットフォーム</h2>
+				<h2 className="text-3xl font-semibold text-center">
+					パートナー・プラットフォーム
+				</h2>
 				<div className="w-24 h-1 gradient-1 mt-2 rounded-lg mx-auto"></div>
 
 				<div className="mt-6 max-w-[1300px] divide-y sm:divide-y-0 mx-auto md:mt-12 grid sm:grid-cols-2 gap-2 gap-y-6 md:gap-x-6 md:gap-y-12 md:grid-cols-4 place-content-center">
@@ -259,10 +265,7 @@ const AboutUs = () => {
 					<ServiceCard logo={Cisco} name="Cisco Gold Partner since 2017" />
 					<ServiceCard logo={vmware} name="VMWARE Partner since 2016 " />
 					<ServiceCard logo={p3} name="PaloAlto Networks since 2015" />
-					<ServiceCard
-						logo={p4}
-						name="DellEMC Platinum Partner since 2017"
-					/>
+					<ServiceCard logo={p4} name="DellEMC Platinum Partner since 2017" />
 					<ServiceCard
 						logo={Microsoft}
 						name="Microsoft Cloud Service Provider and Solutions Partner, since 2017"
@@ -286,7 +289,6 @@ const AboutUs = () => {
 							>
 								<span className="text-white">チーム</span>{" "}
 								<br className="hidden md:block" /> メンバー{" "}
-								
 							</motion.h2>
 							<div className="w-24 md:hidden h-1 bg-gradient-to-tl from-cyan-300 to-white mt-2 rounded-lg mx-auto"></div>
 						</div>
@@ -379,17 +381,9 @@ const AboutUs = () => {
 						name="中小企業と大企業"
 						bgName="bg-green-300"
 					/>
-					<ServiceCard
-						logo={c3}
-						name="金融機関"
-						bgName="bg-blue-300"
-					/>
+					<ServiceCard logo={c3} name="金融機関" bgName="bg-blue-300" />
 					<ServiceCard logo={c4} name="石油とガス" bgName="bg-green-300" />
-					<ServiceCard
-						logo={c5}
-						name="通信事業者"
-						bgName="bg-blue-300"
-					/>
+					<ServiceCard logo={c5} name="通信事業者" bgName="bg-blue-300" />
 					<ServiceCard logo={c6} icon="" name="医療" bgName="bg-green-300" />
 				</div>
 			</section>
