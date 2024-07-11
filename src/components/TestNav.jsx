@@ -1,18 +1,21 @@
-'use client'
+/** @format */
+
+"use client";
 import React, { useEffect, useState } from "react";
-import logo from '../assets/lgr1.png';
-import { Button, MegaMenu, Navbar } from 'flowbite-react';
+import logo from "../assets/lgr1.png";
+import { Button, MegaMenu, Navbar } from "flowbite-react";
+import Search from "./_common/Search";
 // add hover underline
 
 const TestNav = () => {
-
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [showdropdown, setshowdropdown] = useState(false);
 	const [isSticky, setIsSticky] = useState(false);
 
 	const toggleMenu = () => {
 		setIsMenuOpen(!isMenuOpen);
-	}
+	};
+
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -22,31 +25,32 @@ const TestNav = () => {
 				setIsSticky(false);
 			}
 		};
-		window.addEventListener('scroll', handleScroll);
+
+		window.addEventListener("scroll", handleScroll);
 
 		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		}
+			window.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
 
 	return (
 		<header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 p-0">
-			<MegaMenu>
-				<div className="py-4 lg:px-14 px-4 font-bold mx-auto flex w-full max-w-screen-2xl flex-wrap items-center justify-between md:space-x-8 hover:text-bluehover">
+
+			<MegaMenu className="relative">
+				<div className="py-4  lg:px-14 px-4 font-bold mx-auto flex w-full max-w-screen-2xl flex-wrap items-center justify-between md:space-x-8 hover:text-bluehover">
 					<Navbar.Brand href="/">
-						<img
-							alt=""
-							src={logo}
-							className="w-50 inline-block items-center"
-						/>
+						<img alt="" src={logo} className="w-50 inline-block items-center" />
+
 					</Navbar.Brand>
 					<Navbar.Toggle />
 					<Navbar.Collapse>
 						<Navbar.Link
 							href="/"
-							className=" font-bold hover:underline shrink-0"
+
+							className="font-bold hover:underline shrink-0"
 						>
-							<p className="w-fit">Why NEX4</p>
+							<p className="w-fit">ホームページ</p>
+
 						</Navbar.Link>
 						{/* <Navbar.Link> */}
 						{/* use comment closed classname and ul under this comment*/}
@@ -77,6 +81,7 @@ const TestNav = () => {
 											<h2 className=" text-1xl font-bold">
 												クラウドサービス
 											</h2>
+
 										</li>
 										<li className="hover:text-bluehover">
 											<a
@@ -265,7 +270,9 @@ const TestNav = () => {
 									<div className="space-y-4 p-4">
 										<li>
 											<h2 className=" text-1xl  font-bold">
-												モダンワークプレイスサービス
+
+												モダン・ワークスペース・サービス
+
 											</h2>
 										</li>
 										<li className="hover:text-bluehover">
@@ -313,19 +320,21 @@ const TestNav = () => {
 							</MegaMenu.Dropdown>
 						</li>
 						{/* </Navbar.Link> */}
-						<Navbar.Link href="about" className=" font-bold hover:underline">
-							About
+
+						<Navbar.Link href="/about" className=" font-bold hover:underline">
+							NEX4について
 						</Navbar.Link>
-						<Navbar.Link href="aws" className=" font-bold hover:underline">
+						<Navbar.Link href="/aws" className=" font-bold hover:underline">
 							AWS
 						</Navbar.Link>
 						{/* <Navbar.Link href="team" className=" font-bold hover:underline">チーム</Navbar.Link> */}
-						<Navbar.Link href="blog" className=" font-bold hover:underline">
+						<Navbar.Link href="/blog" className=" font-bold hover:underline">
 							ブログ
 						</Navbar.Link>
-						<Navbar.Link href="faq" className=" font-bold hover:underline">
+						<Navbar.Link href="/faq" className=" font-bold hover:underline">
 							お問い合わせ
 						</Navbar.Link>
+						<Search />
 					</Navbar.Collapse>
 				</div>
 			</MegaMenu>

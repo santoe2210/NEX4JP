@@ -28,7 +28,7 @@ const MultipleCarousel = ({ children, breakpoints, slides = 4, center = false })
 				},
 			},
 			{
-				breakpoint: 750,
+				breakpoint: 820,
 				settings: {
 					slidesToShow: breakpoints.sm,
 					slidesToScroll: 1,
@@ -37,7 +37,7 @@ const MultipleCarousel = ({ children, breakpoints, slides = 4, center = false })
 				},
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 572,
 				settings: {
 					slidesToShow: breakpoints.mobile,
 					slidesToScroll: 1,
