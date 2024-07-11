@@ -16,6 +16,7 @@ const TestNav = () => {
 		setIsMenuOpen(!isMenuOpen);
 	};
 
+
 	useEffect(() => {
 		const handleScroll = () => {
 			if (window.scrollY > 100) {
@@ -24,6 +25,7 @@ const TestNav = () => {
 				setIsSticky(false);
 			}
 		};
+
 		window.addEventListener("scroll", handleScroll);
 
 		return () => {
@@ -33,18 +35,22 @@ const TestNav = () => {
 
 	return (
 		<header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0 p-0">
+
 			<MegaMenu className="relative">
 				<div className="py-4  lg:px-14 px-4 font-bold mx-auto flex w-full max-w-screen-2xl flex-wrap items-center justify-between md:space-x-8 hover:text-bluehover">
 					<Navbar.Brand href="/">
 						<img alt="" src={logo} className="w-50 inline-block items-center" />
+
 					</Navbar.Brand>
 					<Navbar.Toggle />
 					<Navbar.Collapse>
 						<Navbar.Link
 							href="/"
+
 							className="font-bold hover:underline shrink-0"
 						>
 							<p className="w-fit">ホームページ</p>
+
 						</Navbar.Link>
 						{/* <Navbar.Link> */}
 						{/* use comment closed classname and ul under this comment*/}
@@ -63,8 +69,19 @@ const TestNav = () => {
 								<ul className="grid grid-cols-1 w-full h-[50vh] md:h-fit overflow-y-auto sm:grid-cols-2 md:grid-cols-3 sm:gap-1 gap-0.5 sm:mt-4">
 									{/* <ul> */}
 									<div className="space-y-4 p-4">
+										<li className="hover:text-bluehover">
+											<a
+												href="/service"
+												className="hover:text-primary-600 dark:hover:text-primary-500 text-1xl  font-bold"
+											>
+												すべてのサービス
+											</a>
+										</li>
 										<li>
-											<h2 className=" text-1xl font-bold">クラウドサービス</h2>
+											<h2 className=" text-1xl font-bold">
+												クラウドサービス
+											</h2>
+
 										</li>
 										<li className="hover:text-bluehover">
 											<a
@@ -253,7 +270,9 @@ const TestNav = () => {
 									<div className="space-y-4 p-4">
 										<li>
 											<h2 className=" text-1xl  font-bold">
+
 												モダン・ワークスペース・サービス
+
 											</h2>
 										</li>
 										<li className="hover:text-bluehover">
@@ -301,6 +320,7 @@ const TestNav = () => {
 							</MegaMenu.Dropdown>
 						</li>
 						{/* </Navbar.Link> */}
+
 						<Navbar.Link href="/about" className=" font-bold hover:underline">
 							NEX4について
 						</Navbar.Link>
