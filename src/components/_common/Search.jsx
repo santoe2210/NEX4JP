@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable no-mixed-spaces-and-tabs */
 /** @format */
 
 import React, { useState } from "react";
@@ -15,36 +17,36 @@ const Search = () => {
 	const links = [
 		{
 			id: 1,
-			name: "cloud services",
+			name: "クラウドサービス",
 			sub_links: [
 				{
 					id: 1,
-					name: "migration",
+					name: "移動",
 					path: "/cloud/migration",
 				},
 				{
 					id: 2,
-					name: "operation and monitoring services",
+					name: "運用・監視サービス",
 					path: "/cloud/operation-and-monitoring",
 				},
 				{
 					id: 3,
-					name: "professional service",
+					name: "プロフェッショナル・サービス",
 					path: "/cloud/professional",
 				},
 				{
 					id: 4,
-					name: "design and implementation",
+					name: "設計と実装",
 					path: "/cloud/design-and-implementation",
 				},
 				{
 					id: 5,
-					name: "security operation",
+					name: "セキュリティー・オペレーション",
 					path: "/cloud/security-operation",
 				},
 				{
 					id: 6,
-					name: "cost optimization",
+					name: "コスト最適化サービス",
 					path: "/cloud/cost-optimization",
 				},
 			],
@@ -146,11 +148,11 @@ const Search = () => {
 						{!results &&
 							(searchTerm ? (
 								<p className="text-center text-white">
-									Please, click enter to search for "{searchTerm}"
+									検索するにはエンターキーをクリックしてください "{searchTerm}"
 								</p>
 							) : (
 								<p className="text-center text-white">
-									Type Something to Search.
+									サービス名を入力して検索する。
 								</p>
 							))}
 
@@ -159,7 +161,7 @@ const Search = () => {
 								{results.filterPages.length === 0 &&
 									results.filteredCategories.length === 0 && (
 										<p className="text-center text-white">
-											No result for "{searchTerm}"
+											"{searchTerm}"と一致する結果はみつかりませんでした。 
 										</p>
 									)}
 
@@ -167,7 +169,7 @@ const Search = () => {
 									results.filteredCategories.length > 0) && (
 									<>
 										<p className="text-center text-white">
-											Search result for "{searchTerm}"
+											検索結果 "{searchTerm}"
 										</p>
 										{/* Page */}
 										{results.filterPages.length > 0 && (
