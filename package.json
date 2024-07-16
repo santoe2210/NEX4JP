@@ -11,6 +11,7 @@
     "build-preview": "vite build && vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.2",
     "flowbite-react": "^0.9.0",
     "framer-motion": "^11.2.10",
     "react": "^18.2.0",

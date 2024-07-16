@@ -1,9 +1,5 @@
-import React from "react";
-import blog1 from "../assets/blog1.jpg";
-import blog2 from "../assets/blog2.jpg";
-import blog3 from "../assets/blog3.jpg";
-import blog4 from "../assets/blog/blog1.png";
-import blog5 from "../assets/blog/Imperva-Data-Security-Capabilities.png";
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
 import NavBar from "./TestNav";
 import MyFooter from "./MyFooter";
 import '../assets/css/blog.css';
@@ -12,15 +8,49 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import { Autoplay } from "swiper/modules";
 
-// Install Swiper modules
-// SwiperCore.use([Autoplay]);
-
 const Blog = () => {
+    const [featuredBlogs, setFeaturedBlogs] = useState([]);
+    const [blogs, setBlogs] = useState([]);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchBlogs = async () => {
+            try {
+                const response = await axios.get('http://localhost:1337/api/blogs?populate=photos', {
+                    headers: {
+                        Authorization: `Bearer 3d4ef4a614976a0cc430b47b9d6bc1678ab774eab3095aee6bc1e4c5693ff07b296213a837660c0d7f8abcb0be3b993c464d5104fbf272d12505de41280bd836484b8d1bbac777edfe472d4c1bb017ffc3c0e536a3c64558131d8ecf2fca57c664f9984ba5638cd0f43a1837019af3303e29d14824ca8726aa862f15753c1e62`
+                    }
+                });
+                const fetchedData = response.data.data;
+
+                // Transform the fetched data to match the current data structure
+                const transformedData = fetchedData.map(blog => ({
+                    image: blog.attributes.photos.data.length > 0 
+                            ? blog.attributes.photos.data[0].attributes.url 
+                            : 'defaultImagePath', // Provide a default image path if no photos are available
+                    title: blog.attributes.title,
+                    description: blog.attributes.detail,
+                    link: `http://localhost:1337/api/blog/${blog.id}`
+                }));
+
+                setFeaturedBlogs(transformedData);
+                setBlogs(transformedData);
+                setLoading(false);
+            } catch (error) {
+                console.error('Error fetching blog data:', error);
+                setLoading(false);
+            }
+        };
+
+        fetchBlogs();
+    }, []);
+
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
     return (
         <div className="py-16 max-w-screen-2xl mx-auto" id="blog">
-            {/* <div className="mb-16">
-                <NavBar/>
-            </div> */}
             <section className="latest-featured-blogs">
                 <div className="container">
                     <h1 className="title">新しい注目のブログ</h1>
@@ -42,10 +72,10 @@ const Blog = () => {
                                     slidesPerView: 4,
                                 },
                             }}
-                            autoplay={{ delay: 3000 }}  // Auto scroll every 3 seconds
-                            loop={true}                 // Enable looping
+                            autoplay={{ delay: 3000 }}
+                            loop={true}
                         >
-                            {featuredBlogData.map((blog, index) => (
+                            {featuredBlogs.map((blog, index) => (
                                 <SwiperSlide key={index}>
                                     <div className="blog-item">
                                         <img src={blog.image} alt={blog.title} />
@@ -74,7 +104,7 @@ const Blog = () => {
                         </div>
                     </div>
                     <div className="blog-list">
-                        {blogData.map((blog, index) => (
+                        {blogs.map((blog, index) => (
                             <div key={index} className="blog-item">
                                 <img src={blog.image} alt={blog.title} />
                                 <h3>{blog.title}</h3>
@@ -105,77 +135,5 @@ const Blog = () => {
         </div>
     );
 };
-
-const featuredBlogData = [
-    {
-        image: blog1,
-        title: 'FEATURED BLOG 1',
-        description: 'Description for featured blog 1',
-        link: '#',
-    },
-    {
-        image: blog2,
-        title: 'FEATURED BLOG 2',
-        description: 'Description for featured blog 2',
-        link: '#',
-    },
-    {
-        image: blog3,
-        title: 'FEATURED BLOG 3',
-        description: 'Description for featured blog 3',
-        link: '#',
-    },
-    {
-        image: blog4,
-        title: 'FEATURED BLOG 4',
-        description: 'Description for featured blog 4',
-        link: '#',
-    },
-    {
-        image: blog5,
-        title: 'FEATURED BLOG 5',
-        description: 'Description for featured blog 5',
-        link: '#',
-    },
-];
-
-const blogData = [
-    {
-        image: blog1,
-        title: 'ENHANCING SECURITY AND PERFORMANCE THROUGH CI/CD AND CLOUDFRONT',
-        description: 'Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?',
-        link: '#',
-    },
-    {
-        image: blog2,
-        title: 'CLOUD SECURITY OPERATIONS ON AWS SHARING SESSION',
-        description: 'Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?',
-        link: '#',
-    },
-    {
-        image: blog3,
-        title: 'ENHANCING SECURITY AND PERFORMANCE THROUGH CI/CD AND CLOUDFRONTHOW CORPORATE',
-        description: 'Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?',
-        link: '#',
-    },
-    {
-        image: blog4,
-        title: 'AMAZING CAPABILITIES OF IMPERVA DATA SECURITY',
-        description: 'Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?',
-        link: '#',
-    },
-    {
-        image: blog4,
-        title: 'DATA SECURITY ON PUBLIC CLOUD',
-        description: 'Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?',
-        link: '#',
-    },
-    {
-        image: blog4,
-        title: 'WHY MICROSOFT CLOUD SOLUTIONS FOR EMAIL?',
-        description: 'Malesuada error laudantium quibusdam, voluptas recusandae, corporis nec, metus numquam, facilis, nascetur?',
-        link: '#',
-    },
-];
 
 export default Blog;
