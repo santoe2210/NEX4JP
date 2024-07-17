@@ -13,12 +13,14 @@ const Blog = () => {
     const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    const BASE_URL = 'bright-eggs-6453b2c915.strapiapp.com'; // Set your base URL here
+
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await axios.get('http://localhost:1337/api/blogs?populate=photos', {
+                const response = await axios.get(`${BASE_URL}/api/blogs?populate=photos`, {
                     headers: {
-                        Authorization: `Bearer 3d4ef4a614976a0cc430b47b9d6bc1678ab774eab3095aee6bc1e4c5693ff07b296213a837660c0d7f8abcb0be3b993c464d5104fbf272d12505de41280bd836484b8d1bbac777edfe472d4c1bb017ffc3c0e536a3c64558131d8ecf2fca57c664f9984ba5638cd0f43a1837019af3303e29d14824ca8726aa862f15753c1e62`
+                        Authorization: `Bearer 50e41656cfca401c8dbf3742b4d823e7e0221f995cdf584e3b9f2427f1a3855b3954c3edd0472d0fb06d45f5f2be43fc5c71633734c511f2bcf69870c411e20efa4a54eee64b3ec652f4c655c4813edd8705d2cf0dab439d98f31304070704619111128275190eb51bffd2299cb97b5681bdd3e7b46291593fb43b8cf74f86db`
                     }
                 });
                 const fetchedData = response.data.data;
@@ -26,11 +28,11 @@ const Blog = () => {
                 // Transform the fetched data to match the current data structure
                 const transformedData = fetchedData.map(blog => ({
                     image: blog.attributes.photos.data.length > 0 
-                            ? blog.attributes.photos.data[0].attributes.url 
+                            ? `${BASE_URL}${blog.attributes.photos.data[0].attributes.url}` 
                             : 'defaultImagePath', // Provide a default image path if no photos are available
                     title: blog.attributes.title,
-                    description: blog.attributes.detail,
-                    link: `http://localhost:1337/api/blog/${blog.id}`
+                    description: blog.attributes.detail.split(" ").slice(0, 20).join(" ") + '...',
+                    link: `${BASE_URL}/blog/${blog.id}`
                 }));
 
                 setFeaturedBlogs(transformedData);
