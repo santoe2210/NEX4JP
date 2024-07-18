@@ -13,7 +13,7 @@ const Blog = () => {
     const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    const BASE_URL = 'bright-eggs-6453b2c915.strapiapp.com'; // Set your base URL here
+    const BASE_URL = 'https://bright-eggs-6453b2c915.strapiapp.com'; // Set your base URL here
 
     useEffect(() => {
         const fetchBlogs = async () => {
@@ -28,7 +28,7 @@ const Blog = () => {
                 // Transform the fetched data to match the current data structure
                 const transformedData = fetchedData.map(blog => ({
                     image: blog.attributes.photos.data.length > 0 
-                            ? `${BASE_URL}${blog.attributes.photos.data[0].attributes.url}` 
+                            ? `${blog.attributes.photos.data[0].attributes.url}` 
                             : 'defaultImagePath', // Provide a default image path if no photos are available
                     title: blog.attributes.title,
                     description: blog.attributes.detail.split(" ").slice(0, 20).join(" ") + '...',
