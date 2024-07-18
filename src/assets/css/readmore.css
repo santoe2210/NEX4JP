@@ -1,0 +1,28 @@
+.read-more-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.read-more-page .container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.read-more-page h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.read-more-page img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.read-more-page .blog-content {
+    font-size: 1em;
+    line-height: 1.6;
+}

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from 'axios';
-import NavBar from "./TestNav";
-import MyFooter from "./MyFooter";
+import { Link } from "react-router-dom";
 import '../assets/css/blog.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -13,26 +12,26 @@ const Blog = () => {
     const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    const BASE_URL = 'https://bright-eggs-6453b2c915.strapiapp.com'; // Set your base URL here
+    const BASE_URL = 'https://bright-eggs-6453b2c915.strapiapp.com';
+    const API_KEY = '50e41656cfca401c8dbf3742b4d823e7e0221f995cdf584e3b9f2427f1a3855b3954c3edd0472d0fb06d45f5f2be43fc5c71633734c511f2bcf69870c411e20efa4a54eee64b3ec652f4c655c4813edd8705d2cf0dab439d98f31304070704619111128275190eb51bffd2299cb97b5681bdd3e7b46291593fb43b8cf74f86db';
 
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
                 const response = await axios.get(`${BASE_URL}/api/blogs?populate=photos`, {
                     headers: {
-                        Authorization: `Bearer 50e41656cfca401c8dbf3742b4d823e7e0221f995cdf584e3b9f2427f1a3855b3954c3edd0472d0fb06d45f5f2be43fc5c71633734c511f2bcf69870c411e20efa4a54eee64b3ec652f4c655c4813edd8705d2cf0dab439d98f31304070704619111128275190eb51bffd2299cb97b5681bdd3e7b46291593fb43b8cf74f86db`
+                        Authorization: `Bearer ${API_KEY}`
                     }
                 });
                 const fetchedData = response.data.data;
 
-                // Transform the fetched data to match the current data structure
                 const transformedData = fetchedData.map(blog => ({
+                    id: blog.id,
                     image: blog.attributes.photos.data.length > 0 
                             ? `${blog.attributes.photos.data[0].attributes.url}` 
-                            : 'defaultImagePath', // Provide a default image path if no photos are available
+                            : 'defaultImagePath',
                     title: blog.attributes.title,
                     description: blog.attributes.detail.split(" ").slice(0, 20).join(" ") + '...',
-                    link: `${BASE_URL}/blog/${blog.id}`
                 }));
 
                 setFeaturedBlogs(transformedData);
@@ -83,7 +82,7 @@ const Blog = () => {
                                         <img src={blog.image} alt={blog.title} />
                                         <h3>{blog.title}</h3>
                                         <p>{blog.description}</p>
-                                        <a href={blog.link}>Read More</a>
+                                        <Link to={`/blog/${blog.id}`}>Read More</Link>
                                     </div>
                                 </SwiperSlide>
                             ))}
@@ -98,7 +97,6 @@ const Blog = () => {
                     <div className="category-search">
                         <select className="category-dropdown">
                             <option value="category1">カテゴリー</option>
-                            {/* Add more categories here */}
                         </select>
                         <div className="search-bar">
                             <input type="text" placeholder="検索" />
@@ -111,7 +109,7 @@ const Blog = () => {
                                 <img src={blog.image} alt={blog.title} />
                                 <h3>{blog.title}</h3>
                                 <p>{blog.description}</p>
-                                <a href={blog.link}>Read More</a>
+                                <Link to={`/blog/${blog.id}`}>Read More</Link>
                             </div>
                         ))}
                     </div>
@@ -121,7 +119,6 @@ const Blog = () => {
                             <button>1</button>
                             <button>2</button>
                             <button>3</button>
-                            {/* Add more page numbers here */}
                             <button>63</button>
                             <button>64</button>
                             <button>65</button>
@@ -130,10 +127,6 @@ const Blog = () => {
                     </div>
                 </div>
             </section>
-
-            {/* <div>
-                <MyFooter/>
-            </div> */}
         </div>
     );
 };
