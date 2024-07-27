@@ -10,7 +10,7 @@ import '../assets/css/blog.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import SwiperCore, { Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 // Install Swiper modules
 // SwiperCore.use([Autoplay]);

@@ -160,10 +160,10 @@ const TestNav = () => {
 											</li>
 											<li className="hover:text-bluehover">
 												<a
-													href="/developing"
+													href="/security/operation-service"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													サーバー・ストレージ
+													security
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
