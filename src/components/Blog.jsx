@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 import { Autoplay } from "swiper/modules";
+import { STRAPI_KEY, URL } from "../utils/api_endpoints";
 
 const Blog = () => {
     const [featuredBlogs, setFeaturedBlogs] = useState([]);
@@ -18,9 +19,9 @@ const Blog = () => {
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await axios.get(`${BASE_URL}/api/blogs?populate=photos`, {
+                const response = await axios.get(`${URL}blogs?populate=photos`, {
                     headers: {
-                        Authorization: `Bearer ${API_KEY}`
+                        Authorization: `Bearer ${STRAPI_KEY}`
                     }
                 });
                 const fetchedData = response.data.data;
