@@ -9,7 +9,7 @@ const ReadMorePage = () => {
     const [loading, setLoading] = useState(true);
 
     const BASE_URL = 'https://bright-eggs-6453b2c915.strapiapp.com';
-    const API_KEY = '50e41656cfca401c8dbf3742b4d823e7e0221f995cdf584e3b9f2427f1a3855b3954c3edd0472d0fb06d45f5f2be43fc5c71633734c511f2bcf69870c411e20efa4a54eee64b3ec652f4c655c4813edd8705d2cf0dab439d98f31304070704619111128275190eb51bffd2299cb97b5681bdd3e7b46291593fb43b8cf74f86db';
+    const API_KEY = '752ca3bde6c9c4c06198c76dff4ad5f3c82733dbd23c1b7e8e952ae42a436b50ef696f8f976f4439bbf297da7e7c0bb087ff8ad6113b452ddc2b85513b9275dacc1d2a7596da95f6883cb557a8728edc3750ccece807abdef72e94d0b04bbcb4a3c3a2f90f9a90f30ec11bc075a1244aa90c8d9e8a95ff92d7eb0d14be137629';
 
     useEffect(() => {
         const fetchBlog = async () => {
@@ -40,13 +40,11 @@ const ReadMorePage = () => {
 
     return (
         <div className="read-more-page">
-            <div className="container">
-                <h1>{blog.title}</h1>
-                {blog.photos.data.length > 0 && (
-                    <img src={blog.photos.data[0].attributes.url} alt={blog.title} />
-                )}
-                <div className="blog-content" dangerouslySetInnerHTML={{ __html: blog.detail }} />
-            </div>
+            <h1>{blog.title}</h1>
+            {blog.photos.data.length > 0 && (
+                <img src={blog.photos.data[0].attributes.url} alt={blog.title} />
+            )}
+            <div className="blog-content" dangerouslySetInnerHTML={{ __html: blog.detail }} />
         </div>
     );
 };
