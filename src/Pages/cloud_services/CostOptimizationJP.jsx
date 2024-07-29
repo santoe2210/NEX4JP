@@ -65,7 +65,7 @@ const CostOptimization = () => {
 
     const renderPartners = (partners) => {
         return partners.map(partner => (
-            <Link key={partner.id} className="block mr-4 w-60  md:w-96 shrink-0" to={partner.link ? partner.link : "/aws"}>
+            <Link key={partner.id} className="block mr-4 w-60 md:w-96 shrink-0" to={partner.link ? partner.link : "/aws"}>
                 <img
                     className="cursor-pointer w-full aspect-square object-center object-cover hover:text-blue-500"
                     src={partner.photo.data.attributes.url}
@@ -304,7 +304,30 @@ const CostOptimization = () => {
                         {data.title4}
                     </h2>
                     <div className=" flex flex-col md:flex-row items-center">
-                        {renderPartners(data.partners_platform)}
+                        {data.partners_platform.map(partner => (
+                            <Link key={partner.id} className="block mr-4 w-60 md:w-96 shrink-0" to={partner.link ? partner.link : "/aws"}>
+                                <img
+                                    className="cursor-pointer w-full aspect-square object-center object-cover hover:text-blue-500"
+                                    src={partner.photo.data.attributes.url}
+                                    alt={partner.photo.data.attributes.name}
+                                />
+                            </Link>
+                        ))}
+                        <div>
+                            <a href="/aws">
+                                <h2 className="text-5xl font-bold cursor-pointer hover:text-blue-500">
+                                    AWS{" "}
+                                </h2>
+                            </a>
+                            <br />
+                            <a href="/aws">
+                                <p className="text-xl font-bold cursor-pointer hover:text-blue-500">
+                                    詳細を見る &#62;
+                                </p>
+                            </a>
+                            <hr className="my-4 border-t-1 border-blue-400" />
+                            <p className="mt-4" dangerouslySetInnerHTML={{ __html: data.partners_platform[0].detail }} />
+                        </div>
                     </div>
                 </motion.div>
             </div>
