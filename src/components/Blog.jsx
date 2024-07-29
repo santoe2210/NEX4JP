@@ -13,13 +13,10 @@ const Blog = () => {
     const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(true);
 
-    const BASE_URL = 'https://bright-eggs-6453b2c915.strapiapp.com';
-    const API_KEY = '752ca3bde6c9c4c06198c76dff4ad5f3c82733dbd23c1b7e8e952ae42a436b50ef696f8f976f4439bbf297da7e7c0bb087ff8ad6113b452ddc2b85513b9275dacc1d2a7596da95f6883cb557a8728edc3750ccece807abdef72e94d0b04bbcb4a3c3a2f90f9a90f30ec11bc075a1244aa90c8d9e8a95ff92d7eb0d14be137629';
-
     useEffect(() => {
         const fetchBlogs = async () => {
             try {
-                const response = await axios.get(`${URL}blogs?populate=photos`, {
+                const response = await axios.get(`${URL}blogs?populate=*`, {
                     headers: {
                         Authorization: `Bearer ${STRAPI_KEY}`
                     }
