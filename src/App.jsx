@@ -32,6 +32,7 @@ import CostOptimization from "./Pages/cloud_services/CostOptimizationJP";
 import Home from "./components/Home";
 import RenewHome from "./Pages/RenewHome";
 import AboutUs from "./Pages/AboutUs";
+import SecurityOperationService from "./Pages/security/SecurityOperationService";
 
 function App() {
 	const Layout = () => {
@@ -58,12 +59,29 @@ function App() {
 						<Route path="blog" element={<Blog />} />
 						<Route path="service" element={<Services />} />
 						<Route path="cloud/migration" element={<CloudMigration />} />
-						<Route path="cloud/operation-and-monitoring" element={<OperationAndMonitoring />} />
+						<Route
+							path="cloud/operation-and-monitoring"
+							element={<OperationAndMonitoring />}
+						/>
 						<Route path="cloud/professional" element={<Professional />} />
-						<Route path="cloud/design-and-implementation" element={<DesignAndImplementation />} />
-						<Route path="cloud/security-operation" element={<SecurityOperation />} />
-						<Route path="cloud/cost-optimization" element={<CostOptimization />} />
+						<Route
+							path="cloud/design-and-implementation"
+							element={<DesignAndImplementation />}
+						/>
+						<Route
+							path="cloud/security-operation"
+							element={<SecurityOperation />}
+						/>
+						<Route
+							path="cloud/cost-optimization"
+							element={<CostOptimization />}
+						/>
+						<Route
+							path="security/operation-service"
+							element={<SecurityOperationService />}
+						/>
 						<Route path="developing" element={<Developing />} />
+
 						<Route path="faq" element={<ContactUs />} />
 						<Route path="aws" element={<AWS />} />
 						<Route path="ms" element={<Microsoft />} />

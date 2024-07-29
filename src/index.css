@@ -17,7 +17,7 @@
 }
 
 .outer-padding {
-	@apply px-3  md:px-12;
+	@apply px-3  md:px-16;
 }
 
 .gradient-1 {

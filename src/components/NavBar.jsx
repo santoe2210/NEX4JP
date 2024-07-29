@@ -91,7 +91,7 @@ const NavBar = () => {
                             {dropdownItems ? (
                                 <div className="block group ">
                                     <button  onClick={() => setshowdropdown(!showdropdown)} className="block text-base text-white hover:text-brandPrimary first:font-medium cursor-pointer">
-                                        {link}v
+                                        {link}
                                     </button>
                                     <ul className={`pl-4 ${showdropdown ? "block" : "hidden"}`}>
                                         {dropdownItems.map(({ link, path }) => (
