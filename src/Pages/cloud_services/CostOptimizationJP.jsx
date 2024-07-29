@@ -138,49 +138,27 @@ const CostOptimization = () => {
             <hr className="section-margin w-[90%] block mx-auto" />
 
             <div className="outer-padding customscreen:px-0">
-                {/* Key Services */}
-                <div className="text-center  section-margin rounded-tl-2xl space-y-6 rounded-br-2xl">
-                    <h2
-                        variants={fadeIn("down", 0.2)}
-                        initial="hidden"
-                        whileInView={"show"}
-                        viewport={{ once: false, amount: 0.7 }}
-                        className="text-2xl font-semibold text-bluehover"
-                    >
-                        主なコスト最適化サービス
-                    </h2>
-                    <motion.div
-                        variants={fadeIn(".", 0.25)}
-                        initial="hidden"
-                        whileInView={"show"}
-                        viewport={{ once: false, amount: 0.7 }}
-                        className="mt-3 w-32 max-w-full mx-auto h-[.1rem] bg-bluehover "
-                    />
-
-                    {renderKeyCards(data.service_detail[0].detail)}
-                </div>
-
-                {/* Advanced Strategies */}
-                <div className="text-center  section-margin rounded-tl-2xl space-y-6 rounded-br-2xl">
-                    <h2
-                        variants={fadeIn("down", 0.2)}
-                        initial="hidden"
-                        whileInView={"show"}
-                        viewport={{ once: false, amount: 0.7 }}
-                        className="text-2xl font-semibold text-bluehover"
-                    >
-                        貯蓄のための高度な戦略
-                    </h2>
-                    <motion.div
-                        variants={fadeIn(".", 0.25)}
-                        initial="hidden"
-                        whileInView={"show"}
-                        viewport={{ once: false, amount: 0.7 }}
-                        className="mt-3 w-32 max-w-full mx-auto h-[.1rem] bg-bluehover "
-                    />
-
-                    {renderKeyCards(data.service_detail[1].detail)}
-                </div>
+                {data.service_detail.map((service, index) => (
+                    <div key={service.id} className="text-center section-margin rounded-tl-2xl space-y-6 rounded-br-2xl">
+                        <h2
+                            variants={fadeIn("down", 0.2)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0.7 }}
+                            className="text-2xl font-semibold text-bluehover"
+                        >
+                            {service.title_for_service}
+                        </h2>
+                        <motion.div
+                            variants={fadeIn(".", 0.25)}
+                            initial="hidden"
+                            whileInView={"show"}
+                            viewport={{ once: false, amount: 0.7 }}
+                            className="mt-3 w-32 max-w-full mx-auto h-[.1rem] bg-bluehover "
+                        />
+                        {renderKeyCards(service.detail)}
+                    </div>
+                ))}
 
                 {/* Why Choose Section */}
                 <WhyChoose
