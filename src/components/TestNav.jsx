@@ -123,15 +123,15 @@ const TestNav = () => {
 										<div className="space-y-4 p-4">
 											<li>
 												<h2 className=" text-1xl  font-bold">
-												ネットワーク関連サービス
+												ネットワーク関連サービス 
 												</h2>
 											</li>
 											<li className="hover:text-bluehover">
 												<a
-													href="/developing"
+													href="/microsoft/microsoft-365"
 													className="hover:text-primary-600 dark:hover:text-primary-500"
 												>
-													データセンター・ネットワーク
+													データセンター・ネットワーク || Microsoft 365
 												</a>
 											</li>
 											<li className="hover:text-bluehover">
