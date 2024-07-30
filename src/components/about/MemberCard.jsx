@@ -13,7 +13,7 @@ const MemberCard = ({ img, name, roles = [] }) => {
 			variants={fadeIn("up", 0.2)}
 			initial="hidden"
 			whileInView={"show"}
-			viewport={{ once: false, amount: 0.7 }}
+			viewport={{ once: true, amount: 0.7 }}
 			className="flex shrink-0 items-center justify-center flex-col space-y-3"
 		>
 			<img

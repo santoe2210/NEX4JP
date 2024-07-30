@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -10,7 +11,7 @@ const WhyChooseCard = ({ icon, title, desc }) => {
 			variants={fadeIn("down", 0.25)}
 			initial="hidden"
 			whileInView={"show"}
-			viewport={{ once: false, amount: 0.7 }}
+			viewport={{ once: true, amount: 0.7 }}
 			className="flex gradient-1 text-white items-center justify-stretch gap-y-3 flex-col p-6 rounded-md"
 		>
 			{icon}
@@ -18,7 +19,7 @@ const WhyChooseCard = ({ icon, title, desc }) => {
 				variants={fadeIn("up", 0.35)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="text-2xl font-semibold"
 			>
 				{title}
@@ -27,7 +28,7 @@ const WhyChooseCard = ({ icon, title, desc }) => {
 				variants={fadeIn("up", 0.35)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 			>
 				{desc}
 			</motion.p>

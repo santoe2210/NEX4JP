@@ -12,7 +12,7 @@ const RelatedPartner = () => {
 			variants={fadeIn("down", 0.2)}
 			initial="hidden"
 			whileInView={"show"}
-			viewport={{ once: false, amount: 0.7 }}
+			viewport={{ once: true, amount: 0.7 }}
 			className="section-margin max-w-[1240px] mx-auto"
 		>
 			<h2 className="text-center text-2xl font-bold">

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
 import {motion} from "framer-motion"
 import { fadeIn } from '../../variants';
@@ -8,7 +9,7 @@ const LocationCard = ({img, name}) => {
 			variants={fadeIn("up", 0.2)}
 			initial="hidden"
 			whileInView={"show"}
-			viewport={{ once: false, amount: 0.7 }}
+			viewport={{ once: true, amount: 0.7 }}
 			className="relative rounded-md overflow-hidden bg-white drop-shadow-lg"
 		>
 			<img className="aspect-square object-cover" src={img} alt={name} />

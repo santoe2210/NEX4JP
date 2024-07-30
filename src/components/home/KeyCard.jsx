@@ -15,7 +15,7 @@ const KeyCard = ({ logo, achievements = [] }) => {
 			variants={fadeIn("up", 0.25)}
 			initial="hidden"
 			whileInView={"show"}
-			viewport={{ once: false, amount: 0.7 }}
+			viewport={{ once: true, amount: 0.7 }}
 			className="p-6 bg-gray-50/80 drop-shadow-md hover:drop-shadow-none hover:shadow-md hover:shadow-cyan-300/40 transition duration-300 rounded-lg space-y-5 max-w-"
 		>
 			<img
@@ -28,7 +28,7 @@ const KeyCard = ({ logo, achievements = [] }) => {
 					variants={fadeIn("down", 0.25)}
 					initial="hidden"
 					whileInView={"show"}
-					viewport={{ once: false, amount: 0.7 }}
+					viewport={{ once: true, amount: 0.7 }}
 					className="space-y-3"
 				>
 					{achievements.map((achievement) => (

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -11,7 +12,7 @@ const WhatIsSecurity = ({ title, desc }) => {
 				variants={fadeIn("up", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="text-2xl font-bold text-bluehover"
 			>
 				{title}
@@ -20,7 +21,7 @@ const WhatIsSecurity = ({ title, desc }) => {
 				variants={fadeIn("up", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="text-center mt-4 font-medium"
 			>
 				{desc}

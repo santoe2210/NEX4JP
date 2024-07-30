@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -12,7 +13,7 @@ const KeyCard = ({ img = "", title = "", desc = "", icon = "" }) => {
 				variants={fadeIn("right", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="w-36 md:w-48 md:h-auto shrink-0 text-white"
 			>
 				{img ? (
@@ -31,7 +32,7 @@ const KeyCard = ({ img = "", title = "", desc = "", icon = "" }) => {
 				variants={fadeIn("left", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="space-y-2 text-center  md:text-left text-white"
 			>
 				<h3 className="text-xl font-semibold">{title || "Title"}</h3>

@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -11,7 +12,7 @@ const SecurityServiceCard = ({ title, photo, desc }) => {
 				variants={fadeIn("right", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="block w-60 mx-auto md:mx-0 object-fit"
 				src={photo}
 				alt={title}
@@ -20,7 +21,7 @@ const SecurityServiceCard = ({ title, photo, desc }) => {
 				variants={fadeIn("left", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 			>
 				<h2 className="text-2xl font-bold text-bluehover">{title}</h2>
 				<div className="h-[.1rem] w-36 md:w-auto my-3 md:my-6 bg-bluehover"></div>
