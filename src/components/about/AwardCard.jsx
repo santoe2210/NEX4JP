@@ -20,7 +20,7 @@ const AwardCard = ({ img, awards = [] }) => {
 			initial="hidden"
 			whileHover={"hover"}
 			whileInView={"show"}
-			viewport={{ once: false, amount: 0.7 }}
+			viewport={{ once: true, amount: 0.7 }}
 			className="relative aspect-square rounded-md overflow-hidden"
 		>
 			<div className="flex items-center justify-center">

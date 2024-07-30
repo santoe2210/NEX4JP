@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -11,7 +12,7 @@ const AdvancedSecurityCard = ({ title, desc }) => {
 				variants={fadeIn("left", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="flex items-center gap-4"
 			>
 				<h2 className="text-xl font-bold text-bluehover">{title}</h2>
@@ -21,7 +22,7 @@ const AdvancedSecurityCard = ({ title, desc }) => {
 				variants={fadeIn("left", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="font-medium"
 			>
 				{desc}

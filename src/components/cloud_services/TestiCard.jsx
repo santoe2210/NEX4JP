@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -14,7 +15,7 @@ const TestiCard = ({ name, desc, img = "" }) => {
 			initial="hidden"
             whileHover={"hover"}
 			whileInView={"show"}
-			viewport={{ once: false, amount: 0.7 }}
+			viewport={{ once: true, amount: 0.7 }}
 		>
 			<img
 				className="block size-20 rounded-full mx-auto"

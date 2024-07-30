@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -11,7 +12,7 @@ const ServiceCard = ({ logo = "", name, bgName, icon = "" }) => {
 				variants={fadeIn("down", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 			>
 				{logo && (
 					<img
@@ -26,7 +27,7 @@ const ServiceCard = ({ logo = "", name, bgName, icon = "" }) => {
 				variants={fadeIn("up", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className={`text-xl capitalize font-semibold pt-2 text-center py-1 mt-4 ${
 					bgName ? `${bgName} md:text-2xl` : "text-shadow"
 				}`}

@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -12,7 +14,7 @@ const MissionCard = ({ icon, title, list = [], titleBg }) => {
 				variants={fadeIn("down", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="flex items-center justify-center"
 			>
 				{icon}
@@ -21,7 +23,7 @@ const MissionCard = ({ icon, title, list = [], titleBg }) => {
 				variants={fadeIn("up", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="div"
 			>
 				<h2

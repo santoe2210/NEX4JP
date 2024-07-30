@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /** @format */
 
 import React from "react";
@@ -11,7 +12,7 @@ const MicrosoftServiceCard = ({ photo, title, desc }) => {
 				variants={fadeIn("down", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="block size-[141px] mx-auto"
 				src={photo}
 				alt={`nex4 microsoft ${title}`}
@@ -20,7 +21,7 @@ const MicrosoftServiceCard = ({ photo, title, desc }) => {
 				variants={fadeIn("up", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="text-xl font-bold "
 			>
 				{title}
@@ -29,7 +30,7 @@ const MicrosoftServiceCard = ({ photo, title, desc }) => {
 				variants={fadeIn("up", 0.2)}
 				initial="hidden"
 				whileInView={"show"}
-				viewport={{ once: false, amount: 0.7 }}
+				viewport={{ once: true, amount: 0.7 }}
 				className="font-medium text-justify"
 			>
 				{desc}
