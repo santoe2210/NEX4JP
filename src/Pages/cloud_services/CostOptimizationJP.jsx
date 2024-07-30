@@ -19,10 +19,11 @@ import WhyChoose from "../../components/cloud_services/WhyChoose";
 const CostOptimization = () => {
     const navigate = useNavigate();
     const [data, setData] = useState(null);
+    const ApiName = "cloud-cost-saving-service"
 
     useEffect(() => {
         axios.get(
-            `${URL}cloud-cost-saving-service?populate[page][populate]=title1,service_condition.title,service_condition.detail,service_detail.title_for_service,service_detail.detail.icon,service_detail.detail.title,service_detail.detail.detail,why_choose_us.icon,why_choose_us.title,why_choose_us.detail,title3,merit.title,merit.detail,get_started.title,get_started.detail,title4,partners_platform.photo,partners_platform.detail,partners_platform.link,service_conclusion`,
+            `${URL}${ApiName}?populate[page][populate]=title1,service_condition.title,service_condition.detail,service_detail.title_for_service,service_detail.detail.icon,service_detail.detail.title,service_detail.detail.detail,why_choose_us.icon,why_choose_us.title,why_choose_us.detail,title3,merit.title,merit.detail,get_started.title,get_started.detail,title4,partners_platform.photo,partners_platform.detail,partners_platform.link,service_conclusion`,
             {
                 headers: {
                     Authorization: `Bearer ${STRAPI_KEY}`
