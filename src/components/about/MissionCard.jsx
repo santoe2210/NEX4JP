@@ -1,11 +1,10 @@
 /** @format */
 
 import React from "react";
-
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
-const MissionCard = ({ icon, title, list = [], titleBg }) => {
+const MissionCard = ({ icon, title, detail, titleBg }) => {
 	return (
 		<article className="pt-5 sm:pt-0">
 			<motion.div
@@ -29,12 +28,10 @@ const MissionCard = ({ icon, title, list = [], titleBg }) => {
 				>
 					{title}
 				</h2>
-				{list.length > 0 && (
-					<ul className="space-y-1 mt-3 font-medium list-outside list-disc ml-8">
-						{list.map((item) => (
-							<li>{item}</li>
-						))}
-					</ul>
+				{detail && (
+					<div className="space-y-1 mt-3 font-medium list-outside list-disc ml-8"
+						dangerouslySetInnerHTML={{ __html: detail }}
+					/>
 				)}
 			</motion.div>
 		</article>

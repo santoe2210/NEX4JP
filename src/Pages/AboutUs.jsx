@@ -124,7 +124,7 @@ const AboutUs = () => {
                                 " bg-blue-400"
                             }
                             title={mission.title}
-                            list={mission.detail.replace(/<\/?[^>]+(>|$)/g, "").split("\n")}
+                            detail={mission.detail}
                         />
                     ))}
                 </div>
