@@ -33,6 +33,7 @@ import Home from "./components/Home";
 import RenewHome from "./Pages/RenewHome";
 import AboutUs from "./Pages/AboutUs";
 import SecurityOperationService from "./Pages/security/SecurityOperationService";
+import Microsoft365 from "./Pages/microsoft/Microsoft365";
 
 function App() {
 	const Layout = () => {
@@ -80,6 +81,9 @@ function App() {
 							path="security/operation-service"
 							element={<SecurityOperationService />}
 						/>
+						<Route path="microsoft/microsoft-365"
+						element={<Microsoft365 />}
+						></Route>
 						<Route path="developing" element={<Developing />} />
 
 						<Route path="faq" element={<ContactUs />} />

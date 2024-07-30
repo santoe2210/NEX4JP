@@ -14,7 +14,7 @@ const AdvancedSecurityCard = ({ title, desc }) => {
 				viewport={{ once: false, amount: 0.7 }}
 				className="flex items-center gap-4"
 			>
-				<h2 className="text-2xl font-bold text-bluehover">{title}</h2>
+				<h2 className="text-xl font-bold text-bluehover">{title}</h2>
 				<div className="h-[.15rem] bg-bluehover w-24"></div>
 			</motion.div>
 			<motion.p

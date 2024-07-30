@@ -80,94 +80,93 @@ const TestNav = () => {
 										<li>
 											<h2 className=" text-1xl font-bold">
 												クラウドサービス
-											</h2>
-
-										</li>
-										<li className="hover:text-bluehover">
-											<a
-												href="/cloud/migration"
-												className="hover:text-primary-600 dark:hover:text-primary-500"
-											>
-												移動
-											</a>
-										</li>
-										<li className="hover:text-bluehover">
-											<a
-												href="/cloud/operation-and-monitoring"
-												className="hover:text-primary-600 dark:hover:text-primary-500"
-											>
-												運用・監視サービス
-											</a>
-										</li>
-										<li className="hover:text-bluehover">
-											<a
-												href="/cloud/professional"
-												className="hover:text-primary-600 dark:hover:text-primary-500"
-											>
-												プロフェッショナル・サービス
-											</a>
-										</li>
-										<li className="hover:text-bluehover">
-											<a
-												href="/cloud/design-and-implementation"
-												className="hover:text-primary-600 dark:hover:text-primary-500"
-											>
-												設計と実装
-											</a>
-										</li>
-										<li className="hover:text-bluehover">
-											<a
-												href="/cloud/security-operation"
-												className="hover:text-primary-600 dark:hover:text-primary-500"
-											>
-												セキュリティー・オペレーション
-											</a>
-										</li>
-										<li className="hover:text-bluehover">
-											<a
-												href="/cloud/cost-optimization"
-												className="hover:text-primary-600 dark:hover:text-primary-500"
-											>
-												コスト最適化サービス
-											</a>
-										</li>
-									</div>
-									{/* for cloud */}
-									<div className="space-y-4 p-4">
-										<li>
-											<h2 className=" text-1xl  font-bold">
-												ネットワーク関連サービス
-											</h2>
-										</li>
-										<li className="hover:text-bluehover">
-											<a
-												href="/developing"
-												className="hover:text-primary-600 dark:hover:text-primary-500"
-											>
-												データセンター・ネットワーク
-											</a>
-										</li>
-										<li className="hover:text-bluehover">
-											<a
-												href="/developing"
-												className="hover:text-primary-600 dark:hover:text-primary-500"
-											>
-												企業ネットワーク
-											</a>
-										</li>
-										<li className="hover:text-bluehover">
-											<a
-												href="/developing"
-												className="hover:text-primary-600 dark:hover:text-primary-500"
-											>
-												SD-WANネットワーク
-											</a>
-										</li>
-									</div>
-									{/* open this comment for more services*/}
-									<div className="space-y-4 p-4">
-										<li>
-											<h2 className=" text-1xl  font-bold">
+												</h2>
+											</li>
+											<li className="hover:text-bluehover">
+												<a
+													href="/cloud/migration"
+													className="hover:text-primary-600 dark:hover:text-primary-500"
+												>
+													移動
+												</a>
+											</li>
+											<li className="hover:text-bluehover">
+												<a
+													href="/cloud/operation-and-monitoring"
+													className="hover:text-primary-600 dark:hover:text-primary-500"
+												>
+													運用・監視サービス
+												</a>
+											</li>
+											<li className="hover:text-bluehover">
+												<a
+													href="/cloud/professional"
+													className="hover:text-primary-600 dark:hover:text-primary-500"
+												>
+													プロフェッショナル・サービス
+												</a>
+											</li>
+											<li className="hover:text-bluehover">
+												<a
+													href="/cloud/design-and-implementation"
+													className="hover:text-primary-600 dark:hover:text-primary-500"
+												>
+													設計と実装
+												</a>
+											</li>
+											<li className="hover:text-bluehover">
+												<a
+													href="/cloud/security-operation"
+													className="hover:text-primary-600 dark:hover:text-primary-500"
+												>
+													セキュリティー・オペレーション
+												</a>
+											</li>
+											<li className="hover:text-bluehover">
+												<a
+													href="/cloud/cost-optimization"
+													className="hover:text-primary-600 dark:hover:text-primary-500"
+												>
+													コスト最適化サービス
+												</a>
+											</li>
+										</div>
+										{/* for cloud */}
+										<div className="space-y-4 p-4">
+											<li>
+												<h2 className=" text-1xl  font-bold">
+												ネットワーク関連サービス 
+												</h2>
+											</li>
+											<li className="hover:text-bluehover">
+												<a
+													href="/microsoft/microsoft-365"
+													className="hover:text-primary-600 dark:hover:text-primary-500"
+												>
+													データセンター・ネットワーク || Microsoft 365
+												</a>
+											</li>
+											<li className="hover:text-bluehover">
+												<a
+													href="/developing"
+													className="hover:text-primary-600 dark:hover:text-primary-500"
+												>
+													企業ネットワーク
+												</a>
+											</li>
+											<li className="hover:text-bluehover">
+												<a
+													href="/developing"
+													className="hover:text-primary-600 dark:hover:text-primary-500"
+												>
+													SD-WANネットワーク
+												</a>
+											</li>
+										</div>
+										{/* open this comment for more services*/}
+										<div className="space-y-4 p-4">
+											<li>
+												<h2 className=" text-1xl  font-bold">
 												システム関連サービス
 
 												</h2>
