@@ -22,18 +22,19 @@ const Professional = () => {
 	const ApiName = "cloud-professional-service"
 
     useEffect(() => {
-        axios.get(
-            `${URL}${ApiName}?populate[page][populate]=title1,service_condition.title,service_condition.detail,service_detail.title_for_service,service_detail.detail.icon,service_detail.detail.title,service_detail.detail.detail,why_choose_us.icon,why_choose_us.title,why_choose_us.detail,title3,merit.title,merit.detail,get_started.title,get_started.detail,title4,partners_platform.photo,partners_platform.detail,partners_platform.link,service_conclusion`,
-            {
-                headers: {
-                    Authorization: `Bearer ${STRAPI_KEY}`
+        axios
+            .get(
+                `${URL}/api/${ApiName}?populate[page][populate]=title1,service_condition.title,service_condition.detail,service_detail.title_for_service,service_detail.detail.icon,service_detail.detail.title,service_detail.detail.detail,why_choose_us.icon,why_choose_us.title,why_choose_us.detail,title3,merit.title,merit.detail,get_started.title,get_started.detail,title4,partners_platform.photo,partners_platform.detail,partners_platform.link,service_conclusion`,
+                {
+                    headers: {
+                        Authorization: `Bearer ${STRAPI_KEY}`
+                    }
                 }
-            }
-        )
-            .then(response => {
+            )
+            .then((response) => {
                 setData(response.data.data.attributes.page);
             })
-            .catch(error => {
+            .catch((error) => {
                 console.error("Error fetching data:", error);
             });
     }, []);
@@ -42,12 +43,14 @@ const Professional = () => {
         return <div>Loading...</div>;
     }
 
+    const getImageUrl = (path) => (path ? `${URL}${path}` : "");
+
     const renderKeyCards = (services) => {
-        return services.map(service => (
+        return services.map((service) => (
             <KeyCard
                 key={service.id}
-                img={service.icon.data.attributes.url}
-                icon={<img src={service.icon.data.attributes.url} alt={service.icon.data.attributes.name} />}
+                img={getImageUrl(service.icon.data.attributes.url)}
+                icon={<img src={getImageUrl(service.icon.data.attributes.url)} alt={service.icon.data.attributes.name} />}
                 title={service.title}
                 desc={<div dangerouslySetInnerHTML={{ __html: service.detail }} />}
             />
@@ -55,7 +58,7 @@ const Professional = () => {
     };
 
     const renderBenefitCards = (benefits) => {
-        return benefits.map(benefit => (
+        return benefits.map((benefit) => (
             <BenifitCard
                 key={benefit.id}
                 title={benefit.title}
@@ -65,11 +68,11 @@ const Professional = () => {
     };
 
     const renderPartners = (partners) => {
-        return partners.map(partner => (
+        return partners.map((partner) => (
             <Link key={partner.id} className="block mr-4 w-60 md:w-96 shrink-0" to={partner.link ? partner.link : "/aws"}>
                 <img
                     className="cursor-pointer w-full aspect-square object-center object-cover hover:text-blue-500"
-                    src={partner.photo.data.attributes.url}
+                    src={getImageUrl(partner.photo.data.attributes.url)}
                     alt={partner.photo.data.attributes.name}
                 />
                 <div>
@@ -163,7 +166,7 @@ const Professional = () => {
 
                 {/* Why Choose Section */}
                 <WhyChoose
-                    img={data.why_choose_us.icon.data.attributes.url}
+                    img={getImageUrl(data.why_choose_us.icon.data.attributes.url)}
                     title={data.why_choose_us.title}
                     desc={<div dangerouslySetInnerHTML={{ __html: data.why_choose_us.detail }} />}
                 />
@@ -283,11 +286,15 @@ const Professional = () => {
                         {data.title4}
                     </h2>
                     <div className=" flex flex-col md:flex-row items-center">
-                        {data.partners_platform.map(partner => (
-                            <Link key={partner.id} className="block mr-4 w-60 md:w-96 shrink-0" to={partner.link ? partner.link : "/aws"}>
+                        {data.partners_platform.map((partner) => (
+                            <Link
+                                key={partner.id}
+                                className="block mr-4 w-60 md:w-96 shrink-0"
+                                to={partner.link ? partner.link : "/aws"}
+                            >
                                 <img
                                     className="cursor-pointer w-full aspect-square object-center object-cover hover:text-blue-500"
-                                    src={partner.photo.data.attributes.url}
+                                    src={getImageUrl(partner.photo.data.attributes.url)}
                                     alt={partner.photo.data.attributes.name}
                                 />
                             </Link>
