@@ -27,7 +27,7 @@ const AboutUs = () => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    `${URL}/api/${ApiName}?populate[main_title]=*&populate[title_photo]=*&populate[about_detail]=*&populate[missions][populate]=icon,title,detail&populate[our_solution]=*&populate[locations][populate]=title,photo&populate[services][populate]=title,photo&populate[service_detail]=*&populate[partners][populate]=title,photo&populate[members][populate]=icon,title,detail&populate[awards][populate]=icon,title,detail&populate[our_customers][populate]=title,photo`,
+                    `${URL}/api/${ApiName}?populate[main_title]=*&populate[titel_photo]=*&populate[about_detail]=*&populate[missions][populate]=icon,title,detail&populate[our_solution]=*&populate[locations][populate]=title,photo&populate[services][populate]=title,photo&populate[service_detail]=*&populate[partners][populate]=title,photo&populate[members][populate]=icon,title,detail&populate[awards][populate]=icon,title,detail&populate[our_customers][populate]=title,photo`,
                     {
                         headers: {
                             Authorization: `Bearer ${STRAPI_KEY}`,
@@ -63,7 +63,7 @@ const AboutUs = () => {
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
                     className="w-full h-60 md:h-96 object-cover rounded-md drop-shadow-xl"
-                    src={aboutUsPhoto}
+                    src={getImageUrl(data.titel_photo?.data?.attributes?.url)}
                     alt="NEX4 Team"
                 />
                 <motion.p
@@ -72,7 +72,7 @@ const AboutUs = () => {
                     whileInView={"show"}
                     viewport={{ once: false, amount: 0.7 }}
                     className="leading-loose font-medium text-lg text-justify md:text-center mt-4 md:mt-6 max-w-[1240px] mx-auto"
-                    dangerouslySetInnerHTML={{ __html: data.about_detail }}
+                    dangerouslySetInnerHTML={{ __html: data.aboud_detail }}
                 />
             </section>
 
@@ -121,7 +121,7 @@ const AboutUs = () => {
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
                 style={{
-                    backgroundImage: `url(${getImageUrl(data.title_photo?.data?.attributes?.url)})`,
+                    backgroundImage: `url(${getImageUrl(data.titel_photo?.data?.attributes?.url)})`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPosition: "center center",
