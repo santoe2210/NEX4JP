@@ -3,7 +3,6 @@
 
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Helmet } from "react-helmet";
 import MissionCard from "../components/about/MissionCard";
 import LocationCard from "../components/about/LocationCard";
 import ServiceCard from "../components/about/ServiceCard";
@@ -51,9 +50,6 @@ const AboutUs = () => {
 
     return (
         <section>
-            <Helmet>
-                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-            </Helmet>
             <h2 className="text-3xl md:text-4xl font-semibold text-center">
                 {data.main_title}
             </h2>
