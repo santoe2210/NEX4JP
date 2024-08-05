@@ -65,8 +65,8 @@ const TestNav = () => {
 								}
 							>
 								{" "}
-								{/* className="w-4/5 font-semibold" */}
-								<ul className="grid grid-cols-1 w-full h-[50vh] md:h-fit overflow-y-auto sm:grid-cols-2 md:grid-cols-3 sm:gap-1 gap-0.5 sm:mt-4">
+								{/* className="grid grid-cols-1 w-full h-[50vh] md:h-fit overflow-y-auto sm:grid-cols-2 md:grid-cols-3 sm:gap-1 gap-0.5 sm:mt-4" */}
+								<ul className="w-full h-[50vh] text-center md:h-fit overflow-y-auto">
 									{/* <ul> */}
 									<div className="space-y-4 p-4">
 										<li className="hover:text-bluehover">
@@ -132,7 +132,7 @@ const TestNav = () => {
 											</li>
 										</div>
 										{/* for cloud */}
-										<div className="space-y-4 p-4">
+										{/* <div className="space-y-4 p-4">
 											<li>
 												<h2 className=" text-1xl  font-bold">
 												ネットワーク関連サービス 
@@ -162,9 +162,9 @@ const TestNav = () => {
 													SD-WANネットワーク
 												</a>
 											</li>
-										</div>
+										</div> */}
 										{/* open this comment for more services*/}
-										<div className="space-y-4 p-4">
+										{/* <div className="space-y-4 p-4">
 											<li>
 												<h2 className=" text-1xl  font-bold">
 												システム関連サービス
@@ -315,7 +315,7 @@ const TestNav = () => {
 												Power Platform
 											</a>
 										</li>
-									</div>
+									</div> */}
 								</ul>
 							</MegaMenu.Dropdown>
 						</li>
