@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import { Autoplay } from "swiper/modules";
 import { STRAPI_KEY, URL } from "../utils/api_endpoints";
+import { Helmet } from "react-helmet";
 
 const getImageUrl = (path) => (path ? `${URL}${path}` : "");
 
@@ -104,6 +105,9 @@ const Blog = () => {
 
     return (
         <div className="py-16 max-w-screen-2xl mx-auto" id="blog">
+            <Helmet>
+                <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+            </Helmet>
             <section className="latest-featured-blogs">
                 <div className="container">
                     <h1 className="title">新しい注目のブログ</h1>
