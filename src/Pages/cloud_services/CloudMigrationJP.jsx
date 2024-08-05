@@ -199,7 +199,7 @@ const CloudMigration = () => {
                     </div>
                 </div>
 
-                {/* Testimonials */}
+                {/* Testimonials
                 <motion.div className="max-w-[1240px] mx-auto">
                     <div className="section-margin section-padding gradient-1 text-white text-center">
                         <h2
@@ -236,7 +236,7 @@ const CloudMigration = () => {
                             </MultipleCarousel>
                         </div>
                     </div>
-                </motion.div>
+                </motion.div> */}
 
                 {/* Get Started Today */}
                 <div className="section-margin max-w-[1240px] drop-shadow-lg rounded-b-lg px-6 bg-white pb-8 space-y-8 text-center mx-auto">

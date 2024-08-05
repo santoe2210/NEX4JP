@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Checkbox, Label, TextInput, Textarea } from "flowbite-react";
+import { Button, Label, TextInput, Textarea } from "flowbite-react";
 import NavBar from './TestNav';
 import MyFooter from './MyFooter';
 import headerImage from '../assets/icons/background (2).jpg';
@@ -58,7 +58,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div path="faq" className="py-12 max-w-screen-2xl mx-auto items-center justify-center w-full">
+    <div id="faq" className="py-12 max-w-screen-2xl mx-auto items-center justify-center w-full">
       {/* Uncomment to include the NavBar */}
       {/* <div className="mb-16">
           <NavBar/>
@@ -157,7 +157,7 @@ const ContactForm = () => {
             <span className="icon">&#128222;</span>
             <div className="text-content">
               <div className="text-title">電話番号</div>
-              <div className="text-detail">123-456-7890</div>
+              <div className="text-detail">(+81)-080-9996-1692</div>
             </div>
           </div>
           <div className="contact-button">
@@ -171,22 +171,25 @@ const ContactForm = () => {
             <span className="icon">&#127759;</span>
             <div className="text-content">
               <div className="text-title">会社の所在地</div>
-              <div className="text-detail">123 Anywhere St, Any City, 12345</div>
+              <div className="text-detail">〒114-0003, 東京都北区豊島8丁目27-2-207</div>
             </div>
           </div>
         </div>
         <div className='map-container'>
-          <iframe width="1000"
-            height="400"
-            frameBorder="0"
-            scrolling="no"
-            marginHeight="0"
-            marginWidth="0"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=%20tokyo+()&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-          </iframe>
-          <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=e2244c045b2c1f22bb7d1c1cb90d0da91a16c75d'>
-          </script>
+          <div className="mapouter">
+            <div className="gmap_canvas">
+              <iframe 
+                className="gmap_iframe" 
+                width="100%" 
+                height="100%"
+                frameBorder="0" 
+                scrolling="no" 
+                marginHeight="0" 
+                marginWidth="0" 
+                src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=東京都北区豊島8丁目27-2-207&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
       {/* Uncomment to include the Footer */}
