@@ -1,5 +1,3 @@
-/** @format */
-
 import "./App.css";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Service1 from "./components/Service1";
@@ -32,8 +30,10 @@ import CostOptimization from "./Pages/cloud_services/CostOptimizationJP";
 import Home from "./components/Home";
 import RenewHome from "./Pages/RenewHome";
 import AboutUs from "./Pages/AboutUs";
+import ReadMorePage from "./components/ReadMorePage"; // Import the ReadMorePage component
 import SecurityOperationService from "./Pages/security/SecurityOperationService";
 import Microsoft365 from "./Pages/microsoft/Microsoft365";
+
 
 function App() {
 	const Layout = () => {
@@ -89,6 +89,7 @@ function App() {
 						<Route path="faq" element={<ContactUs />} />
 						<Route path="aws" element={<AWS />} />
 						<Route path="ms" element={<Microsoft />} />
+						<Route path="blog/:id" element={<ReadMorePage />} /> {/* Add this route */}
 					</Route>
 				</Routes>
 			</BrowserRouter>

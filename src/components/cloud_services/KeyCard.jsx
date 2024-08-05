@@ -19,7 +19,7 @@ const KeyCard = ({ img = "", title = "", desc = "", icon = "" }) => {
 				{img ? (
 					<img
 						src={img}
-						className="w-full aspect-square object-cover rounded-full"
+						className="w-full aspect-square object-cove"
 						alt={title}
 					/>
 				) : (
