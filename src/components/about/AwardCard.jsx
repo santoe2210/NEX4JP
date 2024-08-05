@@ -8,6 +8,7 @@ import { RxCrossCircled } from "react-icons/rx";
 import { fadeIn, growOut } from "../../variants";
 
 const AwardCard = ({ img, awards = [] }) => {
+
   const [isOpen, setIsOpen] = useState(false);
 
   return (

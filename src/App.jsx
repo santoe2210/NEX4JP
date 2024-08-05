@@ -31,6 +31,9 @@ import Home from "./components/Home";
 import RenewHome from "./Pages/RenewHome";
 import AboutUs from "./Pages/AboutUs";
 import ReadMorePage from "./components/ReadMorePage"; // Import the ReadMorePage component
+import SecurityOperationService from "./Pages/security/SecurityOperationService";
+import Microsoft365 from "./Pages/microsoft/Microsoft365";
+
 
 function App() {
 	const Layout = () => {
@@ -57,12 +60,32 @@ function App() {
 						<Route path="blog" element={<Blog />} />
 						<Route path="service" element={<Services />} />
 						<Route path="cloud/migration" element={<CloudMigration />} />
-						<Route path="cloud/operation-and-monitoring" element={<OperationAndMonitoring />} />
+						<Route
+							path="cloud/operation-and-monitoring"
+							element={<OperationAndMonitoring />}
+						/>
 						<Route path="cloud/professional" element={<Professional />} />
-						<Route path="cloud/design-and-implementation" element={<DesignAndImplementation />} />
-						<Route path="cloud/security-operation" element={<SecurityOperation />} />
-						<Route path="cloud/cost-optimization" element={<CostOptimization />} />
+						<Route
+							path="cloud/design-and-implementation"
+							element={<DesignAndImplementation />}
+						/>
+						<Route
+							path="cloud/security-operation"
+							element={<SecurityOperation />}
+						/>
+						<Route
+							path="cloud/cost-optimization"
+							element={<CostOptimization />}
+						/>
+						<Route
+							path="security/operation-service"
+							element={<SecurityOperationService />}
+						/>
+						<Route path="microsoft/microsoft-365"
+						element={<Microsoft365 />}
+						></Route>
 						<Route path="developing" element={<Developing />} />
+
 						<Route path="faq" element={<ContactUs />} />
 						<Route path="aws" element={<AWS />} />
 						<Route path="ms" element={<Microsoft />} />

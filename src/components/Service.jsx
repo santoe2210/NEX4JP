@@ -214,13 +214,13 @@ const Services = () => {
 
                 <div className="text-center my-8">
                     <div className="pt-5">
-                        <h2 className="text-4xl text-neturalDGrey font-semibold mb-2">モダンワークプレイスサービス</h2>
-                        <p className="text-neturalDGrey font-semibold">当社のモダンワークプレイスサービスは、最新のツールとテクノロジーを駆使して、効率的でコラボレーティブな作業環境を提供します。<br />
+                        <h2 className="text-4xl text-neturalDGrey font-semibold mb-2">モダンワークスペースサービス</h2>
+                        <p className="text-neturalDGrey font-semibold">当社のモダンワークスペースサービスは、最新のツールとテクノロジーを駆使して、効率的でコラボレーティブな作業環境を提供します。<br />
                             ビジネスの生産性を向上させ、柔軟な働き方を支援します。</p>
                     </div>
                     <div className="border-2 border-neturalDGrey p-4 rounded-lg lg:w-1/2 mx-auto mt-5">
                         <h3 className="text-3xl text-neturalDGrey font-semibold my-4">なぜこのサービスを利用するのか？</h3>
-                        <p className="text-neturalDGrey font-semibold">モダンワークプレイスサービスを利用することで、企業は従業員の生産性を最大化し、効率的なコラボレーション環境を構築できます。最新のツールとテクノロジーを活用し、柔軟な働き方を支援します。</p>
+                        <p className="text-neturalDGrey font-semibold">モダンワークスペースサービスを利用することで、企業は従業員の生産性を最大化し、効率的なコラボレーション環境を構築できます。最新のツールとテクノロジーを活用し、柔軟な働き方を支援します。</p>
                     </div>
                 </div>
                 {/* cards */}

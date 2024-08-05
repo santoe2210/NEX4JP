@@ -24,7 +24,7 @@ const SlideCard = ({ bgImg, title, to, img = "" }) => {
 					variants={fadeIn("up", 0.35)}
 					initial="hidden"
 					whileInView={"show"}
-					viewport={{ once: false, amount: 0.7 }}
+					viewport={{ once: true, amount: 0.7 }}
 					className={`${
 						!img ? "mx-auto" : "mx-auto sm:mx-0"
 					} bg-gray-100/40 w-[80%] md:w-2/3 p-6 rounded-r-lg z-10`}

@@ -1,3 +1,7 @@
+
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
+/** @format */
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
