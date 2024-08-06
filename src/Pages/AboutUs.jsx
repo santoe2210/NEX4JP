@@ -291,7 +291,7 @@ const AboutUs = () => {
             </section>
 
             {/* Testimonials */}
-            <motion.section className="section-margin outer-padding">
+            {/* <motion.section className="section-margin outer-padding">
                 <div className="gradient-2">
                     <div className="max-w-[1280px] mx-auto section-padding text-white text-center">
                         <motion.h2
@@ -331,7 +331,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-            </motion.section>
+            </motion.section> */}
         </section>
     );
 };
