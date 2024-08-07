@@ -40,10 +40,15 @@ const AwardCard = ({ img, awards = [] }) => {
         className="absolute right-4 bottom-2"
       >
         {isOpen ? (
-          <RxCrossCircled className="size-9 text-cyan-300" />
-        ) : (
-          <BsFillPlusCircleFill className="size-8 text-cyan-300" />
+        <button className="text-cyan-300 bg-transparent border border-cyan-300 rounded-full px-4 py-2 cursor-pointer">
+        閉じる
+        </button>
+      ) : (
+        <button className="text-cyan-300 bg-transparent border border-cyan-300 rounded-full px-4 py-2 cursor-pointer">
+        詳細
+      </button>
         )}
+
       </button>
     </motion.article>
   );
